@@ -1,0 +1,14 @@
+#first run instal.sh 
+#It also start the server
+
+source install.sh
+
+#next run the client
+source startClient.sh
+
+#to check logs
+source showLogs.sh
+
+#to cleanup the containers and network bridge
+source CleanUp.sh
+
