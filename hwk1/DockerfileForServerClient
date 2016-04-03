@@ -1,6 +1,8 @@
 FROM ubuntu:12.04
 
 RUN apt-get -y update && apt-get install -y iputils-ping && apt-get install -y default-jdk
-
+ADD /hw1 /opt/hw1/ 
+CMD cd /opt/hw1/
+CMD javac -d bin src/com/p0/*.java 
 
 

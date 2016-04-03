@@ -1,14 +1,20 @@
+STEP 1. 
 #first run instal.sh 
 #It also start the server
 
 source install.sh
 
+
+STEP 2.
 #next run the client
 source startClient.sh
 
+STEP 3.
 #to check logs
 source showLogs.sh
 
+
+STEP 4. 
 #to cleanup the containers and network bridge
 source CleanUp.sh
 
