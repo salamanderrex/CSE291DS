@@ -8,7 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/.idea/copyright" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/javadoc/rmi" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/javadoc/resources" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pingPongTest" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pingPongTest" isTestSource="false" packagePrefix="pingPongTest" />
       <sourceFolder url="file://$MODULE_DIR$/rmi" isTestSource="false" packagePrefix="rmi" />
       <sourceFolder url="file://$MODULE_DIR$/build" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/javadoc" isTestSource="false" />
@@ -16,6 +16,7 @@
       <sourceFolder url="file://$MODULE_DIR$/unit" isTestSource="true" packagePrefix="unit" />
       <sourceFolder url="file://$MODULE_DIR$/unit/rmi" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/conformance" isTestSource="true" packagePrefix="conformance" />
+      <sourceFolder url="file://$MODULE_DIR$/conformance/rmi" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
