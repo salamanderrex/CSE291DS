@@ -13,6 +13,8 @@ public class PingPongTestServer {
     public static void main(String [] args) {
 
         PingPongServerImplementation server = new PingPongServerImplementation();
+
+        //InetSocketAddress address = new InetSocketAddress("localhost",8888);
         InetSocketAddress address = new InetSocketAddress("myserver",8888);
         Skeleton <PingPongServer> skeleton = new Skeleton (PingPongServer.class,server,address);
 
@@ -21,7 +23,7 @@ public class PingPongTestServer {
         } catch (RMIException e ){
             System.out.println("error");
         }
-        System.out.print("hee");
+        System.out.println("start server Daze~");
 
     }
 }
