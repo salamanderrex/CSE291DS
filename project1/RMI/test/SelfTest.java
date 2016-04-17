@@ -20,7 +20,7 @@ public class SelfTest
         // Create the test list, the series object, and run the test series.
         @SuppressWarnings("unchecked")
         Class<? extends Test>[]     tests =
-            new Class[] {InfiniteLoopTest.class, TemporaryDirectoryTest.class};
+            new Class[] {InfiniteLoopTest.class, TemporaryDirectoryTest.class, LocalPingPongTest.class};
         Series                      series = new Series(tests);
         SeriesReport                report = series.run(3, System.out);
 

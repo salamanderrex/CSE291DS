@@ -57,7 +57,7 @@ public abstract class Stub
     	}
     	
     	/* checks that c is an RMI interface */
-    	if(!c.isInterface() || !throwRMIcheck(c)) {
+    	if(!c.isInterface() || !checkRMIException(c)) {
     		throw new Error("error");
     	}
     	
@@ -124,7 +124,7 @@ public abstract class Stub
     	}
     	    	
     	/* checks that c is an RMI interface */
-    	if(!c.isInterface() || !throwRMIcheck(c)) {
+    	if(!c.isInterface() || !checkRMIException(c)) {
     		throw new Error("error");
     	}
     
@@ -165,36 +165,36 @@ public abstract class Stub
      */
     public static <T> T create(Class<T> c, InetSocketAddress address)
     {
-        
-    	/* checks for null inputs */
-    	if(c == null || address == null) {
+
+        if(c == null || address == null) {
     		throw new NullPointerException();
     	}
-    	
-    	/* checks if c is an RMI interface */
-    	if(!c.isInterface() || !throwRMIcheck(c)) {
-    		throw new Error("error");
+
+    	if(!c.isInterface() )
+        {
+    		throw new Error("now a interface ");
     	}
-    	
-    	/* creates invocation handler */
+        if (!checkRMIException(c)) {
+            throw new Error ("Has method does not have RMIExcpetion type");
+        }
+
     	InvocationHandler handler = new RMIInvocationHandler(address, c);
+
+    	T proxy = (T) Proxy.newProxyInstance(c.getClassLoader(), new Class[] { c }, handler);
     	
-    	/* creates a new proxy object and returns it */
-    	Object impl = (T) Proxy.newProxyInstance(c.getClassLoader(), 
-    			new Class[] { c }, handler);
-    	
-    	return (T) impl;
+    	return  proxy;
     	
     }
     
-    /* Method checks that every method in Class c throws an RMIException */
-    private static boolean throwRMIcheck(Class c) {
+    /*
+     * check all methods has exception RMI exception
+     */
+    private static boolean checkRMIException(Class c) {
     	
     	Method[] methods = c.getMethods();
-    	Class[] exceptions = null;
-    	
+
     	for(int i = 0; i<methods.length; i++) {
-    		exceptions = methods[i].getExceptionTypes();
+			Class[] exceptions = methods[i].getExceptionTypes();
     		for(int j = 0; j<exceptions.length; j++) {
     			if(exceptions[j].getName().contains("RMIException")) {
     				break;

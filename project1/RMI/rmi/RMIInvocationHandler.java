@@ -2,21 +2,18 @@ package rmi;
 
 import java.io.*;
 import java.lang.reflect.*;
-import java.lang.reflect.Proxy;
 import java.net.*;
 
 public class RMIInvocationHandler implements InvocationHandler, Serializable {
 
-	private String hostname;
-	private int port;
+
 	private InetSocketAddress address;
-	private Class intface;
+	private Class myInterface;
 	
 	public RMIInvocationHandler(InetSocketAddress address, Class c) {
-		this.hostname = address.getHostName();
-		this.port = address.getPort();
+
 		this.address = address;
-		this.intface = c;
+		this.myInterface = c;
 	}
 	
 	public Object invoke(Object proxy, Method method, Object[] args) throws Exception  {
@@ -29,7 +26,7 @@ public class RMIInvocationHandler implements InvocationHandler, Serializable {
 			RMIInvocationHandler r = (RMIInvocationHandler) 
 					java.lang.reflect.Proxy.getInvocationHandler(proxy);
 			
-			return r.getintface().getName() + " " + r.getAddress().toString();
+			return r.getInterface().getName() + " " + r.getAddress().toString();
 		}
 		
 		/* Returns a hashCode based on implementing interface and network address 
@@ -40,7 +37,7 @@ public class RMIInvocationHandler implements InvocationHandler, Serializable {
 			RMIInvocationHandler r = (RMIInvocationHandler) 
 					java.lang.reflect.Proxy.getInvocationHandler(proxy);
 			
-			return r.getintface().hashCode() * r.getAddress().hashCode();		
+			return r.getInterface().hashCode() * r.getAddress().hashCode();
 		}
 		
 		/* Determines if two proxy objects are equal based on the interface 
@@ -57,7 +54,7 @@ public class RMIInvocationHandler implements InvocationHandler, Serializable {
 					(RMIInvocationHandler) java.lang.reflect.
 					Proxy.getInvocationHandler(args[0]);
 			
-			if(r.getintface().equals(q.getintface()) 
+			if(r.getInterface().equals(q.getInterface())
 					&& r.getAddress().equals(q.getAddress()) ) {
 				return true;
 			}
@@ -72,7 +69,7 @@ public class RMIInvocationHandler implements InvocationHandler, Serializable {
 			/* Connects to server and forwards information and 
 			 * Receives a response. Throws an RMIException if 
 			 * Problems occurred */
-			connection = new Socket(hostname, port);
+			connection = new Socket(this.address.getHostName(), this.address.getPort());
 			ObjectOutputStream out = 
 					new ObjectOutputStream(connection.getOutputStream());
 			out.flush();
@@ -101,8 +98,8 @@ public class RMIInvocationHandler implements InvocationHandler, Serializable {
 	}
 	
 	/* Helper methods to retrieve private variables */
-	public Class getintface() {
-		return intface; 
+	public Class getInterface() {
+		return myInterface;
 	}
 	
 	public InetSocketAddress getAddress() {
