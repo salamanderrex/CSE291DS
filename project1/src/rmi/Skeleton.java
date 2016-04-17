@@ -1,6 +1,9 @@
 package rmi;
 
+import java.io.IOException;
+import java.lang.reflect.Method;
 import java.net.*;
+
 
 /** RMI skeleton
 
@@ -26,7 +29,18 @@ import java.net.*;
 */
 public class Skeleton<T>
 {
-    /** Creates a <code>Skeleton</code> with no initial server address. The
+    
+	private int port = 0;
+	private String HostName = null; 
+	private Object server = null;
+	/* flag is volatile for thread safety */
+	private volatile boolean isRunning = false;
+	private listenThread listen = null;
+	private ServerSocket listen_socket;
+	private Class intface = null;
+	
+	
+	/** Creates a <code>Skeleton</code> with no initial server address. The
         address will be determined by the system when <code>start</code> is
         called. Equivalent to using <code>Skeleton(null)</code>.
 
@@ -38,17 +52,33 @@ public class Skeleton<T>
         @param c An object representing the class of the interface for which the
                  skeleton server is to handle method call requests.
         @param server An object implementing said interface. Requests for method
-                      calls are forwarded by the skeleton to this object.
+                      calls are forwarded by the skeleton to this object. 
         @throws Error If <code>c</code> does not represent a remote interface -
                       an interface whose methods are all marked as throwing
                       <code>RMIException</code>.
         @throws NullPointerException If either of <code>c</code> or
                                      <code>server</code> is <code>null</code>.
      */
-    public Skeleton(Class<T> c, T server)
+    public Skeleton(Class<T> c, T server) 
     {
-        throw new UnsupportedOperationException("not implemented");
+    	
+    	/* checks for null inputs */
+    	if(c == null || server == null) {
+    		throw new NullPointerException();
+    	}
+    	
+    	/* Makes sure that c is a remote interface and initialize */
+    	if(c.isInterface() && throwRMIcheck(c)) {
+    		this.server = server;
+    		this.intface = c;
+    	}
+    	else {
+    		throw new Error("error");
+    	}
+   
     }
+    
+   
 
     /** Creates a <code>Skeleton</code> with the given initial server address.
 
@@ -70,10 +100,27 @@ public class Skeleton<T>
      */
     public Skeleton(Class<T> c, T server, InetSocketAddress address)
     {
-        throw new UnsupportedOperationException("not implemented");
+        
+    	/* checks for null inputs */
+    	if(c == null || server == null) {
+    		throw new NullPointerException();
+    	}
+    	    	
+    	/* Makes sure that c is a remote interface and initialize */
+    	if(c.isInterface() && throwRMIcheck(c)) {
+    		this.intface = c;
+    		this.server = server;
+    		this.port = address.getPort();
+        	this.HostName = address.getHostName();
+    	}
+    	else {
+    		throw new Error("error");
+    	}
+    	 	
     }
 
-    /** Called when the listening thread exits.
+
+	/** Called when the listening thread exits.
 
         <p>
         The listening thread may exit due to a top-level exception, or due to a
@@ -92,7 +139,7 @@ public class Skeleton<T>
                      <code>null</code> if the skeleton stopped normally.
      */
     protected void stopped(Throwable cause)
-    {
+    {    
     }
 
     /** Called when an exception occurs at the top level in the listening
@@ -141,7 +188,35 @@ public class Skeleton<T>
      */
     public synchronized void start() throws RMIException
     {
-        throw new UnsupportedOperationException("not implemented");
+       
+    	/* start server only if not running */
+    	if(isRunning() == false) {
+    		/* set running flag */
+    		setisRunning(true);
+    		
+    		try {
+				listen_socket = new ServerSocket(getPort());	
+				
+				/* set port number */
+				this.port = listen_socket.getLocalPort();					
+				
+				/* set hostname if not already set */
+				if(this.getHostName() == null) {		
+					this.HostName = listen_socket.getInetAddress()
+							.getHostName();
+				}
+								
+				/* start the main thread which listens for requests from a stub */
+				listen = new listenThread(this, listen_socket);
+		   		listen.start();
+			
+			} catch (IOException e) {
+				throw new RMIException(e.getCause());
+			}
+        }
+    	else {
+    		throw new RMIException("Server has already started and has not since stopped");
+    	}
     }
 
     /** Stops the skeleton server, if it is already running.
@@ -153,8 +228,62 @@ public class Skeleton<T>
         <code>stopped</code> is called at that point. The server may then be
         restarted.
      */
+    
     public synchronized void stop()
     {
-        throw new UnsupportedOperationException("not implemented");
+     
+    	/* set flag to not running, and close the connection */
+    	try {
+    		setisRunning(false);
+   			listen_socket.close();		
+		} catch (IOException e) {			
+			System.err.println("Unable to close the connection");
+		}
     }
+
+	/* Helper methods to set and retrieve local variables */
+    public int getPort() {
+		return port;
+	}
+
+	/* flag getters and setter are synchronized for thread safety */
+    public synchronized boolean isRunning() {
+		return isRunning;
+	}
+	public synchronized void setisRunning(boolean isRunning) {
+		this.isRunning = isRunning;
+	}
+
+	public String getHostName() {
+		return HostName;
+	}
+
+	public Object getServer() {
+		return server;
+	}
+
+	public Class getIntface() {
+		return intface;
+	}
+	
+	/* Method checks that every method in Class c throws an RMIException */
+	private static boolean throwRMIcheck(Class c) {
+    	Method[] methods = c.getMethods();
+    	Class[] exceptions = null;	
+    	
+    	for(int i = 0; i<methods.length; i++) {
+    		exceptions = methods[i].getExceptionTypes();
+    		for(int j = 0; j<exceptions.length; j++) {
+    			if(exceptions[j].getName().contains("RMIException")) {
+    				break;
+    			}
+    			else if (j == exceptions.length - 1) {
+    				return false;
+    			}
+    		}
+    	}
+    	
+    	return true;
+    }
+	
 }
