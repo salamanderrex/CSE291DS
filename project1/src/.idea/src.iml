@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file:///production/src" />
+    <output-test url="file:///test/src" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/.idea/copyright" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/javadoc/rmi" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/javadoc/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pingPongTest" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rmi" isTestSource="false" packagePrefix="rmi" />
+      <sourceFolder url="file://$MODULE_DIR$/build" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/javadoc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" packagePrefix="test" />
+      <sourceFolder url="file://$MODULE_DIR$/unit" isTestSource="true" packagePrefix="unit" />
+      <sourceFolder url="file://$MODULE_DIR$/unit/rmi" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/conformance" isTestSource="true" packagePrefix="conformance" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
