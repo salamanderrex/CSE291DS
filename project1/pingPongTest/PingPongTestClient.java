@@ -8,7 +8,7 @@ import rmi.*;
 public class PingPongTestClient  {
     public static void main(String [] args) {
         int id = 0;
-        if (args.length > 1)
+        if (args.length >= 1)
             id = Integer.parseInt(args[0]);
         else
             id = -1;
