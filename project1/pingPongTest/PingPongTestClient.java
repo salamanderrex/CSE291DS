@@ -12,15 +12,28 @@ public class PingPongTestClient  {
             id = Integer.parseInt(args[0]);
         else
             id = -1;
+
         InetSocketAddress address = new InetSocketAddress("localhost",8889);
         //InetSocketAddress address = new InetSocketAddress("myserver",8888);
-        PingPongServer  server = Stub.create(PingPongServer.class, address);
-        try {
-            System.out.println(server.ping(id));
-        } catch (Exception e){
-            System.out.print("no RMI exception");
 
+        PingPongServer  server = Stub.create(PingPongServer.class, address);
+        int TEST_TIME = 4;
+        int count = 0;
+        for (int i = 0 ; i < TEST_TIME; i ++) {
+
+
+            try {
+                System.out.println(server.ping(id));
+                count ++;
+
+            } catch (Exception e) {
+                System.out.print("exception");
+
+
+            }
         }
+
+        System.out.println("4 Test Completed,"+(TEST_TIME - count)+ " times Failed" );
 
     }
 

@@ -14,8 +14,10 @@ public class PingPongTestServer {
 
         PingPongServerImplementation server = new PingPongServerImplementation();
 
+
         InetSocketAddress address = new InetSocketAddress("localhost",8889);
         //InetSocketAddress address = new InetSocketAddress("myserver",8888);
+
         Skeleton <PingPongServer> skeleton = new Skeleton (PingPongServer.class,server,address);
 
         try {
