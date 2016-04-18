@@ -1,289 +1,164 @@
 package rmi;
-
+import java.net.*;
 import java.io.IOException;
 import java.lang.reflect.Method;
-import java.net.*;
 
-
-/** RMI skeleton
-
-    <p>
-    A skeleton encapsulates a multithreaded TCP server. The server's clients are
-    intended to be RMI stubs created using the <code>Stub</code> class.
-
-    <p>
-    The skeleton class is parametrized by a type variable. This type variable
-    should be instantiated with an interface. The skeleton will accept from the
-    stub requests for calls to the methods of this interface. It will then
-    forward those requests to an object. The object is specified when the
-    skeleton is constructed, and must implement the remote interface. Each
-    method in the interface should be marked as throwing
-    <code>RMIException</code>, in addition to any other exceptions that the user
-    desires.
-
-    <p>
-    Exceptions may occur at the top level in the listening and service threads.
-    The skeleton's response to these exceptions can be customized by deriving
-    a class from <code>Skeleton</code> and overriding <code>listen_error</code>
-    or <code>service_error</code>.
-*/
-public class Skeleton<T>
-{
-    
+public class Skeleton<T> {
 	private int port = 0;
-	private String HostName = null; 
-	private Object server = null;
-	/* flag is volatile for thread safety */
-	private volatile boolean isRunning = false;
-	private listenThread listen = null;
-	private ServerSocket listen_socket;
-	private Class intface = null;
-	
-	
-	/** Creates a <code>Skeleton</code> with no initial server address. The
-        address will be determined by the system when <code>start</code> is
-        called. Equivalent to using <code>Skeleton(null)</code>.
+	private Class<T> my_c;
+	private T my_server;
+	private InetSocketAddress my_address;
+	private MutableUtil tool;
+	private String HostName = null;
+	//private volatile boolean isRunning = false;
 
-        <p>
-        This constructor is for skeletons that will not be used for
-        bootstrapping RMI - those that therefore do not require a well-known
-        port.
-
-        @param c An object representing the class of the interface for which the
-                 skeleton server is to handle method call requests.
-        @param server An object implementing said interface. Requests for method
-                      calls are forwarded by the skeleton to this object. 
-        @throws Error If <code>c</code> does not represent a remote interface -
-                      an interface whose methods are all marked as throwing
-                      <code>RMIException</code>.
-        @throws NullPointerException If either of <code>c</code> or
-                                     <code>server</code> is <code>null</code>.
-     */
-    public Skeleton(Class<T> c, T server) 
-    {
-    	
-    	/* checks for null inputs */
-    	if(c == null || server == null) {
-    		throw new NullPointerException();
-    	}
-    	
-    	/* Makes sure that c is a remote interface and initialize */
-    	if(c.isInterface() && throwRMIcheck(c)) {
-    		this.server = server;
-    		this.intface = c;
-    	}
-    	else {
-    		throw new Error("error");
-    	}
-   
-    }
-    
-   
-
-    /** Creates a <code>Skeleton</code> with the given initial server address.
-
-        <p>
-        This constructor should be used when the port number is significant.
-
-        @param c An object representing the class of the interface for which the
-                 skeleton server is to handle method call requests.
-        @param server An object implementing said interface. Requests for method
-                      calls are forwarded by the skeleton to this object.
-        @param address The address at which the skeleton is to run. If
-                       <code>null</code>, the address will be chosen by the
-                       system when <code>start</code> is called.
-        @throws Error If <code>c</code> does not represent a remote interface -
-                      an interface whose methods are all marked as throwing
-                      <code>RMIException</code>.
-        @throws NullPointerException If either of <code>c</code> or
-                                     <code>server</code> is <code>null</code>.
-     */
-    public Skeleton(Class<T> c, T server, InetSocketAddress address)
-    {
-        
-    	/* checks for null inputs */
-    	if(c == null || server == null) {
-    		throw new NullPointerException();
-    	}
-    	    	
-    	/* Makes sure that c is a remote interface and initialize */
-    	if(c.isInterface() && throwRMIcheck(c)) {
-    		this.intface = c;
-    		this.server = server;
-    		this.port = address.getPort();
-        	this.HostName = address.getHostName();
-    	}
-    	else {
-    		throw new Error("error");
-    	}
-    	 	
-    }
-
-
-	/** Called when the listening thread exits.
-
-        <p>
-        The listening thread may exit due to a top-level exception, or due to a
-        call to <code>stop</code>.
-
-        <p>
-        When this method is called, the calling thread owns the lock on the
-        <code>Skeleton</code> object. Care must be taken to avoid deadlocks when
-        calling <code>start</code> or <code>stop</code> from different threads
-        during this call.
-
-        <p>
-        The default implementation does nothing.
-
-        @param cause The exception that stopped the skeleton, or
-                     <code>null</code> if the skeleton stopped normally.
-     */
-    protected void stopped(Throwable cause)
-    {    
-    }
-
-    /** Called when an exception occurs at the top level in the listening
-        thread.
-
-        <p>
-        The intent of this method is to allow the user to report exceptions in
-        the listening thread to another thread, by a mechanism of the user's
-        choosing. The user may also ignore the exceptions. The default
-        implementation simply stops the server. The user should not use this
-        method to stop the skeleton. The exception will again be provided as the
-        argument to <code>stopped</code>, which will be called later.
-
-        @param exception The exception that occurred.
-        @return <code>true</code> if the server is to resume accepting
-                connections, <code>false</code> if the server is to shut down.
-     */
-    protected boolean listen_error(Exception exception)
-    {
-        return false;
-    }
-
-    /** Called when an exception occurs at the top level in a service thread.
-
-        <p>
-        The default implementation does nothing.
-
-        @param exception The exception that occurred.
-     */
-    protected void service_error(RMIException exception)
-    {
-    }
-
-    /** Starts the skeleton server.
-
-        <p>
-        A thread is created to listen for connection requests, and the method
-        returns immediately. Additional threads are created when connections are
-        accepted. The network address used for the server is determined by which
-        constructor was used to create the <code>Skeleton</code> object.
-
-        @throws RMIException When the listening socket cannot be created or
-                             bound, when the listening thread cannot be created,
-                             or when the server has already been started and has
-                             not since stopped.
-     */
-    public synchronized void start() throws RMIException
-    {
-       
-    	/* start server only if not running */
-    	if(isRunning() == false) {
-    		/* set running flag */
-    		setisRunning(true);
-    		
-    		try {
-				listen_socket = new ServerSocket(getPort());	
-				
-				/* set port number */
-				this.port = listen_socket.getLocalPort();					
-				
-				/* set hostname if not already set */
-				if(this.getHostName() == null) {		
-					this.HostName = listen_socket.getInetAddress()
-							.getHostName();
-				}
-								
-				/* start the main thread which listens for requests from a stub */
-				listen = new listenThread(this, listen_socket);
-		   		listen.start();
-			
-			} catch (IOException e) {
-				throw new RMIException(e.getCause());
-			}
-        }
-    	else {
-    		throw new RMIException("Server has already started and has not since stopped");
-    	}
-    }
-
-    /** Stops the skeleton server, if it is already running.
-
-        <p>
-        The listening thread terminates. Threads created to service connections
-        may continue running until their invocations of the <code>service</code>
-        method return. The server stops at some later time; the method
-        <code>stopped</code> is called at that point. The server may then be
-        restarted.
-     */
-    
-    public synchronized void stop()
-    {
-     
-    	/* set flag to not running, and close the connection */
-    	try {
-    		setisRunning(false);
-   			listen_socket.close();		
-		} catch (IOException e) {			
-			System.err.println("Unable to close the connection");
+	public Skeleton(Class<T> c, T server)
+	{
+		if(c == null || server == null) throw new NullPointerException("Invalid input for constructor of Skeleton!");
+		else if(!isRemoteInterface(c)) throw new Error("Non-remote interface detected!");
+		else if(c.isInterface()) {
+			this.my_c = c;
+			this.my_server = server;
+			//this.my_address = new InetSocketAddress("localhost", 5000);
+			this.tool = new MutableUtil(1);
 		}
-    }
-
-	/* Helper methods to set and retrieve local variables */
-    public int getPort() {
-		return port;
+		else throw new Error("Input must be an interface!");
 	}
 
-	/* flag getters and setter are synchronized for thread safety */
-    public synchronized boolean isRunning() {
-		return isRunning;
-	}
-	public synchronized void setisRunning(boolean isRunning) {
-		this.isRunning = isRunning;
+	public Skeleton(Class<T> c, T server, InetSocketAddress address)
+	{
+		if(c == null || server == null || address == null) throw new NullPointerException("Invvalid input for constructor of Skeleton!");
+		else if(!isRemoteInterface(c)) throw new Error("Non-remote interface detected!");
+		else if(c.isInterface()) {
+			this.my_c = c;
+			this.my_server = server;
+			this.my_address = address;
+            this.port = address.getPort();
+			this.tool = new MutableUtil(1);
+		}
+		else throw new Error("Input must be an interface!");
 	}
 
+	// Helper public func
+	public InetSocketAddress getAddr()
+	{
+		return this.my_address;
+	}
+
+	public synchronized int getUtil()
+	{
+		return this.tool.stop;
+	}
+
+	protected void stopped(Throwable cause)
+	{
+		this.tool.stop = 1;
+	}
+
+	// Never called!
+	protected boolean listen_error(Exception exception)
+	{
+		return false;
+	}
+
+	// Never called!
+	protected void service_error(RMIException exception)
+	{
+
+	}
+
+	protected boolean isRemoteInterface(Class<T> c)
+	{
+		Method[] met = c.getMethods();
+		for(int i = 0; i < met.length; i++) {
+			//
+			//System.out.println("Method: " + met[i].getName());
+			// Find all exceptions thrown by a certain method in this interface
+			Class[] ex = met[i].getExceptionTypes();
+			boolean found = false;
+			for(int j = 0; j < ex.length; j++) {
+				//
+				//System.out.println("==> " + ex[j].getName());
+				//
+				if(ex[j].getTypeName().equals("rmi.RMIException")) {
+					found = true;
+					break;
+				}
+			}
+			//
+			if(found) continue;
+			else return false;
+		}
+		//
+		return true;
+	}
+
+	public synchronized void start() throws RMIException
+	{
+		if(this.my_address == null) this.my_address = new InetSocketAddress("localhost", 5000);
+        this.port = this.my_address.getPort();
+		//
+		if(this.tool.stop == 1)
+		{
+			System.out.println("The skeleton starts now!");
+			this.tool.stop = 0;
+			Skeleton_listenThr<T> my_listenThr = new Skeleton_listenThr<T>(this.my_address, this.tool, this.my_c, this.my_server, this);
+			my_listenThr.start();
+		}
+		else System.out.println("This skeleton has already started!");
+		//
+		notify();
+	}
+
+	public synchronized void stop()
+	{
+		if(this.tool.stop == 1) System.out.println("Already stopped!");
+		else
+		{
+			//
+			this.tool.stop = 2; // send stop req
+			//
+			Socket StopSign = new Socket();
+			try {
+				StopSign.connect(this.my_address);
+				//
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			//
+			while(this.tool.stop != 1)
+			{
+				try {
+					wait();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			//
+			stopped(new Throwable());
+			System.out.println("Stopping skeleton!");
+		}
+		//
+		notify();
+	}
+	public synchronized boolean isRunning() {
+			return this.tool.stop == 0;
+		}
 	public String getHostName() {
 		return HostName;
 	}
 
+    public int getPort() {
+        return port;
+    }
+
 	public Object getServer() {
-		return server;
+		return my_server;
 	}
 
 	public Class getIntface() {
-		return intface;
+		return my_c;
 	}
-	
-	/* Method checks that every method in Class c throws an RMIException */
-	private static boolean throwRMIcheck(Class c) {
-    	Method[] methods = c.getMethods();
-    	Class[] exceptions = null;	
-    	
-    	for(int i = 0; i<methods.length; i++) {
-    		exceptions = methods[i].getExceptionTypes();
-    		for(int j = 0; j<exceptions.length; j++) {
-    			if(exceptions[j].getName().contains("RMIException")) {
-    				break;
-    			}
-    			else if (j == exceptions.length - 1) {
-    				return false;
-    			}
-    		}
-    	}
-    	
-    	return true;
-    }
-	
 }
