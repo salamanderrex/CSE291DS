@@ -11,12 +11,12 @@ import java.net.InetSocketAddress;
 /**
  * Created by qingyu on 4/17/16.
  */
-public class LocalPingPongTest extends Test {
+public class StubHashCodeTest extends Test {
     /**
      * Test notice.
      */
     public static final String notice =
-            "checking a local pingpong";
+            "checking a stub hashcode";
 
 
     /**
@@ -33,7 +33,7 @@ public class LocalPingPongTest extends Test {
 
 
             PingPongServerImplementation server = new PingPongServerImplementation();
-            InetSocketAddress address = new InetSocketAddress("localhost", 1234);
+            InetSocketAddress address = new InetSocketAddress("localhost", 1236);
             // InetSocketAddress address = new InetSocketAddress("myserver",8888);
             Skeleton<PingPongServer> skeleton = new Skeleton(PingPongServer.class, server, address);
 
@@ -48,10 +48,8 @@ public class LocalPingPongTest extends Test {
             // InetSocketAddress address = new InetSocketAddress("myserver",8888);
             PingPongServer remoteserver = Stub.create(PingPongServer.class, address);
             try {
-                String result = remoteserver.ping(-1);
-                if (!result.equals("pong-1")) {
-                    throw new TestFailed("wrong return");
-                }
+                int result = remoteserver.hashCode();
+                System.out.print(result);
 
             } catch (Exception e) {
                 System.out.print("no RMI exception");
@@ -62,7 +60,7 @@ public class LocalPingPongTest extends Test {
 
         } catch (Exception e) {
             e.printStackTrace();
-            throw new TestFailed(" pingpong test fail");
+            throw new TestFailed(" toString test fail");
         }
     }
 
@@ -72,6 +70,7 @@ public class LocalPingPongTest extends Test {
      */
     @Override
     protected synchronized void clean() {
+
         notifyAll();
     }
 }

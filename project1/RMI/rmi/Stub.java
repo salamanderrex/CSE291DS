@@ -51,37 +51,46 @@ public abstract class Stub
         throws UnknownHostException
     {
     	
-    	/* checks for null inputs */
+
     	if(c == null || skeleton == null) {
     		throw new NullPointerException();
     	}
-    	
-    	/* checks that c is an RMI interface */
-    	if(!c.isInterface() || !checkRMIException(c)) {
-    		throw new Error("error");
-    	}
-    	
-    	/* checks for illegal state */
+
+
+        if(!c.isInterface() )
+        {
+            throw new Error("now a interface ");
+        }
+        if (!checkRMIException(c)) {
+            throw new Error ("Has method does not have RMI Exception type");
+        }
+
+
     	if(skeleton.getHostName() == null || skeleton.isRunning() == false) {
     		throw new IllegalStateException();
     	}
-    	
-    	/* checks if local host can be determined */
+
+
     	if(skeleton.getHostName().equals("0.0.0.0")) {
-    		InetAddress localhost = InetAddress.getLocalHost(); 
+    		try {
+                InetAddress.getLocalHost();
+            }  catch (UnknownHostException e) {
+                System.out.println("wildcard but no localhost");
+                throw new UnknownHostException;
+
+            }
     	}
     	 	
     	InetSocketAddress address = new InetSocketAddress(skeleton.
     			getHostName(), skeleton.getPort());
     	
-    	/* creates invocation handler */
-    	InvocationHandler handler = new RMIInvocationHandler(address, c);
-    	
-    	/* creates a new proxy object and returns it */
-    	Object impl = (T) Proxy.newProxyInstance(c.getClassLoader(), 
+
+    	InvocationHandler handler = new StubInvocationHandler(address, c);
+
+
+        return (T) Proxy.newProxyInstance(c.getClassLoader(),
     			new Class[] { c }, handler);
-    	
-    	return (T) impl;
+
     }
 
     /** Creates a stub, given a skeleton with an assigned address and a hostname
@@ -118,17 +127,19 @@ public abstract class Stub
                                String hostname)
     {
         	
-    	/* checks for null inputs */
+
     	if(c == null || skeleton == null || hostname == null) {
     		throw new NullPointerException();
     	}
-    	    	
-    	/* checks that c is an RMI interface */
-    	if(!c.isInterface() || !checkRMIException(c)) {
-    		throw new Error("error");
-    	}
-    
-    	/* checks for illegal state */
+
+        if(!c.isInterface() )
+        {
+            throw new Error("now a interface ");
+        }
+        if (!checkRMIException(c)) {
+            throw new Error ("Has method does not have RMI Exception type");
+        }
+
     	if(skeleton.getPort() == 0) {
     		throw new IllegalStateException();
     	}
@@ -136,14 +147,14 @@ public abstract class Stub
     	InetSocketAddress address = new InetSocketAddress(hostname, 
     			skeleton.getPort());
     	
-    	/* creates invocation handler */
-    	InvocationHandler handler = new RMIInvocationHandler(address, c);
-    	
-    	/* creates a new proxy object and returns it */
-    	Object impl = (T) Proxy.newProxyInstance(c.getClassLoader(), 
+
+    	InvocationHandler handler = new StubInvocationHandler(address, c);
+
+
+        return (T) Proxy.newProxyInstance(c.getClassLoader(),
     			new Class[] { c }, handler);
     	
-    	return (T) impl;
+
     }
 
     /** Creates a stub, given the address of a remote server.
@@ -154,7 +165,7 @@ public abstract class Stub
         not necessarily a direct way to obtain an associated stub.
 
         @param c A <code>Class</code> object representing the interface
-                 implemented by the remote object.
+                 proxyemented by the remote object.
         @param address The network address of the remote skeleton.
         @return The stub created.
         @throws NullPointerException If any argument is <code>null</code>.
@@ -175,14 +186,12 @@ public abstract class Stub
     		throw new Error("now a interface ");
     	}
         if (!checkRMIException(c)) {
-            throw new Error ("Has method does not have RMIExcpetion type");
+            throw new Error ("Has method does not have RMI Exception type");
         }
 
-    	InvocationHandler handler = new RMIInvocationHandler(address, c);
+    	InvocationHandler handler = new StubInvocationHandler(address, c);
 
-    	T proxy = (T) Proxy.newProxyInstance(c.getClassLoader(), new Class[] { c }, handler);
-    	
-    	return  proxy;
+        return  (T) Proxy.newProxyInstance(c.getClassLoader(), new Class[] { c }, handler);
     	
     }
     
