@@ -28,8 +28,6 @@ public class PingPongTestClient  {
 
             } catch (Exception e) {
                 e.printStackTrace();
-                //System.out.print("exception");
-
 
             }
         }
