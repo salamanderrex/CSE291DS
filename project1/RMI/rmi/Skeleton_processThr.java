@@ -34,6 +34,8 @@ public class Skeleton_processThr<T> extends Thread {
 			}
 			*/
 			//
+			ObjectOutputStream os = new ObjectOutputStream(this.my_sock.getOutputStream());
+			os.flush();
 			ObjectInputStream is = new ObjectInputStream(iss);
 			if(is == null) return;
 
@@ -47,16 +49,16 @@ public class Skeleton_processThr<T> extends Thread {
 			// Terminate as needed
 			if(method_name == null) return;
 			// Get the length of the para list
-			Integer para_len = (Integer)is.readObject();
+			//Integer para_len = (Integer)is.readObject();
 			// Get para, watch for stub obj
-			Object[] para = new Object[para_len];
+			//Object[] para = new Object[para_len];
 			//Method serverMethod = sklt.getIntface().getMethod((String)methodName,(Class[])parameterTypes);
-			for(int xx = 0; xx < para_len; xx++)
-			{
-				para[xx] = (Object)is.readObject();
+			//for(int xx = 0; xx < para_len; xx++)
+			//{
+			//	para[xx] = (Object)is.readObject();
 				//String chk_stub = para[xx].toString();
 				//if(chk_stub.equals("$$Proxy")) para[xx] = Stub.create(this.my_c, (Skeleton<T>) this.sklt);
-			}
+			//}
 			Method serverMethod;
 			responseObject response = null;
 			// solve for result
@@ -73,7 +75,7 @@ public class Skeleton_processThr<T> extends Thread {
 				Throwable t = new RMIException("Return Type Mismatch");
 				response = new responseObject(true, t);
 			}
-			ObjectOutputStream os = new ObjectOutputStream(this.my_sock.getOutputStream());
+
 			try {
 				Object serverReturn = serverMethod.
 						invoke(my_server, (Object [])args);
@@ -92,6 +94,8 @@ public class Skeleton_processThr<T> extends Thread {
 				response = new responseObject(true, e.getCause());
 				os.writeObject(response);
 			}
+			os.writeObject(response);
+			my_sock.close();
 			/*
 			for(int i = 0; i < candidate.length; i++)
 			{

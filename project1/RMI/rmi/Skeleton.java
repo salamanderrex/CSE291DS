@@ -95,7 +95,7 @@ public class Skeleton<T> {
 
 	public synchronized void start() throws RMIException
 	{
-		if(this.my_address == null) this.my_address = new InetSocketAddress("localhost", 5000);
+		if(this.my_address == null) this.my_address = new InetSocketAddress("localhost", 8888);
         this.port = this.my_address.getPort();
 		//
 		if(this.tool.stop == 1)
@@ -103,7 +103,7 @@ public class Skeleton<T> {
 			System.out.println("The skeleton starts now!");
 			this.tool.stop = 0;
 			Skeleton_listenThr<T> my_listenThr = new Skeleton_listenThr<T>(this.my_address, this.tool, this.my_c, this.my_server, this);
-			my_listenThr.start();
+			my_listenThr.run();
 		}
 		else System.out.println("This skeleton has already started!");
 		//
