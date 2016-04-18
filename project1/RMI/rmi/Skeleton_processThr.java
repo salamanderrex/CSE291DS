@@ -39,10 +39,13 @@ public class Skeleton_processThr<T> extends Thread {
 			ObjectInputStream is = new ObjectInputStream(iss);
 			if(is == null) return;
 
-			Object method_name = is.readObject();
-			Object parameterTypes = is.readObject();
-			Object returnType = is.readObject();
-			Object args = is.readObject();
+
+
+			requestObject reO = (requestObject) is.readObject();
+			Object method_name = reO.getName();
+			Object parameterTypes = reO.getParameterTypes();
+			Object returnType = reO.getReturnType();
+			Object args = reO.getArgs();
 
 			// Get desired method name and parameter
 			//String method_name = (String)is.readObject();
