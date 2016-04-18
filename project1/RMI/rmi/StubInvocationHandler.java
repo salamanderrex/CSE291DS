@@ -40,10 +40,10 @@ public class StubInvocationHandler implements InvocationHandler, Serializable {
             StubInvocationHandler r = (StubInvocationHandler)
                     Proxy.getInvocationHandler(proxy);
 
-            return r.getInterface().hashCode() * r.getAddress().hashCode();
+            return r.getInterface().hashCode() + r.getAddress().hashCode();
         }
 
-
+        // check interface, ip address and port equals
         if (method.getName().equals("equals") &&
                 method.getReturnType().getName().equals("boolean") &&
                 method.getParameterTypes().length == 1) {
@@ -58,7 +58,7 @@ public class StubInvocationHandler implements InvocationHandler, Serializable {
                     (StubInvocationHandler) Proxy.getInvocationHandler(b);
 
 
-            // interface, ip address and port equals
+           
             if (x.getInterface().equals(y.getInterface())
                     && x.getAddress().toString().equals(y.getAddress().toString()) &&
                     (x.getAddress().getPort() == y.getAddress().getPort())) {
@@ -71,14 +71,12 @@ public class StubInvocationHandler implements InvocationHandler, Serializable {
         responseObject resultObject = null;
 
         try {
-
             connection = new Socket(this.address.getHostName(), this.address.getPort());
             ObjectOutputStream out =
                     new ObjectOutputStream(connection.getOutputStream());
             out.flush();
             ObjectInputStream in =
                     new ObjectInputStream(connection.getInputStream());
-
             requestObject reqo = new requestObject(method, arguments);
             out.writeObject(reqo);
             resultObject = (responseObject) in.readObject();

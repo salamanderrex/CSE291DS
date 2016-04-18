@@ -76,7 +76,7 @@ public abstract class Stub
                 InetAddress.getLocalHost();
             }  catch (UnknownHostException e) {
                 System.out.println("wildcard but no localhost");
-                throw new UnknownHostException;
+                throw new UnknownHostException();
 
             }
     	}
