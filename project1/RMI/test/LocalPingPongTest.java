@@ -1,7 +1,7 @@
 package test;
 
-import pingPongTest.PingPongServer;
-import pingPongTest.PingPongServerImplementation;
+import test.PingPongServer;
+import test.PingPongServerImplementation;
 import rmi.RMIException;
 import rmi.Skeleton;
 import rmi.Stub;
