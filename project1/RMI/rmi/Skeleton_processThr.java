@@ -45,7 +45,7 @@ public class Skeleton_processThr<T> extends Thread {
 			Object method_name = reO.getName();
 			Object parameterTypes = reO.getParameterTypes();
 			Object returnType = reO.getReturnType();
-			Object args = reO.getArgs();
+			Object[] args = reO.getArgs();
 
 			// Get desired method name and parameter
 			//String method_name = (String)is.readObject();
@@ -81,7 +81,7 @@ public class Skeleton_processThr<T> extends Thread {
 
 			try {
 				Object serverReturn = serverMethod.
-						invoke(my_server, (Object [])args);
+						invoke(my_server, args);
 				response = new responseObject(false, serverReturn);
 					/* response in not an exception */
 			} catch(IllegalAccessException e){

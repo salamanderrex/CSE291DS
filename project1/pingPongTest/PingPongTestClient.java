@@ -27,7 +27,8 @@ public class PingPongTestClient  {
                 count ++;
 
             } catch (Exception e) {
-                System.out.print("exception");
+                e.printStackTrace();
+                //System.out.print("exception");
 
 
             }
