@@ -15,7 +15,7 @@ public class Skeleton<T> {
 
 	public Skeleton(Class<T> c, T server)
 	{
-		if(c == null || server == null) throw new NullPointerException("Invalid input for constructor of Skeleton!");
+		if(c == null || server == null) throw new IllegalStateException("Invalid input for constructor of Skeleton!");
 		else if(!isRemoteInterface(c)) throw new Error("Non-remote interface detected!");
 		else if(c.isInterface()) {
 			this.my_c = c;
