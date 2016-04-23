@@ -10,6 +10,7 @@ public class Skeleton<T> {
 	private InetSocketAddress my_address;
 	private MutableUtil tool;
 	private String HostName = null;
+	private ServerSocket socketServer = null;
 	//private volatile boolean isRunning = false;
 
 	public Skeleton(Class<T> c, T server)
@@ -102,7 +103,14 @@ public class Skeleton<T> {
 		{
 			System.out.println("The skeleton starts now!");
 			this.tool.stop = 0;
-			Skeleton_listenThr<T> my_listenThr = new Skeleton_listenThr<T>(this.my_address, this.tool, this.my_c, this.my_server, this);
+			try{
+				 this.socketServer = new ServerSocket(this.my_address.getPort());
+			} catch (Exception e) {
+				throw new RMIException("ServerSocker create fail");
+			}
+
+
+			Skeleton_listenThr<T> my_listenThr = new Skeleton_listenThr<T>(this.my_address, this.tool, this.my_c, this.my_server, this,socketServer);
 			my_listenThr.start();
 		}
 		else System.out.println("This skeleton has already started!");
@@ -113,6 +121,8 @@ public class Skeleton<T> {
 
 	public synchronized void stop()
 	{
+
+		System.out.println("in skeleton Stop()..... ");
 		if(this.tool.stop == 1) System.out.println("Already stopped!");
 		else
 		{

@@ -67,6 +67,7 @@ public class SkeletonTest extends Test
 
         try
         {
+            System.out.println("\nin TEST::::  SkeletonTest start()");
             skeleton.start();
         }
         catch(RMIException e)
@@ -74,9 +75,11 @@ public class SkeletonTest extends Test
             throw new TestFailed("unable to start skeleton", e);
         }
 
+        System.out.println("in TEST::::  SkeletonTest after SkeletonTest start()");
         if(!probe())
             throw new TestFailed("skeleton refuses connections after start");
 
+        System.out.println(" in TEST::::  SkeletonTest starting SkeletonTest stop()");
         skeleton.stop();
 
         synchronized(this)

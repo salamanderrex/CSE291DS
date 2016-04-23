@@ -9,20 +9,25 @@ public class Skeleton_listenThr<T> extends Thread {
 	private InetSocketAddress my_address;
 	private MutableUtil tool;
 	private Object lock;
+	private ServerSocket skeleton_server;
 
-	public Skeleton_listenThr(InetSocketAddress given_address, MutableUtil given_tool, Class<T> given_c, T given_server, Object given_lock)
+	public Skeleton_listenThr(InetSocketAddress given_address,
+							  MutableUtil given_tool, Class<T> given_c,
+							  T given_server, Object given_lock,
+							  ServerSocket socketServer)
 	{
 		this.my_address = given_address;
 		this.tool = given_tool;
 		this.my_c = given_c;
 		this.my_server = given_server;
 		this.lock = given_lock;
+		this.skeleton_server = socketServer;
 	}
 
 	public void run()
 	{
 		try {
-			ServerSocket skeleton_server = new ServerSocket(this.my_address.getPort());
+			//ServerSocket skeleton_server = new ServerSocket(this.my_address.getPort());
 			//skeleton_server.setSoTimeout(1000);
 			//System.out.println("Hostname: " + this.my_address.getHostName() + " Port: " + this.my_address.getPort());
 			//
