@@ -79,7 +79,7 @@ public class SkeletonTest extends Test
         if(!probe())
             throw new TestFailed("skeleton refuses connections after start");
 
-        System.out.println(" in TEST::::  SkeletonTest starting SkeletonTest stop()");
+        System.out.println(" in TEST::::  SkeletonTest starting SkeletonTest stop()ppppppppppppp");
         skeleton.stop();
 
         synchronized(this)
@@ -136,7 +136,7 @@ public class SkeletonTest extends Test
         test main thread. */
     @Override
     protected void clean()
-    {
+    {System.out.println("start Skeleton:::Stub test Stub stop()ppppppppppppppp");
         skeleton.stop();
         wake();
     }

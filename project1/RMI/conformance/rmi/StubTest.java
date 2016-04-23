@@ -66,6 +66,7 @@ public class StubTest extends Test
         try
         {
             skeleton = new Skeleton<TestInterface>(TestInterface.class, server);
+            System.out.println("you get a skeleton" + skeleton);
         }
         catch(Throwable t)
         {
@@ -96,6 +97,8 @@ public class StubTest extends Test
         System.out.println("start TEST:::Stub test Stub ensureLocalMethods()");
         ensureLocalMethods();
 
+
+        System.out.println("start TEST:::Stub test Stub stop()!!!!!");
         skeleton.stop();
 
         ensureStubConnects();
@@ -378,7 +381,15 @@ public class StubTest extends Test
         System.out.println("in TEST:::Stub test Stub ensureLocalMethods()");
         try
         {
+            System.out.println("in TEST:::Stub  Stub1-----------");
+            System.out.println("in TEST:::Stub  Stub1-----------");
+            System.out.println("in TEST:::Stub  Stub1-----------");
+            System.out.println("in TEST:::Stub  Stub1-----------");
+
             stub1 = Stub.create(TestInterface.class, skeleton);
+            System.out.println("in TEST:::Stub  Stub2-----------");
+            System.out.println("in TEST:::Stub  Stub2-----------");
+            System.out.println("in TEST:::Stub  Stub2-----------");
             stub2 = Stub.create(TestInterface.class, skeleton);
         }
         catch(Throwable t)

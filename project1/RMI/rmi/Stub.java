@@ -53,7 +53,10 @@ public abstract class Stub
     	
 
         System.out.println("in Stub create");
+        System.out.println("well, c is "+c);
+        System.out.println("well skeleton is " + skeleton);
     	if(c == null || skeleton == null) {
+            System.out.println("I want to throw NullPointerException");
     		throw new NullPointerException();
     	}
 
@@ -69,13 +72,15 @@ public abstract class Stub
 
         System.out.println("hostname is " + skeleton.getHostName());
         System.out.println("is running"+skeleton.isRunning());
-    	if(skeleton.getHostName() == null || skeleton.isRunning() == false) {
+    	if(skeleton.getHostName() == null && skeleton.isRunning() == false) {
+            System.out.println("I want to throw IllegalStateException");
     		throw new IllegalStateException();
     	}
 
         System.out.println("checkpoint3");
-    	if(skeleton.getHostName().equals("0.0.0.0")) {
+    	if(skeleton.getHostName() != null  && skeleton.getHostName().equals("0.0.0.0")) {
     		try {
+                System.out.println("here in wild card");
                 InetAddress.getLocalHost();
             }  catch (UnknownHostException e) {
                 System.out.println("wildcard but no localhost");
@@ -84,8 +89,7 @@ public abstract class Stub
             }
     	}
         System.out.println("checkpoint4");
-    	InetSocketAddress address = new InetSocketAddress(skeleton.
-    			getHostName(), skeleton.getPort());
+    	InetSocketAddress address = skeleton.getAddr();
     	
 
     	InvocationHandler handler = new StubInvocationHandler(address, c);

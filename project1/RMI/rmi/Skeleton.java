@@ -9,13 +9,13 @@ public class Skeleton<T> {
 	private T my_server;
 	private InetSocketAddress my_address;
 	private MutableUtil tool;
-	//private String HostName = null;
+	private String HostName = null;
 	private ServerSocket socketServer = null;
 	//private volatile boolean isRunning = false;
 
 	public Skeleton(Class<T> c, T server)
 	{
-		if(c == null || server == null) throw new IllegalStateException("Invalid input for constructor of Skeleton!");
+		if(c == null || server == null) throw new NullPointerException("Invalid input for constructor of Skeleton!");
 		else if(!isRemoteInterface(c)) throw new Error("Non-remote interface detected!");
 		else if(c.isInterface()) {
 			this.my_c = c;
@@ -36,6 +36,7 @@ public class Skeleton<T> {
 			this.my_address = address;
             this.port = address.getPort();
 			this.tool = new MutableUtil(1);
+			this.HostName=address.getHostName();
 
 		}
 		else throw new Error("Input must be an interface!");
@@ -123,7 +124,7 @@ public class Skeleton<T> {
 	public synchronized void stop()
 	{
 
-		System.out.println("in skeleton Stop()..... ");
+		System.out.println("in skeleton Stop()............................. ");
 		if(this.tool.stop == 1) System.out.println("Already stopped!");
 		else
 		{
@@ -159,7 +160,7 @@ public class Skeleton<T> {
 			return this.tool.stop == 0;
 		}
 	public String getHostName() {
-		return this.my_address.getHostName();
+		return this.HostName;
 	}
 
     public int getPort() {
