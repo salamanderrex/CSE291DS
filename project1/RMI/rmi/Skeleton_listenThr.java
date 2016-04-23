@@ -53,7 +53,7 @@ public class Skeleton_listenThr<T> extends Thread {
 				System.out.println("Request from ==> name: " + detail.getHostName() + " addr: " + detail.getHostAddress());
 				//
 				Skeleton_processThr<T> process_req = new Skeleton_processThr<T>(req, this.my_c, this.my_server, this.lock);
-				process_req.run();
+				process_req.start();
 			}
 			//
 			if(this.tool.stop == 2) skeleton_server.accept();

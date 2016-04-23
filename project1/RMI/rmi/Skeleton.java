@@ -98,7 +98,7 @@ public class Skeleton<T> {
 
 	public synchronized void start() throws RMIException
 	{
-		if(this.my_address == null) this.my_address = new InetSocketAddress("localhost", 8888);
+		if(this.my_address == null) this.my_address = new InetSocketAddress("localhost", 9999);
         this.port = this.my_address.getPort();
 		//
 		if(this.tool.stop == 1)
