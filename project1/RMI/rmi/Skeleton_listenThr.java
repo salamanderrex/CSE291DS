@@ -31,10 +31,12 @@ public class Skeleton_listenThr<T> extends Thread {
 				System.out.println("In while!");
 				//
 				Socket req = skeleton_server.accept();
+				System.out.println("right after accept in listeing thread!");
 				synchronized(this.lock)
 				{
 					if(this.tool.stop == 2)
 					{
+						System.out.println("going to close listening socket.....!");
 						this.tool.stop = 1;
 						this.lock.notify();
 						skeleton_server.close();

@@ -103,11 +103,12 @@ public class Skeleton<T> {
 			System.out.println("The skeleton starts now!");
 			this.tool.stop = 0;
 			Skeleton_listenThr<T> my_listenThr = new Skeleton_listenThr<T>(this.my_address, this.tool, this.my_c, this.my_server, this);
-			my_listenThr.run();
+			my_listenThr.start();
 		}
 		else System.out.println("This skeleton has already started!");
 		//
 		notify();
+		System.out.println("end of start() in skeleton........");
 	}
 
 	public synchronized void stop()
