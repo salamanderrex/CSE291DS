@@ -94,7 +94,7 @@ public class StubTest extends Test
         ensureNonRemoteInterfaceRejected();
         System.out.println("start TEST:::Stub test Stub ensureNullPointerExceptions()");
         ensureNullPointerExceptions();
-        System.out.println("start TEST:::Stub test Stub ensureLocalMethods()");
+
         ensureLocalMethods();
 
 
