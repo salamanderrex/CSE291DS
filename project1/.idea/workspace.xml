@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Skeleton.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Skeleton.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RMI/rmi/Skeleton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="120" column="40" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="40" />
+            <state relative-caret-position="16">
+              <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,8 +55,8 @@
       <file leaf-file-name="Skeleton_listenThr.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RMI/rmi/Skeleton_listenThr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+            <state relative-caret-position="555">
+              <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -72,6 +72,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Skeleton_processThr.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RMI/rmi/Skeleton_processThr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1140">
+              <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="StubTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RMI/conformance/rmi/StubTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Series.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Series.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RMI/test/Series.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="292" column="65" selection-start-line="292" selection-start-column="65" selection-end-line="292" selection-end-column="65" />
+            <state relative-caret-position="2024">
+              <caret line="296" column="26" selection-start-line="296" selection-start-column="26" selection-end-line="296" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -129,12 +139,12 @@
         <option value="$PROJECT_DIR$/RMI/rmi/RMIInvocationHandler.java" />
         <option value="$PROJECT_DIR$/RMI/rmi/Stub.java" />
         <option value="$PROJECT_DIR$/RMI/rmi/StubInvocationHandler.java" />
-        <option value="$PROJECT_DIR$/RMI/rmi/Skeleton_processThr.java" />
         <option value="$PROJECT_DIR$/pingPongTest/PingPongTestClient.java" />
         <option value="$PROJECT_DIR$/RMI/rmi/requestObject.java" />
-        <option value="$PROJECT_DIR$/RMI/rmi/Skeleton.java" />
-        <option value="$PROJECT_DIR$/RMI/rmi/Skeleton_listenThr.java" />
         <option value="$PROJECT_DIR$/RMI/test/Series.java" />
+        <option value="$PROJECT_DIR$/RMI/rmi/Skeleton_listenThr.java" />
+        <option value="$PROJECT_DIR$/RMI/rmi/Skeleton_processThr.java" />
+        <option value="$PROJECT_DIR$/RMI/rmi/Skeleton.java" />
       </list>
     </option>
   </component>
@@ -877,12 +887,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1460858273546</updated>
-      <workItem from="1460953146892" duration="8096000" />
+      <workItem from="1460953146892" duration="8373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8096000" />
+    <option name="totallyTimeSpent" value="8373000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -940,7 +950,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/RMI/rmi/Skeleton.java</url>
-          <line>126</line>
+          <line>118</line>
           <properties />
         </line-breakpoint>
       </breakpoints>
@@ -1134,14 +1144,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RMI/rmi/Skeleton_processThr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RMI/test/LocalPingPongTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -1222,26 +1224,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RMI/rmi/Skeleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="120" column="40" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pingPongTest/PingPongTestClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RMI/rmi/Skeleton_listenThr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1272,8 +1258,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RMI/test/Series.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="292" column="65" selection-start-line="292" selection-start-column="65" selection-end-line="292" selection-end-column="65" />
+        <state relative-caret-position="2024">
+          <caret line="296" column="26" selection-start-line="296" selection-start-column="26" selection-end-line="296" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RMI/rmi/Skeleton_listenThr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RMI/rmi/Skeleton_processThr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RMI/rmi/Skeleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding />
         </state>
       </provider>

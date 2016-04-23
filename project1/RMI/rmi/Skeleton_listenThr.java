@@ -27,14 +27,9 @@ public class Skeleton_listenThr<T> extends Thread {
 	public void run()
 	{
 		try {
-			//ServerSocket skeleton_server = new ServerSocket(this.my_address.getPort());
-			//skeleton_server.setSoTimeout(1000);
-			//System.out.println("Hostname: " + this.my_address.getHostName() + " Port: " + this.my_address.getPort());
-			//
 			while(this.tool.stop != 1)
 			{
 				System.out.println("In while!");
-				//
 				Socket req = skeleton_server.accept();
 				System.out.println("right after accept in listeing thread!");
 				synchronized(this.lock)

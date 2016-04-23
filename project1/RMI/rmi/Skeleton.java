@@ -11,7 +11,6 @@ public class Skeleton<T> {
 	private MutableUtil tool;
 	private String HostName = null;
 	private ServerSocket socketServer = null;
-	//private volatile boolean isRunning = false;
 
 	public Skeleton(Class<T> c, T server)
 	{
@@ -20,7 +19,6 @@ public class Skeleton<T> {
 		else if(c.isInterface()) {
 			this.my_c = c;
 			this.my_server = server;
-			//this.my_address = new InetSocketAddress("localhost", 5000);
 			this.tool = new MutableUtil(1);
 		}
 		else throw new Error("Input must be an interface!");
@@ -74,25 +72,19 @@ public class Skeleton<T> {
 	{
 		Method[] met = c.getMethods();
 		for(int i = 0; i < met.length; i++) {
-			//
-			//System.out.println("Method: " + met[i].getName());
-			// Find all exceptions thrown by a certain method in this interface
+
 			Class[] ex = met[i].getExceptionTypes();
 			boolean found = false;
 			for(int j = 0; j < ex.length; j++) {
-				//
-				//System.out.println("==> " + ex[j].getName());
-				//
 				if(ex[j].getTypeName().equals("rmi.RMIException")) {
 					found = true;
 					break;
 				}
 			}
-			//
 			if(found) continue;
 			else return false;
 		}
-		//
+
 		return true;
 	}
 
@@ -130,7 +122,6 @@ public class Skeleton<T> {
 		{
 			//
 			this.tool.stop = 2; // send stop req
-			//
 			Socket StopSign = new Socket();
 			try {
 				StopSign.connect(this.my_address);
@@ -139,7 +130,6 @@ public class Skeleton<T> {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			//
 			while(this.tool.stop != 1)
 			{
 				try {
@@ -149,11 +139,9 @@ public class Skeleton<T> {
 					e.printStackTrace();
 				}
 			}
-			//
 			stopped(new Throwable());
 			System.out.println("Stopping skeleton!");
 		}
-		//
 		notify();
 	}
 	public synchronized boolean isRunning() {
