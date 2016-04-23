@@ -52,25 +52,28 @@ public abstract class Stub
     {
     	
 
+        System.out.println("in Stub create");
     	if(c == null || skeleton == null) {
     		throw new NullPointerException();
     	}
 
-
+        System.out.println("checkpoint1");
         if(!c.isInterface() )
         {
-            throw new Error("now a interface ");
+            throw new Error("not a interface ");
         }
         if (!checkRMIException(c)) {
             throw new Error ("Has method does not have RMI Exception type");
         }
+        System.out.println("checkpoint2");
 
-
+        System.out.println("hostname is " + skeleton.getHostName());
+        System.out.println("is running"+skeleton.isRunning());
     	if(skeleton.getHostName() == null || skeleton.isRunning() == false) {
     		throw new IllegalStateException();
     	}
 
-
+        System.out.println("checkpoint3");
     	if(skeleton.getHostName().equals("0.0.0.0")) {
     		try {
                 InetAddress.getLocalHost();
@@ -80,13 +83,13 @@ public abstract class Stub
 
             }
     	}
-    	 	
+        System.out.println("checkpoint4");
     	InetSocketAddress address = new InetSocketAddress(skeleton.
     			getHostName(), skeleton.getPort());
     	
 
     	InvocationHandler handler = new StubInvocationHandler(address, c);
-
+        System.out.println("checkpoint5");
 
         return (T) Proxy.newProxyInstance(c.getClassLoader(),
     			new Class[] { c }, handler);

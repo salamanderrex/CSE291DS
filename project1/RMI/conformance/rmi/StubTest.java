@@ -89,8 +89,11 @@ public class StubTest extends Test
         }
 
         ensureClassRejected();
+        System.out.println("start TEST:::Stub test Stub ensureNonRemoteInterfaceRejected()");
         ensureNonRemoteInterfaceRejected();
+        System.out.println("start TEST:::Stub test Stub ensureNullPointerExceptions()");
         ensureNullPointerExceptions();
+        System.out.println("start TEST:::Stub test Stub ensureLocalMethods()");
         ensureLocalMethods();
 
         skeleton.stop();
@@ -372,7 +375,7 @@ public class StubTest extends Test
         // Create two stubs for the same skeleton.
         TestInterface   stub1;
         TestInterface   stub2;
-
+        System.out.println("in TEST:::Stub test Stub ensureLocalMethods()");
         try
         {
             stub1 = Stub.create(TestInterface.class, skeleton);

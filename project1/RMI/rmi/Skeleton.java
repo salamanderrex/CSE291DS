@@ -9,7 +9,7 @@ public class Skeleton<T> {
 	private T my_server;
 	private InetSocketAddress my_address;
 	private MutableUtil tool;
-	private String HostName = null;
+	//private String HostName = null;
 	private ServerSocket socketServer = null;
 	//private volatile boolean isRunning = false;
 
@@ -36,6 +36,7 @@ public class Skeleton<T> {
 			this.my_address = address;
             this.port = address.getPort();
 			this.tool = new MutableUtil(1);
+
 		}
 		else throw new Error("Input must be an interface!");
 	}
@@ -158,7 +159,7 @@ public class Skeleton<T> {
 			return this.tool.stop == 0;
 		}
 	public String getHostName() {
-		return HostName;
+		return this.my_address.getHostName();
 	}
 
     public int getPort() {
