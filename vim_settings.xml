@@ -3,15 +3,36 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="$USER_HOME$/CSE232/drinkingDemo/src/AntlrDrinkListener.java" timestamp="1461565335370" />
+      <file name="$USER_HOME$/CSE232/xquery-processor-master/src/main/java/dk/martinbmadsen/xquery/xmltree/IXMLElement.java" timestamp="1461568956860" />
+      <file name="$USER_HOME$/CSE232/xquery-processor-master/src/main/java/dk/martinbmadsen/xquery/visitor/XQueryEvaluator.java" timestamp="1461569148518" />
+      <file name="$USER_HOME$/CSE232/pom.xml" timestamp="1461569309277">
+        <mark key="[" line="45" column="0" />
+        <mark key="]" line="45" column="0" />
+        <mark key="." line="45" column="0" />
+      </file>
     </filemarks>
     <jumps />
-    <registers />
+    <registers>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgPC9wbHVnaW5zPgo=</text>
+      </register>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgPC9wbHVnaW5zPgo=</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgPHBsdWdpbnM+Cg==</text>
+      </register>
+    </registers>
     <search>
       <last-dir>0</last-dir>
       <show-last>false</show-last>
     </search>
-    <history />
+    <history>
+      <history-search />
+      <history-cmd />
+      <history-expr />
+      <history-input />
+    </history>
     <shortcut-conflicts />
   </component>
 </application>
