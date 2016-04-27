@@ -1,10 +1,10 @@
 #!/bin/bash
-cd /home/proj1/project1
+cd /home/proj1
 mkdir bin
 #if [ !  $# == 1 ]; then
 #	echo "give me a id, please"
 #	exit
-#fi 
+#fi
 echo "en.. your luck number is $1"
 echo "let me ping it to server........"
 javac -nowarn -d  bin  -cp RMI pingPongTest/*.java

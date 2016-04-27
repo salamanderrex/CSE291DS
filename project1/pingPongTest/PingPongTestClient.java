@@ -13,8 +13,8 @@ public class PingPongTestClient  {
         else
             id = -1;
 
-        //InetSocketAddress address = new InetSocketAddress("localhost",8889);
-        InetSocketAddress address = new InetSocketAddress("myserver",8889);
+        InetSocketAddress address = new InetSocketAddress("localhost",8889);
+        //InetSocketAddress address = new InetSocketAddress("myserver",8889);
 
         PingPongServer  server = Stub.create(PingPongServer.class, address);
         int TEST_TIME = 4;
