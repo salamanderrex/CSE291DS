@@ -12,11 +12,18 @@ public class StubInvocationHandler implements InvocationHandler, Serializable {
     private InetSocketAddress address;
     private Class myInterface;
 
-    public StubInvocationHandler(InetSocketAddress address, Class c) {
+    public InetSocketAddress getAddress() {
+            return address;
+    }
 
+    public Class getInterface() {
+        return myInterface;
+    }
+   
+
+    public StubInvocationHandler(InetSocketAddress address, Class c) {
         this.address = address;
         this.myInterface = c;
-
     }
 
     public Object invoke(Object proxy, Method method, Object[] arguments) throws Exception {
@@ -58,23 +65,22 @@ public class StubInvocationHandler implements InvocationHandler, Serializable {
                     (StubInvocationHandler) Proxy.getInvocationHandler(b);
 
 
-           
-            if (x.getInterface().equals(y.getInterface())
-                    && x.getAddress().toString().equals(y.getAddress().toString()) &&
-                    (x.getAddress().getPort() == y.getAddress().getPort())) {
+            if (x.getInterface().equals(y.getInterface()) &&
+                     x.getAddress().toString().equals(y.getAddress().toString())  &&
+                     (x.getAddress().getPort() == y.getAddress().getPort())) {
                 return true;
             } else
                 return false;
         }
 
-        Socket connection = null;
         responseObject resultObject = null;
 
         try {
-            connection = new Socket(this.address.getHostName(), this.address.getPort());
+            Socket connection = new Socket(this.address.getHostName(), this.address.getPort());
             ObjectOutputStream out =
                     new ObjectOutputStream(connection.getOutputStream());
             out.flush();
+
             ObjectInputStream in =
                     new ObjectInputStream(connection.getInputStream());
             requestObject reqo = new requestObject(method, arguments);
@@ -96,11 +102,5 @@ public class StubInvocationHandler implements InvocationHandler, Serializable {
     }
 
 
-    public Class getInterface() {
-        return myInterface;
-    }
-
-    public InetSocketAddress getAddress() {
-        return address;
-    }
+    
 }

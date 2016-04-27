@@ -158,8 +158,7 @@ public abstract class Stub
     	InvocationHandler handler = new StubInvocationHandler(address, c);
 
 
-        return (T) Proxy.newProxyInstance(c.getClassLoader(),
-    			new Class[] { c }, handler);
+        return (T) Proxy.newProxyInstance(c.getClassLoader(),new Class[] { c }, handler);
     	
 
     }
