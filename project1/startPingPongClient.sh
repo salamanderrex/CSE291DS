@@ -1,5 +1,6 @@
 #!/bin/bash
 cd /home/proj1/project1
+mkdir bin
 #if [ !  $# == 1 ]; then
 #	echo "give me a id, please"
 #	exit
