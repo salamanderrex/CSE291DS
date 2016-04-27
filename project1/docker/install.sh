@@ -8,8 +8,8 @@ echo "$1"
 cd ./docker
 docker build -f DockerfileForServerClient -t hw1-server .  
 docker build -f DockerfileForServerClient -t hw1-client .  
-cd ..
 docker build -t hw1-sharedata .
+cd ..
 
 docker run -d  --name myvolume hw1-sharedata /bin/sh -c "while true; do fake=1; sleep 1; done"
 docker network create -d bridge my-bridge-network
