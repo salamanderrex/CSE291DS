@@ -12,7 +12,7 @@ import java.net.InetSocketAddress;
 public class PingPongTestServer {
     public static void main(String [] args) {
 
-        PingPongServerImplementation server = new PingPongServerImplementation();
+        PingPongServerImplementation server = PingPongServerFactory.makePingServer();
 
 
         InetSocketAddress address = new InetSocketAddress("localhost",8889);
