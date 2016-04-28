@@ -9,9 +9,9 @@ public class Skeleton_processThr<T> extends Thread {
 	private Socket my_sock;
 	private Class<T> my_c;
 	private T my_server;
-	private Object sklt;
+	private Skeleton sklt;
 
-	public Skeleton_processThr(Socket socket, Class<T> given_c, T given_server, Object given_sklt)
+	public Skeleton_processThr(Socket socket, Class<T> given_c, T given_server, Skeleton given_sklt)
 	{
 		this.my_sock = socket;
 		this.my_c = given_c;
@@ -79,6 +79,7 @@ public class Skeleton_processThr<T> extends Thread {
 			// TODO Auto-generated catch block
 			//e.printStackTrace();
 			System.out.println("The other side is terminated! Exiting...");
+			sklt.service_error(new RMIException("client cloesed"));
 			return;
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block

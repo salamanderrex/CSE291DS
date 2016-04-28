@@ -8,12 +8,12 @@ public class Skeleton_listenThr<T> extends Thread {
 	private T my_server;
 	private InetSocketAddress my_address;
 	private MutableUtil tool;
-	private Object lock;
+	private Skeleton lock;
 	private ServerSocket skeleton_server;
 
 	public Skeleton_listenThr(InetSocketAddress given_address,
 							  MutableUtil given_tool, Class<T> given_c,
-							  T given_server, Object given_lock,
+							  T given_server, Skeleton given_lock,
 							  ServerSocket socketServer)
 	{
 		this.my_address = given_address;
