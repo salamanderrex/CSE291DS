@@ -24,12 +24,44 @@ public class StubInvocationHandler implements InvocationHandler, Serializable {
     public StubInvocationHandler(InetSocketAddress address, Class c) {
         this.address = address;
         this.myInterface = c;
+        this.ifsf = getIFSF(c);
+    }
+    //IFSF means speical functions like toString hashCode
+    private boolean [] ifsf;
+
+    private static boolean[] getIFSF(Class c) {
+        Method[] methods = c.getMethods();
+
+        boolean [] return_ = {false, false, false};
+        for (int i = 0; i < methods.length; i++) {
+            Class[] exceptions = methods[i].getExceptionTypes();
+            if (exceptions.length == 0) {
+                continue;
+            }
+            for (int j = 0; j < exceptions.length; j++) {
+                if (exceptions[j].getName().contains("RMIException")) {
+                    if (methods[i].getName().equals("equals")) {
+                        return_[0] = true;
+                    }
+                    if (methods[i].getName().equals("toString")) {
+                        return_[1] = true;
+                    }
+                    if (methods[i].getName().equals("hashCode")) {
+                        return_[2] = true;
+                    }
+                    break;
+                } else if (j == exceptions.length - 1) {
+                }
+            }
+        }
+        return return_;
     }
 
     public Object invoke(Object proxy, Method method, Object[] arguments) throws Exception {
 
 
-        if (method.getName().equals("toString") &&
+
+        if (method.getName().equals("toString") && !ifsf[1] &
                 method.getReturnType().getName().equals("java.lang.String") &&
                 method.getParameterTypes().length == 0) {
 
@@ -40,7 +72,7 @@ public class StubInvocationHandler implements InvocationHandler, Serializable {
         }
 
 
-        if (method.getName().equals("hashCode") &&
+        if (method.getName().equals("hashCode") && !ifsf[2] &
                 method.getReturnType().getName().equals("int") &&
                 method.getParameterTypes().length == 0) {
 
@@ -51,7 +83,7 @@ public class StubInvocationHandler implements InvocationHandler, Serializable {
         }
 
         // check interface, ip address and port equals
-        if (method.getName().equals("equals") &&
+        if (method.getName().equals("equals") && !ifsf[0] &
                 method.getReturnType().getName().equals("boolean") &&
                 method.getParameterTypes().length == 1) {
             System.out.println("IN equals........");
@@ -106,6 +138,7 @@ public class StubInvocationHandler implements InvocationHandler, Serializable {
 
         return resultObject.getReturn();
     }
+
 
 
 }
