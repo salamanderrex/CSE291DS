@@ -49,6 +49,14 @@ public class Skeleton_listenThr<T> extends Thread {
 				//
 				Skeleton_processThr<T> process_req = new Skeleton_processThr<T>(req, this.my_c, this.my_server, this.lock);
 				process_req.start();
+				/*
+				ExecutorService executor = Executors.newSingleThreadExecutor();
+				Future<String> future = executor.submit(new Callable(){
+					public void call() throws Exception{
+						process_req.start();
+					}
+				});
+				*/
 			}
 			//
 			if(this.tool.stop == 2) skeleton_server.accept();

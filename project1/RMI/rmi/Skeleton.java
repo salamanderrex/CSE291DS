@@ -26,15 +26,18 @@ public class Skeleton<T> {
 
 	public Skeleton(Class<T> c, T server, InetSocketAddress address)
 	{
-		if(c == null || server == null || address == null) throw new NullPointerException("Invvalid input for constructor of Skeleton!");
+		if(c == null || server == null) throw new NullPointerException("Invvalid input for constructor of Skeleton!");
 		else if(!isRemoteInterface(c)) throw new Error("Non-remote interface detected!");
 		else if(c.isInterface()) {
 			this.my_c = c;
 			this.my_server = server;
 			this.my_address = address;
-            this.port = address.getPort();
+
 			this.tool = new MutableUtil(1);
-			this.HostName=address.getHostName();
+			if(address != null) {
+				this.port = address.getPort();
+				this.HostName = address.getHostName();
+			}
 
 		}
 		else throw new Error("Input must be an interface!");
