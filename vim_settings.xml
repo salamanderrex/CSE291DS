@@ -3,22 +3,20 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/ServiceErrorTest.java" timestamp="1461815534983" />
       <file name="$USER_HOME$/Desktop/CSE291DS/project1/pingPongTest/PingPongServerFactory.java" timestamp="1461734854132">
         <mark key="[" line="6" column="0" />
         <mark key="]" line="6" column="0" />
         <mark key="^" line="6" column="62" />
         <mark key="." line="6" column="0" />
       </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/rmi/Stub.java" timestamp="1461815519815">
-        <mark key="[" line="228" column="0" />
-        <mark key="]" line="228" column="0" />
-        <mark key="." line="228" column="0" />
-        <mark key="^" line="210" column="44" />
+      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/ShadowTest.java" timestamp="1461820717582" />
+      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/rmi/Stub.java" timestamp="1461820795176">
+        <mark key="[" line="214" column="24" />
+        <mark key="]" line="198" column="95" />
+        <mark key="." line="198" column="95" />
+        <mark key="^" line="198" column="95" />
       </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/InheritanceTest.java" timestamp="1461815156275">
-        <mark key="[" line="74" column="43" />
-      </file>
+      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/EqualsTest.java" timestamp="1461818637885" />
       <file name="$USER_HOME$/Desktop/CSE291DS/project1/pingPongTest/PingPongTestServer.java" timestamp="1461734558457">
         <mark key="'" line="14" column="8" />
         <mark key="[" line="14" column="87" />
@@ -26,39 +24,67 @@
         <mark key="^" line="15" column="0" />
         <mark key="." line="15" column="0" />
       </file>
+      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/rmi/Skeleton.java" timestamp="1461816320165" />
+      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/ServiceErrorTest.java" timestamp="1461816418721" />
+      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/InheritanceTest.java" timestamp="1461815156275">
+        <mark key="[" line="74" column="43" />
+      </file>
+      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/rmi/StubInvocationHandler.java" timestamp="1461820365749">
+        <mark key="[" line="85" column="48" />
+        <mark key="]" line="74" column="57" />
+        <mark key="^" line="74" column="57" />
+        <mark key="." line="74" column="57" />
+      </file>
+      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/OverloadTest.java" timestamp="1461818829312" />
+      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/TestSkeleton.java" timestamp="1461816136445" />
       <file name="$USER_HOME$/CSE232/pom.xml" timestamp="1461569309277">
         <mark key="[" line="45" column="0" />
         <mark key="]" line="45" column="0" />
         <mark key="." line="45" column="0" />
       </file>
+      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/SecurityTest.java" timestamp="1461821846881" />
     </filemarks>
     <jumps>
       <jump line="14" column="8" filename="$USER_HOME$/Desktop/CSE291DS/project1/pingPongTest/PingPongTestServer.java" />
+      <jump line="76" column="12" filename="$USER_HOME$/Desktop/CSE291DS/project1/RMI/rmi/StubInvocationHandler.java" />
+      <jump line="77" column="8" filename="$USER_HOME$/Desktop/CSE291DS/project1/RMI/rmi/StubInvocationHandler.java" />
     </jumps>
     <registers>
       <register name="0" type="4">
-        <text encoding="base64">CQ==</text>
+        <text>(a</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oIllvdSBiZWF1dHkiKTsK</text>
+      <register name="1" type="4">
+        <text encoding="base64">ICAgIHByaXZhdGUgY2xhc3MgSW50ZXJmYWNlU3BlY2lhbEZ1bmN0aW9uIHsKICAgICAgICBwdWJsaWMgYm9vbGVhbiBfZXF1YWxzID0gZmFsc2U7CiAgICAgICAgcHVibGljIGJvb2xlYW4gX3RvU3RyaW5nID0gZmFsc2U7CiAgICAgICAgcHVibGljIGJvb2xlYW4gX2hhc2hDb2RlID0gZmFsc2U7CgogICAgfQ==</text>
       </register>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oIllvdSBiZWF1dHkiKTsK</text>
+      <register name="&quot;" type="4">
+        <text encoding="base64">ICAgIHByaXZhdGUgY2xhc3MgSW50ZXJmYWNlU3BlY2lhbEZ1bmN0aW9uIHsKICAgICAgICBwdWJsaWMgYm9vbGVhbiBfZXF1YWxzID0gZmFsc2U7CiAgICAgICAgcHVibGljIGJvb2xlYW4gX3RvU3RyaW5nID0gZmFsc2U7CiAgICAgICAgcHVibGljIGJvb2xlYW4gX2hhc2hDb2RlID0gZmFsc2U7CgogICAgfQ==</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCJZb3UgYmFzdGFyZCIpOwo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBjb250aW51ZTsK</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIGlmIChleGNlcHRpb25zKQo=</text>
+      <register name="3" type="4">
+        <text encoding="base64">CgogICAgSW50ZXJmYWNlU3BlY2lhbEZ1bmN0aW9uIGlmc2YgPSBuZXcgSW50ZXJmYWNlU3BlY2lhbEZ1bmN0aW9uKCk7</text>
       </register>
-      <register name="4" type="2">
-        <text encoding="base64">ICAgIFBpbmdQb25nU2VydmVySW1wbGVtZW50YXRpb24gc3RhdGljIHNlcnZlciA9IG51bGw7Cg==</text>
+      <register name="4" type="4">
+        <text encoding="base64">IEludGVyZmFjZVNwZWNpYWxGdW5jdGlvbiBpZnNmID0gbmV3IEludGVyZmFjZVNwZWNpYWxGdW5jdGlvbigpOw==</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgPC9wbHVnaW5zPgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICByZXR1cm4gZmFsc2U7Cg==</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgPHBsdWdpbnM+Cg==</text>
+      <register name="6" type="4">
+        <text encoding="base64">ICAgICAgICBNZXRob2RbXSBtZXRob2RzID0gYy5nZXRNZXRob2RzKCk7CiAgICAgICAgaWYgKG1ldGhvZHMubGVuZ3RoID09IDApIHsKICAgICAgICAgICAgcmV0dXJuIGZhbHNlOwogICAgICAgIH0K</text>
+      </register>
+      <register name="7" type="4">
+        <text />
+      </register>
+      <register name="8" type="4">
+        <text />
+      </register>
+      <register name="9" type="4">
+        <text />
+      </register>
+      <register name="-" type="4">
+        <text encoding="base64">IEludGVyZmFjZVNwZWNpYWxGdW5jdGlvbiBpZnNmID0gbmV3IEludGVyZmFjZVNwZWNpYWxGdW5jdGlvbigpOw==</text>
       </register>
     </registers>
     <search>
