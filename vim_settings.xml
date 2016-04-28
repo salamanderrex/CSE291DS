@@ -9,14 +9,12 @@
         <mark key="^" line="6" column="62" />
         <mark key="." line="6" column="0" />
       </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/ShadowTest.java" timestamp="1461820717582" />
       <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/rmi/Stub.java" timestamp="1461820795176">
         <mark key="[" line="214" column="24" />
         <mark key="]" line="198" column="95" />
         <mark key="." line="198" column="95" />
         <mark key="^" line="198" column="95" />
       </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/EqualsTest.java" timestamp="1461818637885" />
       <file name="$USER_HOME$/Desktop/CSE291DS/project1/pingPongTest/PingPongTestServer.java" timestamp="1461734558457">
         <mark key="'" line="14" column="8" />
         <mark key="[" line="14" column="87" />
@@ -24,25 +22,20 @@
         <mark key="^" line="15" column="0" />
         <mark key="." line="15" column="0" />
       </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/rmi/Skeleton.java" timestamp="1461816320165" />
-      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/ServiceErrorTest.java" timestamp="1461816418721" />
       <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/InheritanceTest.java" timestamp="1461815156275">
         <mark key="[" line="74" column="43" />
       </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/rmi/StubInvocationHandler.java" timestamp="1461820365749">
+      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/rmi/StubInvocationHandler.java" timestamp="1461822965758">
         <mark key="[" line="85" column="48" />
         <mark key="]" line="74" column="57" />
         <mark key="^" line="74" column="57" />
         <mark key="." line="74" column="57" />
       </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/OverloadTest.java" timestamp="1461818829312" />
-      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/TestSkeleton.java" timestamp="1461816136445" />
       <file name="$USER_HOME$/CSE232/pom.xml" timestamp="1461569309277">
         <mark key="[" line="45" column="0" />
         <mark key="]" line="45" column="0" />
         <mark key="." line="45" column="0" />
       </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/SecurityTest.java" timestamp="1461821846881" />
     </filemarks>
     <jumps>
       <jump line="14" column="8" filename="$USER_HOME$/Desktop/CSE291DS/project1/pingPongTest/PingPongTestServer.java" />
