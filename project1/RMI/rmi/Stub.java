@@ -195,7 +195,9 @@ public abstract class Stub
             throw new Error ("Has method does not have RMI Exception type");
         }
 
-    	InvocationHandler handler = new StubInvocationHandler(address, c);
+
+        InvocationHandler handler = new StubInvocationHandler(address, c);
+
 
         return  (T) Proxy.newProxyInstance(c.getClassLoader(), new Class[] { c }, handler);
     	

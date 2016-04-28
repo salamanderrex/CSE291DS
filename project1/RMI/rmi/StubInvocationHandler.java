@@ -13,13 +13,13 @@ public class StubInvocationHandler implements InvocationHandler, Serializable {
     private Class myInterface;
 
     public InetSocketAddress getAddress() {
-            return address;
+        return address;
     }
 
     public Class getInterface() {
         return myInterface;
     }
-   
+
 
     public StubInvocationHandler(InetSocketAddress address, Class c) {
         this.address = address;
@@ -54,10 +54,11 @@ public class StubInvocationHandler implements InvocationHandler, Serializable {
         if (method.getName().equals("equals") &&
                 method.getReturnType().getName().equals("boolean") &&
                 method.getParameterTypes().length == 1) {
+            System.out.println("IN equals........");
 
             if (arguments.length != 1 || arguments[0] == null)
                 return false;
-
+            try {
             Object b = arguments[0];
             StubInvocationHandler x = (StubInvocationHandler)
                     Proxy.getInvocationHandler(proxy);
@@ -65,12 +66,17 @@ public class StubInvocationHandler implements InvocationHandler, Serializable {
                     (StubInvocationHandler) Proxy.getInvocationHandler(b);
 
 
-            if (x.getInterface().equals(y.getInterface()) &&
-                     x.getAddress().toString().equals(y.getAddress().toString())  &&
-                     (x.getAddress().getPort() == y.getAddress().getPort())) {
-                return true;
-            } else
+
+                if (x.getAddress() != null && y.getAddress() != null &&
+                        x.getInterface() != null && y.getInterface() != null &&
+                        x.getInterface().equals(y.getInterface()) &&
+                        x.getAddress().equals(y.getAddress())) {
+                    return true;
+                } else
+                    return false;
+            } catch (Exception e) {
                 return false;
+            }
         }
 
         responseObject resultObject = null;
@@ -102,5 +108,4 @@ public class StubInvocationHandler implements InvocationHandler, Serializable {
     }
 
 
-    
 }
