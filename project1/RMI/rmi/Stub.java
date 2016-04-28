@@ -207,9 +207,16 @@ public abstract class Stub
     private static boolean checkRMIException(Class c) {
     	
     	Method[] methods = c.getMethods();
+        if (methods.length == 0) {
+            return false;
+        }
+
 
     	for(int i = 0; i<methods.length; i++) {
 			Class[] exceptions = methods[i].getExceptionTypes();
+            if (exceptions.length==0) {
+                return false;
+            }
     		for(int j = 0; j<exceptions.length; j++) {
     			if(exceptions[j].getName().contains("RMIException")) {
     				break;
@@ -219,7 +226,6 @@ public abstract class Stub
     			}
     		}
     	}
-    	
     	return true;
     }
 }
