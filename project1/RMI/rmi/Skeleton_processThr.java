@@ -43,6 +43,10 @@ public class Skeleton_processThr<T> extends Thread {
 				serverMethod = this.my_c.getMethod((String) method_name, (Class[]) parameterTypes);
 			} catch( NoSuchMethodException e ){
 				System.out.println("no such method found!");
+				Throwable t = new RMIException(e.getCause());
+				response = new responseObject(true, t);
+				os.writeObject(response);
+				my_sock.close();
 				return;
 			}
 			if(!returnType.equals(serverMethod.getReturnType().getName())) {
