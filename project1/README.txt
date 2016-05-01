@@ -1,5 +1,6 @@
 Memebers:
 Qingyu Zhou  A53093706 qyzhou@ucsd.edu
+JiaXiang Chen A53100265 jic286@ucsd.edu
 
 HOW TO RUN?
 ====================
