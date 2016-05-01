@@ -1,3 +1,6 @@
+Memebers:
+Qingyu Zhou  A53093706 qyzhou@ucsd.edu
+
 HOW TO RUN?
 ====================
 ./docker/install.sh "you lucky number"
