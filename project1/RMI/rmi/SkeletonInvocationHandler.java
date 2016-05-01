@@ -11,12 +11,12 @@ public class SkeletonInvocationHandler<T> extends Thread {
 	private T my_server;
 	private Skeleton sklt;
 
-	public SkeletonInvocationHandler(Socket socket, Class<T> given_c, T given_server, Skeleton given_sklt)
+	public SkeletonInvocationHandler(Socket socket, Class<T> c, T server, Skeleton sklt)
 	{
 		this.my_sock = socket;
-		this.my_c = given_c;
-		this.my_server = given_server;
-		this.sklt = given_sklt;
+		this.my_c = c;
+		this.my_server = server;
+		this.sklt = sklt;
 	}
 
 	@SuppressWarnings("unchecked")
@@ -42,7 +42,7 @@ public class SkeletonInvocationHandler<T> extends Thread {
 			try {
 				serverMethod = this.my_c.getMethod((String) method_name, (Class[]) parameterTypes);
 			} catch( NoSuchMethodException e ){
-				//System.out.println("no such method found!");
+				System.out.println("no such method found!");
 				Throwable t = new RMIException(e.getCause());
 				response = new responseObject(true, t);
 				os.writeObject(response);
@@ -59,25 +59,14 @@ public class SkeletonInvocationHandler<T> extends Thread {
 						invoke(my_server, args);
 				response = new responseObject(false, serverReturn);
 					/* response in not an exception */
-			} catch(IllegalAccessException e){
-					/* response is an exception */
-				Throwable t = new RMIException(e.getCause());
-				response = new responseObject(true, t);
-			} catch(IllegalArgumentException e) {
-					/* response is an exception */
-				Throwable t = new RMIException(e.getCause());
-				response = new responseObject(true, t);
-			} catch(InvocationTargetException e) {
-					/* Underlying method threw an exception */
+			}catch (Exception e){
 				response = new responseObject(true, e.getCause());
-				os.writeObject(response);
 			}
 			os.writeObject(response);
 			my_sock.close();
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			//e.printStackTrace();
 			sklt.service_error(new RMIException("client cloesed"));
 			return;
 		} catch (ClassNotFoundException e) {

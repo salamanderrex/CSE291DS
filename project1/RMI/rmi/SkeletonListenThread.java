@@ -7,41 +7,40 @@ public class SkeletonListenThread<T> extends Thread {
 	private Class<T> my_c;
 	private T my_server;
 	private InetSocketAddress my_address;
-	private MutualSig tool;
-	private Skeleton lock;
+	private MutualSig mux;
+	private Skeleton sklt;
 	private ServerSocket skeleton_server;
 
-	public SkeletonListenThread(InetSocketAddress given_address,
-								MutualSig given_tool, Class<T> given_c,
-								T given_server, Skeleton given_lock,
+	public SkeletonListenThread(InetSocketAddress address,
+								MutualSig mux, Class<T> c,
+								T server, Skeleton sklt,
 								ServerSocket socketServer)
 	{
-		this.my_address = given_address;
-		this.tool = given_tool;
-		this.my_c = given_c;
-		this.my_server = given_server;
-		this.lock = given_lock;
+		this.my_address = address;
+		this.mux = mux;
+		this.my_c = c;
+		this.my_server = server;
+		this.sklt = sklt;
 		this.skeleton_server = socketServer;
 	}
 
 	public void run()
 	{
 		try {
-			while(this.tool.stop != 1)
+			while(this.mux.stop != 1)
 			{
 				Socket req = skeleton_server.accept();
-				synchronized(this.lock)
+				synchronized(this.sklt)
 				{
-					if(this.tool.stop == 2)
+					if(this.mux.stop == 2)
 					{
-						this.tool.stop = 1;
-						this.lock.notify();
+						this.mux.stop = 1;
+						this.sklt.notify();
 						skeleton_server.close();
 						return;
 					}
 				}
-				InetAddress detail = req.getInetAddress();
-				SkeletonInvocationHandler<T> process_req = new SkeletonInvocationHandler<T>(req, this.my_c, this.my_server, this.lock);
+				SkeletonInvocationHandler<T> process_req = new SkeletonInvocationHandler<T>(req, this.my_c, this.my_server, this.sklt);
 				process_req.start();
 				/*
 				ExecutorService executor = Executors.newSingleThreadExecutor();
@@ -53,12 +52,12 @@ public class SkeletonListenThread<T> extends Thread {
 				*/
 			}
 			//
-			if(this.tool.stop == 2) skeleton_server.accept();
+			if(this.mux.stop == 2) skeleton_server.accept();
 			//
-			synchronized(this.lock)
+			synchronized(this.sklt)
 			{
-				this.tool.stop = 1;
-				this.lock.notify();
+				this.mux.stop = 1;
+				this.sklt.notify();
 			}
 			//
 			if(!skeleton_server.isClosed()) skeleton_server.close();

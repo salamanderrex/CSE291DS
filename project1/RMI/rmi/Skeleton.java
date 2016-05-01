@@ -14,20 +14,20 @@ public class Skeleton<T> {
 
 	public Skeleton(Class<T> c, T server)
 	{
-		if(c == null || server == null) throw new NullPointerException("Invalid input for constructor of Skeleton!");
-		else if(!isRemoteInterface(c)) throw new Error("Non-remote interface detected!");
+		if(c == null || server == null) throw new NullPointerException("No interface specified");
+		else if(!isRemoteInterface(c)) throw new Error("Not remote interface");
 		else if(c.isInterface()) {
 			this.my_c = c;
 			this.my_server = server;
 			this.tool = new MutualSig(1);
 		}
-		else throw new Error("Input must be an interface!");
+		else throw new Error("Not interface");
 	}
 
 	public Skeleton(Class<T> c, T server, InetSocketAddress address)
 	{
-		if(c == null || server == null) throw new NullPointerException("Invvalid input for constructor of Skeleton!");
-		else if(!isRemoteInterface(c)) throw new Error("Non-remote interface detected!");
+		if(c == null || server == null) throw new NullPointerException("No interface specified");
+		else if(!isRemoteInterface(c)) throw new Error("Not remote interface");
 		else if(c.isInterface()) {
 			this.my_c = c;
 			this.my_server = server;
@@ -40,7 +40,8 @@ public class Skeleton<T> {
 			}
 
 		}
-		else throw new Error("Input must be an interface!");
+		else throw new Error("not interface");
+
 	}
 
 	// Helper public func
@@ -98,7 +99,6 @@ public class Skeleton<T> {
 		//
 		if(this.tool.stop == 1)
 		{
-			//System.out.println("skeleton started");
 			this.tool.stop = 0;
 			try{
 				 this.socketServer = new ServerSocket(this.my_address.getPort());
