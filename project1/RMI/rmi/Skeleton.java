@@ -8,7 +8,7 @@ public class Skeleton<T> {
 	private Class<T> my_c;
 	private T my_server;
 	private InetSocketAddress my_address;
-	private MutableUtil tool;
+	private MutualSig tool;
 	private String HostName = null;
 	private ServerSocket socketServer = null;
 
@@ -19,7 +19,7 @@ public class Skeleton<T> {
 		else if(c.isInterface()) {
 			this.my_c = c;
 			this.my_server = server;
-			this.tool = new MutableUtil(1);
+			this.tool = new MutualSig(1);
 		}
 		else throw new Error("Input must be an interface!");
 	}
@@ -33,7 +33,7 @@ public class Skeleton<T> {
 			this.my_server = server;
 			this.my_address = address;
 
-			this.tool = new MutableUtil(1);
+			this.tool = new MutualSig(1);
 			if(address != null) {
 				this.port = address.getPort();
 				this.HostName = address.getHostName();
@@ -98,7 +98,7 @@ public class Skeleton<T> {
 		//
 		if(this.tool.stop == 1)
 		{
-			System.out.println("The skeleton starts now!");
+			//System.out.println("skeleton started");
 			this.tool.stop = 0;
 			try{
 				 this.socketServer = new ServerSocket(this.my_address.getPort());
@@ -107,21 +107,17 @@ public class Skeleton<T> {
 			}
 
 
-			Skeleton_listenThr<T> my_listenThr = new Skeleton_listenThr<T>(this.my_address, this.tool, this.my_c, this.my_server, this,socketServer);
+			SkeletonListenThread<T> my_listenThr = new SkeletonListenThread<T>(this.my_address, this.tool, this.my_c, this.my_server, this,socketServer);
 			my_listenThr.start();
 		}
-		else System.out.println("This skeleton has already started!");
 		//
 		notify();
-		System.out.println("end of start() in skeleton........");
 	}
 
 	public synchronized void stop()
 	{
 
-		System.out.println("in skeleton Stop()............................. ");
-		if(this.tool.stop == 1) System.out.println("Already stopped!");
-		else
+		if(this.tool.stop != 1)
 		{
 			//
 			this.tool.stop = 2; // send stop req
@@ -143,7 +139,6 @@ public class Skeleton<T> {
 				}
 			}
 			stopped(new Throwable());
-			System.out.println("Stopping skeleton!");
 		}
 		notify();
 	}

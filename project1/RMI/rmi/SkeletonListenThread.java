@@ -3,18 +3,18 @@ package rmi;
 import java.io.IOException;
 import java.net.*;
 
-public class Skeleton_listenThr<T> extends Thread {
+public class SkeletonListenThread<T> extends Thread {
 	private Class<T> my_c;
 	private T my_server;
 	private InetSocketAddress my_address;
-	private MutableUtil tool;
+	private MutualSig tool;
 	private Skeleton lock;
 	private ServerSocket skeleton_server;
 
-	public Skeleton_listenThr(InetSocketAddress given_address,
-							  MutableUtil given_tool, Class<T> given_c,
-							  T given_server, Skeleton given_lock,
-							  ServerSocket socketServer)
+	public SkeletonListenThread(InetSocketAddress given_address,
+								MutualSig given_tool, Class<T> given_c,
+								T given_server, Skeleton given_lock,
+								ServerSocket socketServer)
 	{
 		this.my_address = given_address;
 		this.tool = given_tool;
@@ -29,25 +29,19 @@ public class Skeleton_listenThr<T> extends Thread {
 		try {
 			while(this.tool.stop != 1)
 			{
-				System.out.println("In while!");
 				Socket req = skeleton_server.accept();
-				System.out.println("right after accept in listeing thread!");
 				synchronized(this.lock)
 				{
 					if(this.tool.stop == 2)
 					{
-						System.out.println("going to close listening socket.....!");
 						this.tool.stop = 1;
 						this.lock.notify();
 						skeleton_server.close();
 						return;
 					}
 				}
-				//System.out.println("After accept!");
 				InetAddress detail = req.getInetAddress();
-				System.out.println("Request from ==> name: " + detail.getHostName() + " addr: " + detail.getHostAddress());
-				//
-				Skeleton_processThr<T> process_req = new Skeleton_processThr<T>(req, this.my_c, this.my_server, this.lock);
+				SkeletonInvocationHandler<T> process_req = new SkeletonInvocationHandler<T>(req, this.my_c, this.my_server, this.lock);
 				process_req.start();
 				/*
 				ExecutorService executor = Executors.newSingleThreadExecutor();
@@ -68,11 +62,7 @@ public class Skeleton_listenThr<T> extends Thread {
 			}
 			//
 			if(!skeleton_server.isClosed()) skeleton_server.close();
-			System.out.println("Out of while!");
-			//
-			//
 			return;
-			//
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

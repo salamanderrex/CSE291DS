@@ -2,10 +2,10 @@ package rmi;
 
 import java.io.*;
 
-public class MutableUtil {
+public class MutualSig {
 	public Integer stop;
 
-	public MutableUtil(Integer given_stop)
+	public MutualSig(Integer given_stop)
 	{
 		this.stop = 1;
 		// 0 stands for running
