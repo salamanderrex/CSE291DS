@@ -1,8 +1,16 @@
 <application>
-  <component name="FileTypeManager" version="14">
-    <ignoreFiles list="*.hprof;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.bundle;.git;.hg;.svn;.tox;CVS;RCS;SCCS;__pycache__;_svn;rcs;vssver.scc;vssver2.scc;" />
+  <component name="FileTypeManager" version="17">
+    <ignoreFiles list="*.hprof;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.git;.hg;.svn;CVS;RCS;SCCS;__pycache__;_svn;rcs;vssver.scc;vssver2.scc;" />
     <extensionMap>
       <mapping pattern="log" type="PLAIN_TEXT" />
+      <mapping pattern="Query9" type="PLAIN_TEXT" />
+      <mapping pattern="Query8" type="PLAIN_TEXT" />
+      <mapping pattern="Query7" type="PLAIN_TEXT" />
+      <mapping pattern="Query6" type="PLAIN_TEXT" />
+      <mapping pattern="Query5" type="PLAIN_TEXT" />
+      <mapping pattern="Query4" type="PLAIN_TEXT" />
+      <mapping pattern="Query3" type="PLAIN_TEXT" />
+      <mapping pattern="Query2" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
