@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="17">
     <ignoreFiles list="*.hprof;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.git;.hg;.svn;CVS;RCS;SCCS;__pycache__;_svn;rcs;vssver.scc;vssver2.scc;" />
     <extensionMap>
+      <mapping pattern="Query10" type="PLAIN_TEXT" />
       <mapping pattern="Query9" type="PLAIN_TEXT" />
       <mapping pattern="Query8" type="PLAIN_TEXT" />
       <mapping pattern="Query7" type="PLAIN_TEXT" />
