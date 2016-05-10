@@ -12,6 +12,8 @@
       <mapping pattern="Query2" type="PLAIN_TEXT" />
       <mapping pattern="Query1" type="PLAIN_TEXT" />
       <mapping pattern="log" type="PLAIN_TEXT" />
+      <mapping pattern="Query14" type="PLAIN_TEXT" />
+      <mapping pattern="Query12" type="PLAIN_TEXT" />
       <mapping pattern="Query4" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
