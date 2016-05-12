@@ -3,10 +3,10 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/ApRpEvaluator.java" timestamp="1461870375052">
-        <mark key="[" line="0" column="40" />
-        <mark key="]" line="0" column="8" />
-        <mark key="." line="0" column="8" />
+      <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/ApRpEvaluator.java" timestamp="1463072000054">
+        <mark key="[" line="12" column="0" />
+        <mark key="]" line="12" column="0" />
+        <mark key="." line="12" column="0" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/FEvaluator.java" timestamp="1461870624309">
         <mark key="[" line="49" column="0" />
@@ -43,11 +43,11 @@
         <mark key="^" line="2" column="30" />
         <mark key="." line="2" column="30" />
       </file>
-      <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/XqEvaluator.java" timestamp="1461871175057">
-        <mark key="[" line="148" column="33" />
-        <mark key="]" line="148" column="33" />
-        <mark key="." line="148" column="33" />
-        <mark key="^" line="148" column="33" />
+      <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/XqEvaluator.java" timestamp="1463071556157">
+        <mark key="[" line="109" column="27" />
+        <mark key="]" line="109" column="30" />
+        <mark key="." line="109" column="30" />
+        <mark key="^" line="109" column="30" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/context/QueryContext.java" timestamp="1461869028600">
         <mark key="[" line="0" column="0" />
@@ -65,7 +65,8 @@
         <mark key="^" line="0" column="31" />
         <mark key="." line="0" column="31" />
       </file>
-      <file name="$USER_HOME$/CSE232/pom.xml" timestamp="1461865115338">
+      <file name="$USER_HOME$/CSE232/pom.xml" timestamp="1463071961844">
+        <mark key="'" line="0" column="172" />
         <mark key="[" line="26" column="21" />
         <mark key="]" line="51" column="0" />
         <mark key="." line="51" column="0" />
@@ -96,11 +97,11 @@
         <mark key="]" line="1" column="30" />
         <mark key="." line="1" column="0" />
       </file>
-      <file name="$USER_HOME$/CSE232/project1/src/utils/XQueryExecutor.java" timestamp="1461869734699">
-        <mark key="[" line="28" column="59" />
-        <mark key="]" line="28" column="58" />
-        <mark key="^" line="28" column="58" />
-        <mark key="." line="28" column="58" />
+      <file name="$USER_HOME$/CSE232/project1/src/utils/XQueryExecutor.java" timestamp="1463071669237">
+        <mark key="[" line="14" column="0" />
+        <mark key="]" line="14" column="0" />
+        <mark key="^" line="18" column="80" />
+        <mark key="." line="14" column="0" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/xmltree/XMLText.java" timestamp="1461865458671">
         <mark key="[" line="1" column="32" />
@@ -123,10 +124,16 @@
         <mark key="." line="10" column="36" />
         <mark key="^" line="10" column="36" />
       </file>
-      <file name="$USER_HOME$/CSE232/project1/src/xquery/parser/XQueryParser.java" timestamp="1461870765405" />
       <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/FLWREvaluator.java" timestamp="1461870641137">
         <mark key="]" line="1" column="0" />
         <mark key="." line="1" column="0" />
+      </file>
+      <file name="$USER_HOME$/CSE232/testcases/Main.java" timestamp="1463071610628">
+        <mark key="'" line="63" column="0" />
+        <mark key="[" line="46" column="32" />
+        <mark key="]" line="46" column="31" />
+        <mark key="." line="46" column="31" />
+        <mark key="^" line="46" column="31" />
       </file>
       <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/conformance/rmi/InheritanceTest.java" timestamp="1461815156275">
         <mark key="[" line="74" column="43" />
@@ -151,6 +158,9 @@
         <mark key="'" line="14" column="0" />
         <mark key="[" line="296" column="1" />
       </file>
+      <file name="$USER_HOME$/CSE232/project1/src/xquery/main/Main.java" timestamp="1463071461541">
+        <mark key="[" line="31" column="25" />
+      </file>
     </filemarks>
     <jumps>
       <jump line="14" column="8" filename="$USER_HOME$/Desktop/CSE291DS/project1/pingPongTest/PingPongTestServer.java" />
@@ -160,73 +170,90 @@
       <jump line="13" column="1" filename="$USER_HOME$/CSE232/project1/src/xquery/parser/XQueryVisitor.java" />
       <jump line="14" column="0" filename="$USER_HOME$/CSE232/project1/src/xquery/parser/XQueryVisitor.java" />
       <jump line="15" column="0" filename="$USER_HOME$/CSE232/project1/src/xquery/parser/XQueryBaseVisitor.java" />
+      <jump line="39" column="11" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="44" column="38" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="3" column="15" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="4" column="15" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="5" column="15" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="6" column="15" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="7" column="15" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="8" column="10" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="9" column="10" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="10" column="10" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="13" column="7" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="14" column="7" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="15" column="7" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="16" column="7" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="40" column="20" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="61" column="35" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="64" column="0" filename="$USER_HOME$/CSE232/testcases/Main.java" />
+      <jump line="7" column="22" filename="$USER_HOME$/CSE232/pom.xml" />
+      <jump line="61" column="29" filename="$USER_HOME$/CSE232/pom.xml" />
+      <jump line="70" column="29" filename="$USER_HOME$/CSE232/pom.xml" />
+      <jump line="97" column="29" filename="$USER_HOME$/CSE232/pom.xml" />
+      <jump line="0" column="172" filename="$USER_HOME$/CSE232/pom.xml" />
     </jumps>
     <registers>
+      <register name="&quot;" type="2">
+        <text encoding="base64">aW1wb3J0IHByb2plY3QxLnV0aWxzLio7Cg==</text>
+      </register>
+      <register name="-" type="4">
+        <text>new ANTLRFileStream(queryFilePath))</text>
+      </register>
+      <register name="/" type="4">
+        <text>apa</text>
+      </register>
       <register name="0" type="2">
         <text encoding="base64">cGFja2FnZSBwcm9qZWN0MS54cXVlcnkubWFpbjsK</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">KkEvCg==</text>
+        <text encoding="base64">aW1wb3J0IHByb2plY3QxLnV0aWxzLio7Cg==</text>
       </register>
-      <register name="&quot;" type="2">
-        <text encoding="base64">KkEvCg==</text>
-      </register>
-      <register name="2" type="2">
-        <text encoding="base64">aW1wb3J0IHN0YXRpYyBkay5tYXJ0aW5ibWFkc2VuLnhxdWVyeS5wYXJzZXIuWFF1ZXJ5UGFyc2VyLio7Cg==</text>
+      <register name="2" type="4">
+        <text>/**
+ * A static class to makes executing a query using XQuery from a query in a string or file much easier.
+ */</text>
       </register>
       <register name="3" type="4">
-        <text>import project1.xquery.value.*;</text>
+        <text encoding="base64">LyoqCiAgICAgKiBFeGVjdXRlcyBhIHF1ZXJ5IGZyb20gdGhlIGNvbnRlbnRzIG9mIGEgZmlsZS4KICAgICAqIEBwYXJhbSBxdWVyeUZpbGVQYXRoIHRoZSBwYXRoIHRvIHRoZSBYUXVlcnkgZmlsZSAoYWJzb2x1dGUgb3IgcmVsYXRpdikKICAgICAqIEByZXR1cm4gYSB7QGxpbmsgTGlzdDxYTUxFbGVtZW50Pn0gY29udGFpbmluZyB0aGUgcmVzdWx0IFhNTCBlbGVtZW50cyBmb3VuZCBhcyBhIHJlc3VsdCBvZiBleGVjdXRpbmcgdGhlIHF1ZXJ5CiAgICAgKiBAdGhyb3dzIElPRXhjZXB0aW9uIGlmIHRoZSBmaWxlIGNhbm5vdCBiZSBmb3VuZAogICAgICov</text>
       </register>
-      <register name="4" type="4">
-        <text>import dk.martinbmadsen.xquery.context.QueryContext;
-import dk.martinbmadsen.xquery.parser.XQueryBaseVisitor;
-import dk.martinbmadsen.xquery.parser.XQueryParser.*;
-import dk.martinbmadsen.xquery.value.IXQueryValue;
-import dk.martinbmadsen.xquery.value.VarEnvironment;
-import dk.martinbmadsen.xquery.value.XQueryFilter;
-import dk.martinbmadsen.xquery.value.XQueryList;</text>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICB9Cg==</text>
       </register>
       <register name="5" type="4">
-        <text encoding="base64">CmltcG9ydCBkay5tYXJ0aW5ibWFkc2VuLnhxdWVyeS5jb250ZXh0LlF1ZXJ5Q29udGV4dDsKaW1wb3J0IGRrLm1hcnRpbmJtYWRzZW4ueHF1ZXJ5LnBhcnNlci5YUXVlcnlCYXNlVmlzaXRvcjsKaW1wb3J0IGRrLm1hcnRpbmJtYWRzZW4ueHF1ZXJ5LnZhbHVlLklYUXVlcnlWYWx1ZTsKaW1wb3J0IGRrLm1hcnRpbmJtYWRzZW4ueHF1ZXJ5LnZhbHVlLlhRdWVyeUZpbHRlcjsKaW1wb3J0IGRrLm1hcnRpbmJtYWRzZW4ueHF1ZXJ5LnZhbHVlLlhRdWVyeUxpc3Q7</text>
+        <text encoding="base64">IC8qKgogICAgICogRXhlY3R1dGVzIHRoZSBxdWVyeSBnaXZlbiBpbiBzdHJpbmcgZm9ybS4KICAgICAqIEBwYXJhbSBxdWVyeSB0aGUgcXVlcnkgaW4gc3RyaW5nIGZvcm0KICAgICAqIEByZXR1cm4gYSB7QGxpbmsgTGlzdDxYTUxFbGVtZW50Pn0gY29udGFpbmluZyB0aGUgcmVzdWx0IFhNTCBlbGVtZW50cyBmb3VuZCBhcyBhIHJlc3VsdCBvZiBleGVjdXRpbmcgdGhlIHF1ZXJ5CiAgICAgKi8KICAgIHB1YmxpYyBzdGF0aWMgTGlzdDxYTUxFbGVtZW50PiBleGVjdXRlRnJvbVN0cmluZyhTdHJpbmcgcXVlcnkpIHsKICAgICAgICByZXR1cm4gZXhlY3V0ZShuZXcgQU5UTFJJbnB1dFN0cmVhbShxdWVyeSkpOwogICAgfQoKCiAgICBwcml2YXRlIHN0YXRpYyBYUXVlcnlMaXN0IGV4ZWN1dGUoQU5UTFJJbnB1dFN0cmVhbSBpbnB1dCkgewogICAgICAgCiAg</text>
       </register>
-      <register name="6" type="4">
-        <text encoding="base64">CmltcG9ydCBkay5tYXJ0aW5ibWFkc2VuLnhxdWVyeS5jb250ZXh0LlF1ZXJ5Q29udGV4dDsKaW1wb3J0IGRrLm1hcnRpbmJtYWRzZW4ueHF1ZXJ5LnBhcnNlci5YUXVlcnlCYXNlVmlzaXRvcjsKaW1wb3J0IGRrLm1hcnRpbmJtYWRzZW4ueHF1ZXJ5LnBhcnNlci5YUXVlcnlQYXJzZXIuRm9yQ2xhdXNlQ29udGV4dDsKaW1wb3J0IGRrLm1hcnRpbmJtYWRzZW4ueHF1ZXJ5LnBhcnNlci5YUXVlcnlQYXJzZXIuTGV0Q2xhdXNlQ29udGV4dDsKaW1wb3J0IGRrLm1hcnRpbmJtYWRzZW4ueHF1ZXJ5LnBhcnNlci5YUXVlcnlQYXJzZXIuUmV0dXJuQ2xhdXNlQ29udGV4dDsKaW1wb3J0IGRrLm1hcnRpbmJtYWRzZW4ueHF1ZXJ5LnBhcnNlci5YUXVlcnlQYXJzZXIuV2hlcmVDbGF1c2VDb250ZXh0OwppbXBvcnQgZGsubWFydGluYm1hZHNlbi54cXVlcnkudmFsdWUuKjsKaW1wb3J0IGRrLm1hcnRpbmJtYWRzZW4ueHF1ZXJ5LnhtbHRyZWUuSVhNTEVsZW1lbnQ7</text>
+      <register name="6" type="2">
+        <text encoding="base64">Cg==</text>
       </register>
-      <register name="7" type="4">
-        <text>import dk.martinbmadsen.utils.debug.Debugger;
-import dk.martinbmadsen.xquery.context.QueryContext;
-import dk.martinbmadsen.xquery.parser.XQueryBaseVisitor;
-import dk.martinbmadsen.xquery.parser.XQueryParser;
-import dk.martinbmadsen.xquery.parser.XQueryParser.*;
-import dk.martinbmadsen.xquery.value.*;
-import dk.martinbmadsen.xquery.xmltree.IXMLElement;
-import dk.martinbmadsen.xquery.xmltree.XMLElement;
-import dk.martinbmadsen.xquery.xmltree.XMLText;</text>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgICAgICAvLyBzZXQgZW50cnkgcG9pbnQgdG8gJ3hxJyBub24tdGVybWluYWwgaW4gZ3JhbW1hcgo=</text>
       </register>
-      <register name="8" type="4">
-        <text>import dk.martinbmadsen.xquery.context.QueryContext;
-import dk.martinbmadsen.xquery.parser.XQueryBaseVisitor;
-import dk.martinbmadsen.xquery.value.IXQueryValue;</text>
+      <register name="8" type="2">
+        <text encoding="base64">Cg==</text>
       </register>
-      <register name="9" type="4">
-        <text>import dk.martinbmadsen.xquery.context.QueryContext;
-import dk.martinbmadsen.xquery.parser.XQueryBaseVisitor;
-import dk.martinbmadsen.xquery.parser.XQueryParser.*;
-import dk.martinbmadsen.xquery.value.IXQueryValue;
-import dk.martinbmadsen.xquery.value.XQueryFilter;
-import dk.martinbmadsen.xquery.value.XQueryList;</text>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgICAgICAgcmV0dXJuIGV4ZWN1dGUoOwo=</text>
       </register>
-      <register name="-" type="4">
-        <text>import project1.xquery.value.*;</text>
+      <register name=":" type="4">
+        <text>w</text>
       </register>
     </registers>
     <search>
-      <last-dir>0</last-dir>
+      <last-search>apa</last-search>
+      <last-offset />
+      <last-pattern>apa</last-pattern>
+      <last-dir>1</last-dir>
       <show-last>false</show-last>
     </search>
     <history>
-      <history-search />
-      <history-cmd />
+      <history-search>
+        <entry>j</entry>
+        <entry>apa</entry>
+      </history-search>
+      <history-cmd>
+        <entry>w</entry>
+      </history-cmd>
       <history-expr />
       <history-input />
     </history>
