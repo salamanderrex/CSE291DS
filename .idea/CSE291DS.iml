@@ -19,6 +19,9 @@
       <sourceFolder url="file://$MODULE_DIR$/project2/fuse" isTestSource="false" packagePrefix="fuse" />
       <sourceFolder url="file://$MODULE_DIR$/project2/test" isTestSource="false" packagePrefix="test" />
       <sourceFolder url="file://$MODULE_DIR$/project2/unit" isTestSource="false" packagePrefix="unit" />
+      <sourceFolder url="file://$MODULE_DIR$/project2/rmi" isTestSource="false" packagePrefix="rmi" />
+      <sourceFolder url="file://$MODULE_DIR$/project2/apps" isTestSource="false" packagePrefix="apps" />
+      <excludeFolder url="file://$MODULE_DIR$/project1" />
       <excludeFolder url="file://$MODULE_DIR$/project1/RMI/build" />
       <excludeFolder url="file://$MODULE_DIR$/project1/RMI/conformance" />
       <excludeFolder url="file://$MODULE_DIR$/project1/RMI/test" />
