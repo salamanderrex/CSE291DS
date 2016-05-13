@@ -27,11 +27,6 @@
         <mark key="^" line="8" column="9" />
         <mark key="." line="8" column="9" />
       </file>
-      <file name="$USER_HOME$/CSE232/project1/src/xquery/parser/XQueryBaseVisitor.java" timestamp="1461870138146">
-        <mark key="]" line="5" column="48" />
-        <mark key="^" line="5" column="48" />
-        <mark key="." line="5" column="48" />
-      </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/XQueryFilter.java" timestamp="1461865557550">
         <mark key="[" line="1" column="0" />
         <mark key="]" line="1" column="30" />
@@ -71,6 +66,9 @@
         <mark key="^" line="0" column="31" />
         <mark key="." line="0" column="31" />
       </file>
+      <file name="$USER_HOME$/Desktop/CSE291DS/project2/GracefulSkeleton.java" timestamp="1463114185443">
+        <mark key="[" line="0" column="14" />
+      </file>
       <file name="$USER_HOME$/CSE232/pom.xml" timestamp="1463071961844">
         <mark key="'" line="0" column="172" />
         <mark key="[" line="26" column="21" />
@@ -109,6 +107,11 @@
         <mark key="^" line="18" column="80" />
         <mark key="." line="14" column="0" />
       </file>
+      <file name="$USER_HOME$/Desktop/CSE291DS/project1/RMI/rmi/GracefulSkeleton.java" timestamp="1463114741426">
+        <mark key="[" line="2" column="0" />
+        <mark key="]" line="2" column="0" />
+        <mark key="." line="2" column="0" />
+      </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/xmltree/XMLText.java" timestamp="1461865458671">
         <mark key="[" line="1" column="32" />
         <mark key="]" line="1" column="32" />
@@ -130,6 +133,7 @@
         <mark key="." line="10" column="36" />
         <mark key="^" line="10" column="36" />
       </file>
+      <file name="$USER_HOME$/Desktop/CSE291DS/project2/naming/package-info.java" timestamp="1463114175974" />
       <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/FLWREvaluator.java" timestamp="1461870641137">
         <mark key="]" line="1" column="0" />
         <mark key="." line="1" column="0" />
@@ -160,14 +164,10 @@
         <mark key="." line="16" column="5" />
         <mark key="^" line="16" column="5" />
       </file>
-      <file name="$USER_HOME$/CSE232/project1/src/xquery/parser/XQueryVisitor.java" timestamp="1461869873885">
-        <mark key="'" line="14" column="0" />
-        <mark key="[" line="296" column="1" />
-      </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/main/Main.java" timestamp="1463071461541">
         <mark key="[" line="31" column="25" />
       </file>
-      <file name="/fragment.java" timestamp="1463113134269">
+      <file name="/fragment.java" timestamp="1463114154250">
         <mark key="[" line="0" column="0" />
       </file>
     </filemarks>
@@ -204,10 +204,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">aW1wb3J0IHByb2plY3QxLnV0aWxzLio7Cg==</text>
+        <text encoding="base64">aW1wb3J0IHJtaS5Ta2VsZXRvbjsK</text>
       </register>
       <register name="-" type="4">
-        <text>new ANTLRFileStream(queryFilePath))</text>
+        <text />
       </register>
       <register name="/" type="4">
         <text>apa</text>
@@ -216,33 +216,33 @@
         <text encoding="base64">cGFja2FnZSBwcm9qZWN0MS54cXVlcnkubWFpbjsK</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">aW1wb3J0IHByb2plY3QxLnV0aWxzLio7Cg==</text>
+        <text encoding="base64">aW1wb3J0IHJtaS5Ta2VsZXRvbjsK</text>
       </register>
       <register name="2" type="4">
+        <text />
+      </register>
+      <register name="3" type="4">
+        <text encoding="base64">LyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgogKiAKICogQXV0aG9yczogQ2hyaXN0b3BoZXIgVG9tYXN6ZXdza2kgKENLVCkgJiBEaW5lc2ggUGFsYW5pc2FteSAoRElORVNIUCkgCiAqIAogKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqLw==</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">aW1wb3J0IHByb2plY3QxLnV0aWxzLio7Cg==</text>
+      </register>
+      <register name="5" type="4">
         <text>/**
  * A static class to makes executing a query using XQuery from a query in a string or file much easier.
  */</text>
       </register>
-      <register name="3" type="4">
+      <register name="6" type="4">
         <text encoding="base64">LyoqCiAgICAgKiBFeGVjdXRlcyBhIHF1ZXJ5IGZyb20gdGhlIGNvbnRlbnRzIG9mIGEgZmlsZS4KICAgICAqIEBwYXJhbSBxdWVyeUZpbGVQYXRoIHRoZSBwYXRoIHRvIHRoZSBYUXVlcnkgZmlsZSAoYWJzb2x1dGUgb3IgcmVsYXRpdikKICAgICAqIEByZXR1cm4gYSB7QGxpbmsgTGlzdDxYTUxFbGVtZW50Pn0gY29udGFpbmluZyB0aGUgcmVzdWx0IFhNTCBlbGVtZW50cyBmb3VuZCBhcyBhIHJlc3VsdCBvZiBleGVjdXRpbmcgdGhlIHF1ZXJ5CiAgICAgKiBAdGhyb3dzIElPRXhjZXB0aW9uIGlmIHRoZSBmaWxlIGNhbm5vdCBiZSBmb3VuZAogICAgICov</text>
       </register>
-      <register name="4" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICB9Cg==</text>
       </register>
-      <register name="5" type="4">
+      <register name="8" type="4">
         <text encoding="base64">IC8qKgogICAgICogRXhlY3R1dGVzIHRoZSBxdWVyeSBnaXZlbiBpbiBzdHJpbmcgZm9ybS4KICAgICAqIEBwYXJhbSBxdWVyeSB0aGUgcXVlcnkgaW4gc3RyaW5nIGZvcm0KICAgICAqIEByZXR1cm4gYSB7QGxpbmsgTGlzdDxYTUxFbGVtZW50Pn0gY29udGFpbmluZyB0aGUgcmVzdWx0IFhNTCBlbGVtZW50cyBmb3VuZCBhcyBhIHJlc3VsdCBvZiBleGVjdXRpbmcgdGhlIHF1ZXJ5CiAgICAgKi8KICAgIHB1YmxpYyBzdGF0aWMgTGlzdDxYTUxFbGVtZW50PiBleGVjdXRlRnJvbVN0cmluZyhTdHJpbmcgcXVlcnkpIHsKICAgICAgICByZXR1cm4gZXhlY3V0ZShuZXcgQU5UTFJJbnB1dFN0cmVhbShxdWVyeSkpOwogICAgfQoKCiAgICBwcml2YXRlIHN0YXRpYyBYUXVlcnlMaXN0IGV4ZWN1dGUoQU5UTFJJbnB1dFN0cmVhbSBpbnB1dCkgewogICAgICAgCiAg</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">Cg==</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAvLyBzZXQgZW50cnkgcG9pbnQgdG8gJ3hxJyBub24tdGVybWluYWwgaW4gZ3JhbW1hcgo=</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">Cg==</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgcmV0dXJuIGV4ZWN1dGUoOwo=</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
