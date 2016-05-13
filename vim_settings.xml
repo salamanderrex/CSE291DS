@@ -13,7 +13,7 @@
         <mark key="]" line="49" column="0" />
         <mark key="." line="49" column="0" />
       </file>
-      <file name="/a.dummy" timestamp="1461870210527">
+      <file name="/a.dummy" timestamp="1463119774958">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/antlr4/XQueryBaseListener.java" timestamp="1461869601713">
@@ -21,16 +21,23 @@
         <mark key="]" line="2" column="0" />
         <mark key="." line="2" column="0" />
       </file>
-      <file name="$USER_HOME$/CSE232/project1/src/xquery/value/XQueryList.java" timestamp="1461869291553">
-        <mark key="[" line="8" column="11" />
-        <mark key="]" line="8" column="9" />
-        <mark key="^" line="8" column="9" />
-        <mark key="." line="8" column="9" />
+      <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/MyXQueryEvaluator.java" timestamp="1463120147555">
+        <mark key="[" line="282" column="50" />
+        <mark key="]" line="282" column="50" />
+        <mark key="^" line="207" column="29" />
+        <mark key="." line="282" column="50" />
       </file>
-      <file name="$USER_HOME$/CSE232/project1/src/xquery/value/XQueryFilter.java" timestamp="1461865557550">
-        <mark key="[" line="1" column="0" />
-        <mark key="]" line="1" column="30" />
-        <mark key="." line="1" column="0" />
+      <file name="$USER_HOME$/CSE232/project1/src/xquery/value/XQueryList.java" timestamp="1463120237271">
+        <mark key="[" line="75" column="14" />
+        <mark key="]" line="75" column="15" />
+        <mark key="^" line="57" column="41" />
+        <mark key="." line="75" column="15" />
+      </file>
+      <file name="$USER_HOME$/CSE232/project1/src/xquery/value/XQueryFilter.java" timestamp="1463119589044">
+        <mark key="[" line="5" column="4" />
+        <mark key="]" line="11" column="12" />
+        <mark key="^" line="11" column="12" />
+        <mark key="." line="11" column="12" />
       </file>
       <file name="$USER_HOME$/Desktop/CSE291DS/project2/naming/NamingServer.java" timestamp="1463113180019">
         <mark key="[" line="13" column="10" />
@@ -68,12 +75,6 @@
       </file>
       <file name="$USER_HOME$/Desktop/CSE291DS/project2/GracefulSkeleton.java" timestamp="1463114185443">
         <mark key="[" line="0" column="14" />
-      </file>
-      <file name="$USER_HOME$/CSE232/pom.xml" timestamp="1463071961844">
-        <mark key="'" line="0" column="172" />
-        <mark key="[" line="26" column="21" />
-        <mark key="]" line="51" column="0" />
-        <mark key="." line="51" column="0" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/IXQueryValue.java" timestamp="1461865547872">
         <mark key="[" line="1" column="0" />
@@ -122,6 +123,7 @@
         <mark key="]" line="2" column="0" />
         <mark key="." line="2" column="0" />
       </file>
+      <file name="$USER_HOME$/CSE232/project1/src/xquery/value/XQueryBoolean.java" timestamp="1463120270710" />
       <file name="$USER_HOME$/CSE232/project1/src/xquery/xmltree/XMLElement.java" timestamp="1461865780915">
         <mark key="[" line="1" column="32" />
         <mark key="]" line="1" column="32" />
@@ -133,14 +135,9 @@
         <mark key="." line="10" column="36" />
         <mark key="^" line="10" column="36" />
       </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project2/naming/package-info.java" timestamp="1463114175974" />
-      <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/FLWREvaluator.java" timestamp="1461870641137">
-        <mark key="]" line="1" column="0" />
-        <mark key="." line="1" column="0" />
-      </file>
-      <file name="$USER_HOME$/CSE232/testcases/Main.java" timestamp="1463071610628">
+      <file name="$USER_HOME$/CSE232/testcases/Main.java" timestamp="1463119277094">
         <mark key="'" line="63" column="0" />
-        <mark key="[" line="46" column="32" />
+        <mark key="[" line="26" column="30" />
         <mark key="]" line="46" column="31" />
         <mark key="." line="46" column="31" />
         <mark key="^" line="46" column="31" />
@@ -203,46 +200,44 @@
       <jump line="0" column="172" filename="$USER_HOME$/CSE232/pom.xml" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">aW1wb3J0IHJtaS5Ta2VsZXRvbjsK</text>
+      <register name="&quot;" type="4">
+        <text>XQueryBoolean.falseValue();</text>
       </register>
       <register name="-" type="4">
-        <text />
+        <text>XQueryBoolean.falseValue();</text>
       </register>
       <register name="/" type="4">
         <text>apa</text>
       </register>
-      <register name="0" type="2">
-        <text encoding="base64">cGFja2FnZSBwcm9qZWN0MS54cXVlcnkubWFpbjsK</text>
+      <register name="0" type="4">
+        <text>XQueryBoolean.XQueryBooleanFactory(false);</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">aW1wb3J0IHJtaS5Ta2VsZXRvbjsK</text>
+      <register name="1" type="4">
+        <text>XQueryBoolean.falseValue();</text>
       </register>
       <register name="2" type="4">
-        <text />
+        <text>XQueryBoolean.falseValue();</text>
       </register>
       <register name="3" type="4">
-        <text encoding="base64">LyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgogKiAKICogQXV0aG9yczogQ2hyaXN0b3BoZXIgVG9tYXN6ZXdza2kgKENLVCkgJiBEaW5lc2ggUGFsYW5pc2FteSAoRElORVNIUCkgCiAqIAogKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqLw==</text>
+        <text encoding="base64">IFhRdWVyeUJvb2xlYW4uZmFsc2VWYWx1ZSgpOw==</text>
       </register>
-      <register name="4" type="2">
-        <text encoding="base64">aW1wb3J0IHByb2plY3QxLnV0aWxzLio7Cg==</text>
+      <register name="4" type="4">
+        <text>true)</text>
       </register>
       <register name="5" type="4">
-        <text>/**
- * A static class to makes executing a query using XQuery from a query in a string or file much easier.
- */</text>
+        <text>);</text>
       </register>
       <register name="6" type="4">
-        <text encoding="base64">LyoqCiAgICAgKiBFeGVjdXRlcyBhIHF1ZXJ5IGZyb20gdGhlIGNvbnRlbnRzIG9mIGEgZmlsZS4KICAgICAqIEBwYXJhbSBxdWVyeUZpbGVQYXRoIHRoZSBwYXRoIHRvIHRoZSBYUXVlcnkgZmlsZSAoYWJzb2x1dGUgb3IgcmVsYXRpdikKICAgICAqIEByZXR1cm4gYSB7QGxpbmsgTGlzdDxYTUxFbGVtZW50Pn0gY29udGFpbmluZyB0aGUgcmVzdWx0IFhNTCBlbGVtZW50cyBmb3VuZCBhcyBhIHJlc3VsdCBvZiBleGVjdXRpbmcgdGhlIHF1ZXJ5CiAgICAgKiBAdGhyb3dzIElPRXhjZXB0aW9uIGlmIHRoZSBmaWxlIGNhbm5vdCBiZSBmb3VuZAogICAgICov</text>
+        <text>XQueryBoolean.trueValue().flag</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgICB9Cg==</text>
+        <text encoding="base64">ICAgIH0K</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">IC8qKgogICAgICogRXhlY3R1dGVzIHRoZSBxdWVyeSBnaXZlbiBpbiBzdHJpbmcgZm9ybS4KICAgICAqIEBwYXJhbSBxdWVyeSB0aGUgcXVlcnkgaW4gc3RyaW5nIGZvcm0KICAgICAqIEByZXR1cm4gYSB7QGxpbmsgTGlzdDxYTUxFbGVtZW50Pn0gY29udGFpbmluZyB0aGUgcmVzdWx0IFhNTCBlbGVtZW50cyBmb3VuZCBhcyBhIHJlc3VsdCBvZiBleGVjdXRpbmcgdGhlIHF1ZXJ5CiAgICAgKi8KICAgIHB1YmxpYyBzdGF0aWMgTGlzdDxYTUxFbGVtZW50PiBleGVjdXRlRnJvbVN0cmluZyhTdHJpbmcgcXVlcnkpIHsKICAgICAgICByZXR1cm4gZXhlY3V0ZShuZXcgQU5UTFJJbnB1dFN0cmVhbShxdWVyeSkpOwogICAgfQoKCiAgICBwcml2YXRlIHN0YXRpYyBYUXVlcnlMaXN0IGV4ZWN1dGUoQU5UTFJJbnB1dFN0cmVhbSBpbnB1dCkgewogICAgICAgCiAg</text>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgIHByaXZhdGUgWFF1ZXJ5Qm9vbGVhbigpIHsK</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgIC8K</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
