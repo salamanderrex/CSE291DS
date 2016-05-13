@@ -9,10 +9,20 @@
       <sourceFolder url="file://$MODULE_DIR$/project1/RMI/unit" isTestSource="false" packagePrefix="unit" />
       <sourceFolder url="file://$MODULE_DIR$/project1/RMI/test" isTestSource="false" packagePrefix="test" />
       <sourceFolder url="file://$MODULE_DIR$/project1/RMI/rmi" isTestSource="false" packagePrefix="rmi" />
-      <sourceFolder url="file://$MODULE_DIR$/project2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/project2" isTestSource="false" packagePrefix="project2" />
       <sourceFolder url="file://$MODULE_DIR$/project2/naming" isTestSource="false" packagePrefix="naming" />
       <sourceFolder url="file://$MODULE_DIR$/project2/storage" isTestSource="false" packagePrefix="storage" />
       <sourceFolder url="file://$MODULE_DIR$/project2/common" isTestSource="false" packagePrefix="common" />
+      <sourceFolder url="file://$MODULE_DIR$/project2/conformance" isTestSource="false" packagePrefix="conformance" />
+      <sourceFolder url="file://$MODULE_DIR$/project2/build" isTestSource="false" packagePrefix="build" />
+      <sourceFolder url="file://$MODULE_DIR$/project2/client" isTestSource="false" packagePrefix="client" />
+      <sourceFolder url="file://$MODULE_DIR$/project2/fuse" isTestSource="false" packagePrefix="fuse" />
+      <sourceFolder url="file://$MODULE_DIR$/project2/test" isTestSource="false" packagePrefix="test" />
+      <sourceFolder url="file://$MODULE_DIR$/project2/unit" isTestSource="false" packagePrefix="unit" />
+      <excludeFolder url="file://$MODULE_DIR$/project1/RMI/build" />
+      <excludeFolder url="file://$MODULE_DIR$/project1/RMI/conformance" />
+      <excludeFolder url="file://$MODULE_DIR$/project1/RMI/test" />
+      <excludeFolder url="file://$MODULE_DIR$/project1/RMI/unit" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

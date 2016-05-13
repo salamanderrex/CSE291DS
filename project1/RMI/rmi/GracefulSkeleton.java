@@ -1,10 +1,5 @@
-package common; /******************************************************************************
- * 
- * Authors: Christopher Tomaszewski (CKT) & Dinesh Palanisamy (DINESHP) 
- * 
- ******************************************************************************/
+package rmi;
 
-import rmi.Skeleton;
 
 import java.net.InetSocketAddress;
 
