@@ -51,12 +51,12 @@ public class StorageServer implements Storage, Command
         this.root = root;
         InetSocketAddress storageAddr = new InetSocketAddress(client_port);
         
-        //Create GracefulSkeleton which notifies StorageServer when stopped
+        //Create common.GracefulSkeleton which notifies StorageServer when stopped
         this.storageSkeleton = 
         		new GracefulSkeleton<Storage>(Storage.class, this, storageAddr);
         
         InetSocketAddress commandAddr = new InetSocketAddress(command_port);
-      //Create GracefulSkeleton which notifies StorageServer when stopped
+      //Create common.GracefulSkeleton which notifies StorageServer when stopped
         this.commandSkeleton = 
         		new GracefulSkeleton<Command>(Command.class, this, commandAddr);
     }
@@ -155,7 +155,7 @@ public class StorageServer implements Storage, Command
     	this.commandSkeleton.stop();
     	synchronized(this.commandSkeleton){
     		try {
-    			//wait for notify from GracefulSkeleton stopped method
+    			//wait for notify from common.GracefulSkeleton stopped method
     			this.commandSkeleton.wait();
     		} catch (InterruptedException e) {}
     	}
@@ -165,7 +165,7 @@ public class StorageServer implements Storage, Command
     	this.storageSkeleton.stop();
     	synchronized(this.storageSkeleton){
 	    	try {
-	    		//wait for notify from GracefulSkeleton stopped method
+	    		//wait for notify from common.GracefulSkeleton stopped method
 				this.storageSkeleton.wait();
 			} catch (InterruptedException e) {}
     	}

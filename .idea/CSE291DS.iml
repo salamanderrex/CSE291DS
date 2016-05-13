@@ -5,12 +5,14 @@
     <output-test url="file://$MODULE_DIR$/test/CSE291DS" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/project2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/project1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/project1/RMI/unit" isTestSource="false" packagePrefix="unit" />
       <sourceFolder url="file://$MODULE_DIR$/project1/RMI/test" isTestSource="false" packagePrefix="test" />
       <sourceFolder url="file://$MODULE_DIR$/project1/RMI/rmi" isTestSource="false" packagePrefix="rmi" />
-      <excludeFolder url="file://$MODULE_DIR$/project2" />
+      <sourceFolder url="file://$MODULE_DIR$/project2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/project2/naming" isTestSource="false" packagePrefix="naming" />
+      <sourceFolder url="file://$MODULE_DIR$/project2/storage" isTestSource="false" packagePrefix="storage" />
+      <sourceFolder url="file://$MODULE_DIR$/project2/common" isTestSource="false" packagePrefix="common" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
