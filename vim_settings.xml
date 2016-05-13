@@ -37,6 +37,12 @@
         <mark key="]" line="1" column="30" />
         <mark key="." line="1" column="0" />
       </file>
+      <file name="$USER_HOME$/Desktop/CSE291DS/project2/naming/NamingServer.java" timestamp="1463113180019">
+        <mark key="[" line="13" column="10" />
+        <mark key="]" line="13" column="30" />
+        <mark key="^" line="13" column="30" />
+        <mark key="." line="13" column="30" />
+      </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/CondEvaluator.java" timestamp="1461870671754">
         <mark key="[" line="8" column="0" />
         <mark key="]" line="2" column="30" />
@@ -160,6 +166,9 @@
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/main/Main.java" timestamp="1463071461541">
         <mark key="[" line="31" column="25" />
+      </file>
+      <file name="/fragment.java" timestamp="1463113134269">
+        <mark key="[" line="0" column="0" />
       </file>
     </filemarks>
     <jumps>
