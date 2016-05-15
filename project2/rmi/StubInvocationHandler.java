@@ -90,7 +90,7 @@ public class StubInvocationHandler implements InvocationHandler, Serializable {
         if (method.getName().equals("equals") && !ifsf[0] &
                 method.getReturnType().getName().equals("boolean") &&
                 method.getParameterTypes().length == 1) {
-            System.out.println("IN equals........");
+            //System.out.println("IN equals........");
 
             if (arguments.length != 1 || arguments[0] == null)
                 return false;

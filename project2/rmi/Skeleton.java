@@ -126,6 +126,7 @@ public class Skeleton<T> {
 			this.tool.stop = 2; // send stop req
 			Socket StopSign = new Socket();
 			try {
+                System.out.println("in stop:"+this.my_address);
 				StopSign.connect(this.my_address);
 				//
 			} catch (IOException e) {

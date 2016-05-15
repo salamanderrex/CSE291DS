@@ -55,47 +55,47 @@ public abstract class Stub {
             throws UnknownHostException {
 
 
-        System.out.println("in Stub create");
-        System.out.println("well, c is " + c);
-        System.out.println("well skeleton is " + skeleton);
+        //System.out.println("in Stub create");
+        //System.out.println("well, c is " + c);
+        //System.out.println("well skeleton is " + skeleton);
         if (c == null || skeleton == null) {
             System.out.println("I want to throw NullPointerException");
             throw new NullPointerException();
         }
 
-        System.out.println("checkpoint1");
+        //System.out.println("checkpoint1");
         if (!c.isInterface()) {
             throw new Error("not a interface ");
         }
         if (!checkRMIException(c)) {
             throw new Error("Has method does not have RMI Exception type");
         }
-        System.out.println("checkpoint2");
+        //System.out.println("checkpoint2");
 
-        System.out.println("hostname is " + skeleton.getHostName());
-        System.out.println("is running" + skeleton.isRunning());
+        //System.out.println("hostname is " + skeleton.getHostName());
+        //System.out.println("is running" + skeleton.isRunning());
         if (skeleton.getHostName() == null && skeleton.isRunning() == false) {
             System.out.println("I want to throw IllegalStateException");
             throw new IllegalStateException();
         }
 
-        System.out.println("checkpoint3");
+        //System.out.println("checkpoint3");
         if (skeleton.getHostName() != null && skeleton.getHostName().equals("0.0.0.0")) {
             try {
-                System.out.println("here in wild card");
+                //System.out.println("here in wild card");
                 InetAddress.getLocalHost();
             } catch (UnknownHostException e) {
-                System.out.println("wildcard but no localhost");
+                //System.out.println("wildcard but no localhost");
                 throw new UnknownHostException();
 
             }
         }
-        System.out.println("checkpoint4");
+        //System.out.println("checkpoint4");
         InetSocketAddress address = skeleton.getAddr();
 
 
         InvocationHandler handler = new StubInvocationHandler(address, c);
-        System.out.println("checkpoint5");
+        //System.out.println("checkpoint5");
 
         return (T) Proxy.newProxyInstance(c.getClassLoader(),
                 new Class[]{c}, handler);

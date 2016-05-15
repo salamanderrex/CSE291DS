@@ -45,7 +45,7 @@ public class SkeletonInvocationHandler<T> extends Thread {
 			try {
 				serverMethod = this.my_c.getMethod((String) method_name, (Class[]) parameterTypes);
 			} catch( NoSuchMethodException e ){
-				System.out.println("no such method found!");
+				//System.out.println("no such method found!");
 				Throwable t = new rmi.RMIException(e.getCause());
 				response = new responseObject(true, t);
 				os.writeObject(response);
