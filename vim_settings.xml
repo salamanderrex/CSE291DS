@@ -52,8 +52,8 @@
         <mark key="^" line="11" column="12" />
         <mark key="." line="11" column="12" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463606390504">
-        <mark key="[" line="20" column="0" />
+      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463608007066">
+        <mark key="[" line="337" column="58" />
         <mark key="]" line="20" column="0" />
         <mark key="." line="20" column="0" />
       </file>
@@ -68,6 +68,7 @@
         <mark key="]" line="1" column="0" />
         <mark key="." line="1" column="0" />
       </file>
+      <file name="$USER_HOME$/Distributed_system/src/common/Path.java" timestamp="1463608657500" />
       <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/XQueryEvaluator.java" timestamp="1461870401733">
         <mark key="[" line="2" column="0" />
         <mark key="]" line="2" column="0" />
@@ -129,11 +130,11 @@
         <mark key="]" line="1" column="32" />
         <mark key="." line="1" column="0" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/storage/StorageServer.java" timestamp="1463547118406">
-        <mark key="[" line="47" column="24" />
-        <mark key="]" line="47" column="24" />
-        <mark key="." line="47" column="24" />
-        <mark key="^" line="47" column="24" />
+      <file name="$USER_HOME$/Distributed_system/src/storage/StorageServer.java" timestamp="1463609378316">
+        <mark key="[" line="82" column="17" />
+        <mark key="]" line="84" column="6" />
+        <mark key="." line="84" column="6" />
+        <mark key="^" line="84" column="6" />
       </file>
       <file name="$USER_HOME$/Distributed_system/src/naming/ReplicateThread.java" timestamp="1463606437630">
         <mark key="[" line="2" column="0" />
@@ -217,44 +218,47 @@
       <jump line="0" column="172" filename="$USER_HOME$/CSE232/pom.xml" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text encoding="base64">LyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgogKiAKICogQXV0aG9yczogQ2hyaXN0b3BoZXIgVG9tYXN6ZXdza2kgKENLVCkgJiBEaW5lc2ggUGFsYW5pc2FteSAoRElORVNIUCkgCiAqIAogKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqLw==</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgY29tbWFuZF9wb3J0ID0gODAxMDsK</text>
       </register>
       <register name="-" type="4">
-        <text>/</text>
+        <text>s</text>
       </register>
       <register name="/" type="4">
         <text>apa</text>
       </register>
       <register name="0" type="4">
-        <text>XQueryBoolean.XQueryBooleanFactory(false);</text>
+        <text>while (!available(starter)) {
+                starter++;
+            }
+            client_port = starter;</text>
       </register>
-      <register name="1" type="4">
-        <text encoding="base64">LyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgogKiAKICogQXV0aG9yczogQ2hyaXN0b3BoZXIgVG9tYXN6ZXdza2kgKENLVCkgJiBEaW5lc2ggUGFsYW5pc2FteSAoRElORVNIUCkgCiAqIAogKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqLw==</text>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgY29tbWFuZF9wb3J0ID0gODAxMDsK</text>
       </register>
-      <register name="2" type="4">
-        <text encoding="base64">LyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgogKiAKICogQXV0aG9yczogQ2hyaXN0b3BoZXIgVG9tYXN6ZXdza2kgKENLVCkgJiBEaW5lc2ggUGFsYW5pc2FteSAoRElORVNIUCkgCiAqIAogKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqLw==</text>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIGNsaWVudF9wb3J0PXN0YXJ0ZXI7Cg==</text>
       </register>
-      <register name="3" type="4">
-        <text>/</text>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgODAwMDsK</text>
       </register>
       <register name="4" type="4">
-        <text encoding="base64">Ci8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioKICogCiAqIEF1dGhvcnM6IENocmlzdG9waGVyIFRvbWFzemV3c2tpIChDS1QpICYgRGluZXNoIFBhbGFuaXNhbXkgKERJTkVTSFApIAogKiAKICoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg==</text>
+        <text>s</text>
       </register>
       <register name="5" type="4">
-        <text encoding="base64">ICAgIFN0YXR1cyBBUEkgVHJhaW5pbmcgU2hvcCBCbG9nIEFib3V0</text>
+        <text>s</text>
       </register>
       <register name="6" type="4">
-        <text>y</text>
+        <text encoding="base64">LyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgogKiAKICogQXV0aG9yczogQ2hyaXN0b3BoZXIgVG9tYXN6ZXdza2kgKENLVCkgJiBEaW5lc2ggUGFsYW5pc2FteSAoRElORVNIUCkgCiAqIAogKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqLw==</text>
       </register>
       <register name="7" type="4">
-        <text encoding="base64">Ci8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioKICoKICogQXV0aG9yczogQ2hyaXN0b3BoZXIgVG9tYXN6ZXdza2kgKENLVCkgJiBEaW5lc2ggUGFsYW5pc2FteSAoRElORVNIUCkKICoKICoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi8=</text>
+        <text encoding="base64">LyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgogKiAKICogQXV0aG9yczogQ2hyaXN0b3BoZXIgVG9tYXN6ZXdza2kgKENLVCkgJiBEaW5lc2ggUGFsYW5pc2FteSAoRElORVNIUCkgCiAqIAogKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqLw==</text>
       </register>
       <register name="8" type="4">
-        <text encoding="base64">Ci8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioKICoKICogQXV0aG9yczogQ2hyaXN0b3BoZXIgVG9tYXN6ZXdza2kgKENLVCkgJiBEaW5lc2ggUGFsYW5pc2FteSAoRElORVNIUCkKICoKICoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi8=</text>
+        <text>/</text>
       </register>
       <register name="9" type="4">
-        <text encoding="base64">IA==</text>
+        <text encoding="base64">Ci8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioKICogCiAqIEF1dGhvcnM6IENocmlzdG9waGVyIFRvbWFzemV3c2tpIChDS1QpICYgRGluZXNoIFBhbGFuaXNhbXkgKERJTkVTSFApIAogKiAKICoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
