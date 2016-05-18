@@ -41,11 +41,21 @@
         <mark key="^" line="57" column="41" />
         <mark key="." line="75" column="15" />
       </file>
+      <file name="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" timestamp="1463606421345">
+        <mark key="[" line="2" column="0" />
+        <mark key="]" line="2" column="0" />
+        <mark key="." line="2" column="0" />
+      </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/XQueryFilter.java" timestamp="1463119589044">
         <mark key="[" line="5" column="4" />
         <mark key="]" line="11" column="12" />
         <mark key="^" line="11" column="12" />
         <mark key="." line="11" column="12" />
+      </file>
+      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463606390504">
+        <mark key="[" line="20" column="0" />
+        <mark key="]" line="20" column="0" />
+        <mark key="." line="20" column="0" />
       </file>
       <file name="$USER_HOME$/CSE232/testcases/Query4" timestamp="1463161784692">
         <mark key="[" line="4" column="60" />
@@ -104,7 +114,6 @@
         <mark key="]" line="2" column="0" />
         <mark key="." line="2" column="0" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/conformance/common/PathTest.java" timestamp="1463548141592" />
       <file name="$USER_HOME$/CSE232/project1/src/xquery/xmltree/XMLText.java" timestamp="1461865458671">
         <mark key="[" line="1" column="32" />
         <mark key="]" line="1" column="32" />
@@ -125,6 +134,11 @@
         <mark key="]" line="47" column="24" />
         <mark key="." line="47" column="24" />
         <mark key="^" line="47" column="24" />
+      </file>
+      <file name="$USER_HOME$/Distributed_system/src/naming/ReplicateThread.java" timestamp="1463606437630">
+        <mark key="[" line="2" column="0" />
+        <mark key="]" line="2" column="0" />
+        <mark key="." line="2" column="0" />
       </file>
       <file name="$USER_HOME$/Distributed_system/project2/storage/StorageServer.java" timestamp="1463527976015">
         <mark key="[" line="56" column="23" />
@@ -204,10 +218,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">ICAgIFN0YXR1cyBBUEkgVHJhaW5pbmcgU2hvcCBCbG9nIEFib3V0</text>
+        <text encoding="base64">LyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgogKiAKICogQXV0aG9yczogQ2hyaXN0b3BoZXIgVG9tYXN6ZXdza2kgKENLVCkgJiBEaW5lc2ggUGFsYW5pc2FteSAoRElORVNIUCkgCiAqIAogKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqLw==</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">ICAgIFN0YXR1cyBBUEkgVHJhaW5pbmcgU2hvcCBCbG9nIEFib3V0</text>
+        <text>/</text>
       </register>
       <register name="/" type="4">
         <text>apa</text>
@@ -216,31 +230,31 @@
         <text>XQueryBoolean.XQueryBooleanFactory(false);</text>
       </register>
       <register name="1" type="4">
-        <text encoding="base64">ICAgIFN0YXR1cyBBUEkgVHJhaW5pbmcgU2hvcCBCbG9nIEFib3V0</text>
+        <text encoding="base64">LyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgogKiAKICogQXV0aG9yczogQ2hyaXN0b3BoZXIgVG9tYXN6ZXdza2kgKENLVCkgJiBEaW5lc2ggUGFsYW5pc2FteSAoRElORVNIUCkgCiAqIAogKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqLw==</text>
       </register>
       <register name="2" type="4">
-        <text>y</text>
+        <text encoding="base64">LyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgogKiAKICogQXV0aG9yczogQ2hyaXN0b3BoZXIgVG9tYXN6ZXdza2kgKENLVCkgJiBEaW5lc2ggUGFsYW5pc2FteSAoRElORVNIUCkgCiAqIAogKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqLw==</text>
       </register>
       <register name="3" type="4">
-        <text encoding="base64">Ci8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioKICoKICogQXV0aG9yczogQ2hyaXN0b3BoZXIgVG9tYXN6ZXdza2kgKENLVCkgJiBEaW5lc2ggUGFsYW5pc2FteSAoRElORVNIUCkKICoKICoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi8=</text>
+        <text>/</text>
       </register>
       <register name="4" type="4">
-        <text encoding="base64">Ci8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioKICoKICogQXV0aG9yczogQ2hyaXN0b3BoZXIgVG9tYXN6ZXdza2kgKENLVCkgJiBEaW5lc2ggUGFsYW5pc2FteSAoRElORVNIUCkKICoKICoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi8=</text>
+        <text encoding="base64">Ci8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioKICogCiAqIEF1dGhvcnM6IENocmlzdG9waGVyIFRvbWFzemV3c2tpIChDS1QpICYgRGluZXNoIFBhbGFuaXNhbXkgKERJTkVTSFApIAogKiAKICoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg==</text>
       </register>
       <register name="5" type="4">
+        <text encoding="base64">ICAgIFN0YXR1cyBBUEkgVHJhaW5pbmcgU2hvcCBCbG9nIEFib3V0</text>
+      </register>
+      <register name="6" type="4">
+        <text>y</text>
+      </register>
+      <register name="7" type="4">
+        <text encoding="base64">Ci8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioKICoKICogQXV0aG9yczogQ2hyaXN0b3BoZXIgVG9tYXN6ZXdza2kgKENLVCkgJiBEaW5lc2ggUGFsYW5pc2FteSAoRElORVNIUCkKICoKICoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi8=</text>
+      </register>
+      <register name="8" type="4">
+        <text encoding="base64">Ci8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioKICoKICogQXV0aG9yczogQ2hyaXN0b3BoZXIgVG9tYXN6ZXdza2kgKENLVCkgJiBEaW5lc2ggUGFsYW5pc2FteSAoRElORVNIUCkKICoKICoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi8=</text>
+      </register>
+      <register name="9" type="4">
         <text encoding="base64">IA==</text>
-      </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgIDxpZ25vcmVkIHBhdGg9Ii5pZGVhL3dvcmtzcGFjZS54bWwiIC8+Cg==</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">LmlkZWEvbGlicmFyaWVzCg==</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">LmlkZWEvCg==</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAvLyBpdCB3aWxsIGJlY29tZSA8IENBU0V4eHg+IHJlbW92ZSB0aGVtCg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
