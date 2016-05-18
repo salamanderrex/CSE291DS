@@ -3,6 +3,11 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
+      <file name="$USER_HOME$/Distributed_system/src/.gitignore" timestamp="1463543497538">
+        <mark key="[" line="26" column="0" />
+        <mark key="]" line="26" column="0" />
+        <mark key="." line="26" column="0" />
+      </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/ApRpEvaluator.java" timestamp="1463072000054">
         <mark key="[" line="12" column="0" />
         <mark key="]" line="12" column="0" />
@@ -188,11 +193,11 @@
       <jump line="0" column="172" filename="$USER_HOME$/CSE232/pom.xml" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">LmlkZWEvCg==</text>
+      <register name="&quot;" type="4">
+        <text encoding="base64">IA==</text>
       </register>
       <register name="-" type="4">
-        <text>project2.</text>
+        <text encoding="base64">IA==</text>
       </register>
       <register name="/" type="4">
         <text>apa</text>
@@ -200,32 +205,32 @@
       <register name="0" type="4">
         <text>XQueryBoolean.XQueryBooleanFactory(false);</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">LmlkZWEvCg==</text>
+      <register name="1" type="4">
+        <text encoding="base64">IA==</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAvLyBpdCB3aWxsIGJlY29tZSA8IENBU0V4eHg+IHJlbW92ZSB0aGVtCg==</text>
+        <text encoding="base64">ICAgIDxpZ25vcmVkIHBhdGg9Ii5pZGVhL3dvcmtzcGFjZS54bWwiIC8+Cg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAvLyAgICBTeXN0ZW0ub3V0LnByaW50bG4oImlzIHRleHQiKTsK</text>
+        <text encoding="base64">LmlkZWEvbGlicmFyaWVzCg==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgLy8gIFN5c3RlbS5vdXQucHJpbnRsbigiYWRkIitjaGlsZC5lbGVtLmdldE5hbWUoKSk7Cg==</text>
+        <text encoding="base64">LmlkZWEvCg==</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgLy8gIFN5c3RlbS5vdXQucHJpbnRsbigiYWRkIitjaGlsZC50b1N0cmluZygpKTsK</text>
+        <text encoding="base64">ICAgICAgICAvLyBpdCB3aWxsIGJlY29tZSA8IENBU0V4eHg+IHJlbW92ZSB0aGVtCg==</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICAvLyAgICBTeXN0ZW0ub3V0LnByaW50bG4oImlzIHRleHQiKTsK</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgLy9TeXN0ZW0ub3V0LnByaW50bG4oImhlcmUhISEhIik7Cg==</text>
+        <text encoding="base64">ICAgICAgLy8gIFN5c3RlbS5vdXQucHJpbnRsbigiYWRkIitjaGlsZC5lbGVtLmdldE5hbWUoKSk7Cg==</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">Lwo=</text>
+        <text encoding="base64">ICAgICAgLy8gIFN5c3RlbS5vdXQucHJpbnRsbigiYWRkIitjaGlsZC50b1N0cmluZygpKTsK</text>
       </register>
-      <register name="9" type="4">
-        <text encoding="base64">LwovLyAgICAgICAgICAgIFN5c3RlbS5vdXQucHJpbnRsbigidGhpcyIgKyB0aGlzLmVsZW0uYXNYTUwoKSk7Ci8vICAgICAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCJlIiArIGUuZWxlbS5hc1hNTCgpKTsK</text>
+      <register name="9" type="2">
+        <text encoding="base64">Cg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
