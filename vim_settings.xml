@@ -49,6 +49,7 @@
         <mark key="." line="4" column="37" />
       </file>
       <file name="$USER_HOME$/Distributed_system/project2/conformance/storage/StorageTest.java" timestamp="1463526780862" />
+      <file name="$USER_HOME$/Distributed_system/project2/naming/NamingServer.java" timestamp="1463528698082" />
       <file name="$USER_HOME$/CSE232/project1/src/xquery/context/QueryContext.java" timestamp="1461869028600">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="1" column="0" />
@@ -147,6 +148,12 @@
         <mark key="[" line="0" column="8" />
         <mark key="]" line="0" column="8" />
         <mark key="." line="0" column="8" />
+      </file>
+      <file name="$USER_HOME$/Distributed_system/project2/rmi/serverHelper/ServerManager.java" timestamp="1463529353605">
+        <mark key="[" line="49" column="2" />
+        <mark key="]" line="51" column="15" />
+        <mark key="^" line="51" column="15" />
+        <mark key="." line="51" column="15" />
       </file>
     </filemarks>
     <jumps>
