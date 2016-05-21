@@ -41,8 +41,8 @@
         <mark key="^" line="57" column="41" />
         <mark key="." line="75" column="15" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" timestamp="1463868023829">
-        <mark key="'" line="4" column="13" />
+      <file name="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" timestamp="1463868911072">
+        <mark key="'" line="8" column="25" />
         <mark key="[" line="2" column="0" />
         <mark key="]" line="2" column="0" />
         <mark key="." line="2" column="0" />
@@ -53,11 +53,11 @@
         <mark key="^" line="11" column="12" />
         <mark key="." line="11" column="12" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463867349280">
-        <mark key="'" line="193" column="56" />
-        <mark key="[" line="541" column="18" />
-        <mark key="]" line="20" column="0" />
-        <mark key="." line="20" column="0" />
+      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463869453956">
+        <mark key="'" line="477" column="17" />
+        <mark key="[" line="153" column="16" />
+        <mark key="]" line="153" column="17" />
+        <mark key="." line="153" column="17" />
       </file>
       <file name="$USER_HOME$/CSE232/testcases/Query4" timestamp="1463161784692">
         <mark key="[" line="4" column="60" />
@@ -239,6 +239,25 @@
       <jump line="203" column="62" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
       <jump line="205" column="16" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
       <jump line="4" column="13" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="72" column="38" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="87" column="13" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="131" column="13" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="24" column="8" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="67" column="20" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="71" column="8" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="8" column="25" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="153" column="16" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="227" column="42" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="234" column="29" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="257" column="29" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="353" column="16" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="361" column="42" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="364" column="25" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="422" column="45" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="424" column="39" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="468" column="18" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="470" column="18" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="477" column="17" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
     </jumps>
     <registers>
       <register name="&quot;" type="2">
@@ -248,7 +267,7 @@
         <text>s</text>
       </register>
       <register name="/" type="4">
-        <text>totalReadR</text>
+        <text>register</text>
       </register>
       <register name="0" type="4">
         <text>while (!available(starter)) {
@@ -288,9 +307,9 @@
       </register>
     </registers>
     <search>
-      <last-search>totalReadR</last-search>
+      <last-search>register</last-search>
       <last-offset />
-      <last-pattern>totalReadR</last-pattern>
+      <last-pattern>register</last-pattern>
       <last-dir>1</last-dir>
       <show-last>false</show-last>
     </search>
@@ -305,6 +324,9 @@
         <entry>remove</entry>
         <entry>delete</entry>
         <entry>totalReadR</entry>
+        <entry>replicator</entry>
+        <entry>totalR</entry>
+        <entry>register</entry>
       </history-search>
       <history-cmd>
         <entry>w</entry>
