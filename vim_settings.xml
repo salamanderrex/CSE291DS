@@ -41,7 +41,8 @@
         <mark key="^" line="57" column="41" />
         <mark key="." line="75" column="15" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" timestamp="1463866082199">
+      <file name="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" timestamp="1463868023829">
+        <mark key="'" line="4" column="13" />
         <mark key="[" line="2" column="0" />
         <mark key="]" line="2" column="0" />
         <mark key="." line="2" column="0" />
@@ -52,7 +53,7 @@
         <mark key="^" line="11" column="12" />
         <mark key="." line="11" column="12" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463866895451">
+      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463867349280">
         <mark key="'" line="193" column="56" />
         <mark key="[" line="541" column="18" />
         <mark key="]" line="20" column="0" />
@@ -160,8 +161,8 @@
         <mark key="]" line="1" column="0" />
         <mark key="." line="1" column="0" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/Service.java" timestamp="1463866983655">
-        <mark key="'" line="45" column="61" />
+      <file name="$USER_HOME$/Distributed_system/src/naming/Service.java" timestamp="1463867095848">
+        <mark key="'" line="205" column="16" />
       </file>
       <file name="$USER_HOME$/CSE232/.gitignore" timestamp="1463125105629">
         <mark key="[" line="19" column="0" />
@@ -228,13 +229,16 @@
       <jump line="193" column="56" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="72" column="0" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
       <jump line="97" column="53" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
+      <jump line="211" column="19" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
+      <jump line="44" column="52" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
+      <jump line="45" column="61" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
+      <jump line="38" column="34" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
+      <jump line="118" column="55" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
       <jump line="130" column="14" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
       <jump line="202" column="56" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
       <jump line="203" column="62" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
       <jump line="205" column="16" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
-      <jump line="211" column="19" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
-      <jump line="44" column="52" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
-      <jump line="45" column="61" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
+      <jump line="4" column="13" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
     </jumps>
     <registers>
       <register name="&quot;" type="2">
@@ -244,7 +248,7 @@
         <text>s</text>
       </register>
       <register name="/" type="4">
-        <text>delete</text>
+        <text>totalReadR</text>
       </register>
       <register name="0" type="4">
         <text>while (!available(starter)) {
@@ -284,9 +288,9 @@
       </register>
     </registers>
     <search>
-      <last-search>delete</last-search>
+      <last-search>totalReadR</last-search>
       <last-offset />
-      <last-pattern>delete</last-pattern>
+      <last-pattern>totalReadR</last-pattern>
       <last-dir>1</last-dir>
       <show-last>false</show-last>
     </search>
@@ -298,7 +302,9 @@
         <entry>getS</entry>
         <entry>isStop</entry>
         <entry>lock</entry>
+        <entry>remove</entry>
         <entry>delete</entry>
+        <entry>totalReadR</entry>
       </history-search>
       <history-cmd>
         <entry>w</entry>
