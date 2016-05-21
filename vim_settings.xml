@@ -52,8 +52,9 @@
         <mark key="^" line="11" column="12" />
         <mark key="." line="11" column="12" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463608007066">
-        <mark key="[" line="337" column="58" />
+      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463866895451">
+        <mark key="'" line="193" column="56" />
+        <mark key="[" line="541" column="18" />
         <mark key="]" line="20" column="0" />
         <mark key="." line="20" column="0" />
       </file>
@@ -159,6 +160,9 @@
         <mark key="]" line="1" column="0" />
         <mark key="." line="1" column="0" />
       </file>
+      <file name="$USER_HOME$/Distributed_system/src/naming/Service.java" timestamp="1463866983655">
+        <mark key="'" line="45" column="61" />
+      </file>
       <file name="$USER_HOME$/CSE232/.gitignore" timestamp="1463125105629">
         <mark key="[" line="19" column="0" />
         <mark key="]" line="19" column="0" />
@@ -216,6 +220,21 @@
       <jump line="70" column="29" filename="$USER_HOME$/CSE232/pom.xml" />
       <jump line="97" column="29" filename="$USER_HOME$/CSE232/pom.xml" />
       <jump line="0" column="172" filename="$USER_HOME$/CSE232/pom.xml" />
+      <jump line="68" column="64" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="83" column="13" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="541" column="16" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="185" column="32" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="279" column="32" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="193" column="56" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="72" column="0" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
+      <jump line="97" column="53" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
+      <jump line="130" column="14" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
+      <jump line="202" column="56" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
+      <jump line="203" column="62" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
+      <jump line="205" column="16" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
+      <jump line="211" column="19" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
+      <jump line="44" column="52" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
+      <jump line="45" column="61" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
     </jumps>
     <registers>
       <register name="&quot;" type="2">
@@ -225,7 +244,7 @@
         <text>s</text>
       </register>
       <register name="/" type="4">
-        <text>apa</text>
+        <text>delete</text>
       </register>
       <register name="0" type="4">
         <text>while (!available(starter)) {
@@ -265,9 +284,9 @@
       </register>
     </registers>
     <search>
-      <last-search>apa</last-search>
+      <last-search>delete</last-search>
       <last-offset />
-      <last-pattern>apa</last-pattern>
+      <last-pattern>delete</last-pattern>
       <last-dir>1</last-dir>
       <show-last>false</show-last>
     </search>
@@ -275,6 +294,11 @@
       <history-search>
         <entry>j</entry>
         <entry>apa</entry>
+        <entry>directorySt</entry>
+        <entry>getS</entry>
+        <entry>isStop</entry>
+        <entry>lock</entry>
+        <entry>delete</entry>
       </history-search>
       <history-cmd>
         <entry>w</entry>
