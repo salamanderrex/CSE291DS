@@ -50,17 +50,24 @@
         <mark key="^" line="11" column="12" />
         <mark key="." line="11" column="12" />
       </file>
+      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463953925959">
+        <mark key="[" line="163" column="0" />
+        <mark key="]" line="163" column="0" />
+        <mark key="^" line="163" column="48" />
+        <mark key="." line="163" column="0" />
+      </file>
       <file name="$USER_HOME$/CSE232/testcases/Query4" timestamp="1463161784692">
         <mark key="[" line="4" column="60" />
         <mark key="]" line="4" column="37" />
         <mark key="^" line="4" column="37" />
         <mark key="." line="4" column="37" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" timestamp="1463951274993">
-        <mark key="[" line="18" column="11" />
-        <mark key="]" line="18" column="19" />
-        <mark key="^" line="18" column="19" />
-        <mark key="." line="18" column="19" />
+      <file name="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" timestamp="1463953907093">
+        <mark key="'" line="160" column="0" />
+        <mark key="[" line="196" column="44" />
+        <mark key="]" line="196" column="47" />
+        <mark key="." line="196" column="47" />
+        <mark key="^" line="196" column="47" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/context/QueryContext.java" timestamp="1461869028600">
         <mark key="[" line="0" column="0" />
@@ -194,12 +201,11 @@
         <mark key="^" line="51" column="15" />
         <mark key="." line="51" column="15" />
       </file>
-      <file name="/fragment.java" timestamp="1463951252411">
+      <file name="/fragment.java" timestamp="1463953322820">
         <mark key="[" line="0" column="0" />
       </file>
     </filemarks>
     <jumps>
-      <jump line="13" column="7" filename="$USER_HOME$/CSE232/testcases/Main.java" />
       <jump line="14" column="7" filename="$USER_HOME$/CSE232/testcases/Main.java" />
       <jump line="15" column="7" filename="$USER_HOME$/CSE232/testcases/Main.java" />
       <jump line="16" column="7" filename="$USER_HOME$/CSE232/testcases/Main.java" />
@@ -299,10 +305,11 @@
       <jump line="197" column="26" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="23" column="21" filename="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" />
       <jump line="48" column="31" filename="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" />
+      <jump line="160" column="0" filename="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>ConcurrentHashMap</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="-" type="4">
         <text>ConcurrentHashMap</text>
@@ -313,34 +320,26 @@
       <register name="0" type="4">
         <text encoding="base64">IGlmIChleGNsdXNpdmUgPT0gdHJ1ZSkgewogICAgICAgICAgICAgICAgaWYgKHRoaXMuZmlsZUxvY2tzLmdldChsYXN0UGF0aCkuaXNTdG9wcGVkKCkpIHsKICAgICAgICAgICAgICAgICAgICByZXR1cm4gdHJ1ZTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIHRyeSB7CiAgICAgICAgICAgICAgICAgICAgZmlsZUxvY2tzLmdldChsYXN0UGF0aCkubG9ja1dyaXRlKCk7CiAgICAgICAgICAgICAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCJ3cml0ZSBsb2NrIGhlcmUiICsgbGFzdFBhdGgpOwoKICAgICAgICAgICAgICAgIH0gY2F0Y2ggKEludGVycnVwdGVkRXhjZXB0aW9uIGUpIHsKICAgICAgICAgICAgICAgICAgICByZXR1cm4gdHJ1ZTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgIHRyeSB7CiAgICAgICAgICAgICAgICAgICAgZmlsZUxvY2tzLmdldChsYXN0UGF0aCkubG9ja1JlYWQoKTsKICAgICAgICAgICAgICAgIH0gY2F0Y2ggKEludGVycnVwdGVkRXhjZXB0aW9uIGUpIHsKICAgICAgICAgICAgICAgICAgICByZXR1cm4gdHJ1ZTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQ==</text>
       </register>
-      <register name="1" type="4">
-        <text>ConcurrentHashMap</text>
+      <register name="1" type="2">
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oIndyaXRlIGxvY2sgaGVyZSIgKyBsYXN0UGF0aCk7Cg==</text>
+        <text encoding="base64">ICAgICAgICAgKiBpbiBhIGRvd253YXJkIG9yZGVyICovCg==</text>
       </register>
-      <register name="3" type="4">
-        <text>lastPath</text>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgIAkvKiBSZWxlYXNlIGFsbCBuZWNjZXNzYXJ5IGxvY2tzIGluY2x1ZGVkIGFsbCB0aGUgcGFyZW50IGRpcmVjdG9yeSBsb2Nrcwo=</text>
       </register>
-      <register name="4" type="4">
-        <text>astPath</text>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICAvL1BhdGhbXSBsb2NrUGF0aHMgPSBwYXRoLmdldFN1YlBhdGhzKCk7Cg==</text>
       </register>
-      <register name="5" type="4">
-        <text>//iterator not return root , here , check root first
-            if (this.fileLocks.get(new Path()).isStopped()) {
-                return true;
-            }
-            try {
-                this.fileLocks.get(new Path()).lockRead();
-            } catch (InterruptedException e) {
-                return true;
-            }</text>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgICAgICBzYi5hcHBlbmQoIi8iKTsK</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICBpZiAocGF0aC5pc1Jvb3QoKSkgewo=</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgIH0K</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="w" type="4">
         <keys>
@@ -3209,10 +3208,10 @@
         </keys>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCItLS0tPiIrcGF0aC50b1N0cmluZygpKTsK</text>
+        <text encoding="base64">ICAgICAgICB3aGlsZSAK</text>
       </register>
       <register name="9" type="4">
-        <text>&quot;&quot;);</text>
+        <text>ConcurrentHashMap</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
