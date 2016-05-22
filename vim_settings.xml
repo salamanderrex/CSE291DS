@@ -41,10 +41,8 @@
         <mark key="^" line="57" column="41" />
         <mark key="." line="75" column="15" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" timestamp="1463886104201">
-        <mark key="[" line="133" column="0" />
-        <mark key="]" line="133" column="0" />
-        <mark key="." line="133" column="0" />
+      <file name="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" timestamp="1463903944259">
+        <mark key="'" line="120" column="60" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/XQueryFilter.java" timestamp="1463119589044">
         <mark key="[" line="5" column="4" />
@@ -52,8 +50,12 @@
         <mark key="^" line="11" column="12" />
         <mark key="." line="11" column="12" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463876029373">
-        <mark key="'" line="554" column="0" />
+      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463905994464">
+        <mark key="'" line="190" column="26" />
+        <mark key="[" line="441" column="23" />
+        <mark key="]" line="441" column="25" />
+        <mark key="^" line="441" column="25" />
+        <mark key="." line="441" column="25" />
       </file>
       <file name="$USER_HOME$/CSE232/testcases/Query4" timestamp="1463161784692">
         <mark key="[" line="4" column="60" />
@@ -68,17 +70,24 @@
         <mark key="^" line="5" column="40" />
         <mark key="." line="5" column="40" />
       </file>
+      <file name="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" timestamp="1463906049525">
+        <mark key="'" line="23" column="21" />
+        <mark key="[" line="34" column="28" />
+        <mark key="]" line="34" column="19" />
+        <mark key="^" line="34" column="19" />
+        <mark key="." line="34" column="19" />
+      </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/context/QueryContext.java" timestamp="1461869028600">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="1" column="0" />
         <mark key="." line="1" column="0" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/Request.java" timestamp="1463878208371">
-        <mark key="'" line="14" column="22" />
-        <mark key="[" line="14" column="16" />
-        <mark key="]" line="11" column="20" />
-        <mark key="." line="11" column="20" />
-        <mark key="^" line="11" column="20" />
+      <file name="$USER_HOME$/Distributed_system/src/naming/Request.java" timestamp="1463903456162">
+        <mark key="'" line="22" column="22" />
+        <mark key="[" line="16" column="8" />
+        <mark key="]" line="15" column="29" />
+        <mark key="^" line="15" column="29" />
+        <mark key="." line="15" column="29" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/XQueryEvaluator.java" timestamp="1461870401733">
         <mark key="[" line="2" column="0" />
@@ -214,20 +223,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="77" column="8" filename="$USER_HOME$/Desktop/CSE291DS/project1/RMI/rmi/StubInvocationHandler.java" />
-      <jump line="7" column="0" filename="$USER_HOME$/CSE232/project1/src/xquery/main/Main.java" />
-      <jump line="13" column="1" filename="$USER_HOME$/CSE232/project1/src/xquery/parser/XQueryVisitor.java" />
-      <jump line="14" column="0" filename="$USER_HOME$/CSE232/project1/src/xquery/parser/XQueryVisitor.java" />
-      <jump line="15" column="0" filename="$USER_HOME$/CSE232/project1/src/xquery/parser/XQueryBaseVisitor.java" />
-      <jump line="39" column="11" filename="$USER_HOME$/CSE232/testcases/Main.java" />
-      <jump line="44" column="38" filename="$USER_HOME$/CSE232/testcases/Main.java" />
-      <jump line="3" column="15" filename="$USER_HOME$/CSE232/testcases/Main.java" />
-      <jump line="4" column="15" filename="$USER_HOME$/CSE232/testcases/Main.java" />
-      <jump line="5" column="15" filename="$USER_HOME$/CSE232/testcases/Main.java" />
-      <jump line="6" column="15" filename="$USER_HOME$/CSE232/testcases/Main.java" />
-      <jump line="7" column="15" filename="$USER_HOME$/CSE232/testcases/Main.java" />
-      <jump line="8" column="10" filename="$USER_HOME$/CSE232/testcases/Main.java" />
-      <jump line="9" column="10" filename="$USER_HOME$/CSE232/testcases/Main.java" />
       <jump line="10" column="10" filename="$USER_HOME$/CSE232/testcases/Main.java" />
       <jump line="13" column="7" filename="$USER_HOME$/CSE232/testcases/Main.java" />
       <jump line="14" column="7" filename="$USER_HOME$/CSE232/testcases/Main.java" />
@@ -299,7 +294,6 @@
       <jump line="523" column="0" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="551" column="0" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="555" column="0" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
-      <jump line="65" column="4" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="69" column="15" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="8" column="27" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="33" column="8" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
@@ -314,43 +308,55 @@
       <jump line="10" column="18" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="18" column="8" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="29" column="31" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="65" column="36" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="95" column="23" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="51" column="30" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="52" column="10" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="57" column="49" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="59" column="10" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="60" column="25" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="97" column="18" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="107" column="29" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="58" column="29" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="136" column="60" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="187" column="64" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="92" column="4" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="197" column="26" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="23" column="21" filename="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" />
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICBQYXRoIHBhcmVudCA9IHA7Cg==</text>
       </register>
       <register name="-" type="4">
-        <text />
+        <text>private</text>
       </register>
       <register name="/" type="4">
-        <text>queue</text>
+        <text>lockmaster</text>
       </register>
       <register name="0" type="4">
-        <text>while (!available(starter)) {
-                starter++;
-            }
-            client_port = starter;</text>
+        <text encoding="base64">CVNldDxTdG9yYWdlPiBzdG9yYWdlTG9jYXRpb25zID0gdGhpcy5zdG9yYWdlTWFwLmdldChwYXRoKTsgICAgCQkKICAgIAkJU3RvcmFnZVtdIHN0b3JhZ2VBcnJheSA9IG5ldyBTdG9yYWdlW3N0b3JhZ2VMb2NhdGlvbnMuc2l6ZSgpXTsKICAgIAkJc3RvcmFnZUxvY2F0aW9ucy50b0FycmF5KHN0b3JhZ2VBcnJheSk7CiAgICAJCQogICAgCQlmb3IgKGludCBpID0gMTsgaTxzdG9yYWdlQXJyYXkubGVuZ3RoOyBpKyspewogICAgCQkJQ29tbWFuZCBjb21tYW5kU3R1YiA9IAogICAgCQkJCQl0aGlzLnJlZ2lzdGVyZWRTdG9yYWdlU2VydmVycy5nZXQoc3RvcmFnZUFycmF5W2ldKTsKCiAgICAJCQl0cnkgewoJCQkJCWNvbW1hbmRTdHViLmRlbGV0ZShwYXRoKTsKCSAgICAJCQlzdG9yYWdlTG9jYXRpb25zLnJlbW92ZShzdG9yYWdlQXJyYXlbaV0pOwoJCQkJfSBjYXRjaCAoUk1JRXhjZXB0aW9uIGUpIHsKCQkJCQl0aHJvdyBuZXcgSWxsZWdhbFN0YXRlRXhjZXB0aW9uKCk7CgkJCQl9CQogICAgCQl9CQ==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICBQYXRoIHBhcmVudCA9IHA7Cg==</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAvL3dyaXRlUmVxdWVzdHMrKzsK</text>
+        <text encoding="base64">ICAgICAgIC8vIHRoaXMubG9ja21hc3Rlci5yZXBsaWNhdG9yID0gRXhlY3V0b3JzLm5ld0NhY2hlZFRocmVhZFBvb2woKTsK</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CQkvKiBVcGRhdGUgcmVxdWVzdCBjb3VudGVyICovCg==</text>
+        <text encoding="base64">ICAgICAgIC8vIHRoaXMubG9ja21hc3Rlci5maWxlTG9ja3MucHV0KG5ldyBQYXRoKCksIG5ldyBSZWFkV3JpdGVMb2NrKCkpOwo=</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgIC8qIEZsaXBzIGludGVycnVwdCBmbGFnIGFuZCBub3RpZmllcyBhbGwgKi8K</text>
+        <text encoding="base64">ICAgICAgICAvL3RoaXMubG9ja21hc3Rlci5maWxlTG9ja3MgPSBuZXcgQ29uY3VycmVudEhhc2hNYXA8UGF0aCwgUmVhZFdyaXRlTG9jaz4oKTsK</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgIC8vcHJpdmF0ZSB2b2xhdGlsZSBpbnQgdG90YWxSZWFkUmVxdWVzdHMgPSAwOwo=</text>
+        <text encoding="base64">ICAgICAgICAvL3RoaXMubG9ja21hc3Rlci5yZWZfc3RvcmFnZU1hcCA9IHRoaXMuc3RvcmFnZU1hcDsK</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgIC8vcHJpdmF0ZSB2b2xhdGlsZSBpbnQgd3JpdGVSZXF1ZXN0cyA9IDA7Cg==</text>
+        <text encoding="base64">ICAgICAgIC8vIHRoaXMubG9ja21hc3Rlci5yZWZfcmVnaXN0ZXJlZFN0b3JhZ2VTZXJ2ZXJzID0gdGhpcy5yZWdpc3RlcmVkU3RvcmFnZVNlcnZlcnM7Cg==</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgIC8vcHJpdmF0ZSB2b2xhdGlsZSBpbnQgcmVhZExvY2tzT3V0ID0gMDsK</text>
+      <register name="7" type="4">
+        <text encoding="base64">ICAgLy8gdGhpcy5sb2NrbWFzdGVyLnJlZl9yZWdpc3RlcmVkU3RvcmFnZVNlcnZlcnMgPSB0aGlzLnJlZ2lzdGVyZWRTdG9yYWdlU2VydmVyczsKICAgICAgICAvL3RoaXMubG9ja21hc3Rlci5yZWZfc3RvcmFnZU1hcCA9IHRoaXMuc3RvcmFnZU1hcDsKICAgICAgICAvL3RoaXMubG9ja21hc3Rlci5maWxlTG9ja3MgPSBuZXcgQ29uY3VycmVudEhhc2hNYXA8UGF0aCwgUmVhZFdyaXRlTG9jaz4oKTsKICAgICAgIC8vIHRoaXMubG9ja21hc3Rlci5maWxlTG9ja3MucHV0KG5ldyBQYXRoKCksIG5ldyBSZWFkV3JpdGVMb2NrKCkpOwogICAgICAgLy8gdGhpcy5sb2NrbWFzdGVyLnI=</text>
       </register>
       <register name="w" type="4">
         <keys>
@@ -3219,19 +3225,19 @@
         </keys>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">b2w7Cg==</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="9" type="4">
-        <text encoding="base64">CmltcG9ydCBjb20uc3VuLm9yZy5hcGFjaGUucmVnZXhwLmludGVybmFsLlJFOwppbXBvcnQgY29tLnN1bi5vcmcuYXBhY2hlLnJlZ2V4cC5pbnRlcm5hbC5SRVV0aWw7CmltcG9ydCBjb20uc3VuLm9yZy5hcGFjaGUueHBhdGguaW50ZXJuYWwuYXhlcy5JdGVyYXRvclBv</text>
+        <text encoding="base64">LyogUmVwbGljYXRlIGlmIHJlYWQgaXMgY2FsbGVkID49IDIwIHRpbWVzICovCiAgICAgICAgaWYgKCF0aGlzLmRpcmVjdG9yeVN0cnVjdHVyZS5jb250YWluc0tleShwYXRoKSAmJgogICAgICAgICAgICAgICAgbG9ja21hc3Rlci5maWxlTG9ja3MuZ2V0KHBhdGgpLmdldFRvdGFsUmVhZFJlcXVlc3RzKCkgPj0gMjAgJiYKICAgICAgICAgICAgICAgIGV4Y2x1c2l2ZSA9PSBmYWxzZSkgewog</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
       </register>
     </registers>
     <search>
-      <last-search>queue</last-search>
+      <last-search>lockmaster</last-search>
       <last-offset />
-      <last-pattern>queue</last-pattern>
+      <last-pattern>lockmaster</last-pattern>
       <last-dir>1</last-dir>
       <show-last>false</show-last>
     </search>
@@ -3251,9 +3257,14 @@
         <entry>register</entry>
         <entry>readLock</entry>
         <entry>queue</entry>
+        <entry>read</entry>
+        <entry>unlock</entry>
+        <entry>lockmaster</entry>
       </history-search>
       <history-cmd>
         <entry>q</entry>
+        <entry>r</entry>
+        <entry>U</entry>
         <entry>w</entry>
       </history-cmd>
       <history-expr />
