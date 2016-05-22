@@ -50,11 +50,12 @@
         <mark key="^" line="11" column="12" />
         <mark key="." line="11" column="12" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463953925959">
-        <mark key="[" line="163" column="0" />
-        <mark key="]" line="163" column="0" />
-        <mark key="^" line="163" column="48" />
-        <mark key="." line="163" column="0" />
+      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463955005244">
+        <mark key="'" line="334" column="17" />
+        <mark key="[" line="141" column="36" />
+        <mark key="]" line="105" column="63" />
+        <mark key="^" line="105" column="63" />
+        <mark key="." line="105" column="63" />
       </file>
       <file name="$USER_HOME$/CSE232/testcases/Query4" timestamp="1463161784692">
         <mark key="[" line="4" column="60" />
@@ -62,12 +63,9 @@
         <mark key="^" line="4" column="37" />
         <mark key="." line="4" column="37" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" timestamp="1463953907093">
-        <mark key="'" line="160" column="0" />
-        <mark key="[" line="196" column="44" />
-        <mark key="]" line="196" column="47" />
-        <mark key="." line="196" column="47" />
-        <mark key="^" line="196" column="47" />
+      <file name="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" timestamp="1463955154447">
+        <mark key="'" line="138" column="0" />
+        <mark key="[" line="245" column="5" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/context/QueryContext.java" timestamp="1461869028600">
         <mark key="[" line="0" column="0" />
@@ -206,22 +204,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="14" column="7" filename="$USER_HOME$/CSE232/testcases/Main.java" />
-      <jump line="15" column="7" filename="$USER_HOME$/CSE232/testcases/Main.java" />
-      <jump line="16" column="7" filename="$USER_HOME$/CSE232/testcases/Main.java" />
-      <jump line="40" column="20" filename="$USER_HOME$/CSE232/testcases/Main.java" />
-      <jump line="61" column="35" filename="$USER_HOME$/CSE232/testcases/Main.java" />
-      <jump line="64" column="0" filename="$USER_HOME$/CSE232/testcases/Main.java" />
-      <jump line="7" column="22" filename="$USER_HOME$/CSE232/pom.xml" />
-      <jump line="61" column="29" filename="$USER_HOME$/CSE232/pom.xml" />
-      <jump line="70" column="29" filename="$USER_HOME$/CSE232/pom.xml" />
-      <jump line="97" column="29" filename="$USER_HOME$/CSE232/pom.xml" />
-      <jump line="0" column="172" filename="$USER_HOME$/CSE232/pom.xml" />
-      <jump line="68" column="64" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
-      <jump line="83" column="13" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
-      <jump line="541" column="16" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
-      <jump line="185" column="32" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
-      <jump line="279" column="32" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="193" column="56" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="72" column="0" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
       <jump line="97" column="53" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
@@ -306,37 +288,53 @@
       <jump line="23" column="21" filename="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" />
       <jump line="48" column="31" filename="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" />
       <jump line="160" column="0" filename="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" />
+      <jump line="219" column="0" filename="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" />
+      <jump line="466" column="8" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="44" column="23" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="66" column="13" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="68" column="13" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="105" column="13" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="106" column="39" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="134" column="0" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="135" column="17" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="142" column="43" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="145" column="19" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="151" column="17" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="159" column="25" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="163" column="13" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="335" column="17" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
+      <jump line="141" column="0" filename="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" />
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgZAo=</text>
       </register>
       <register name="-" type="4">
         <text>ConcurrentHashMap</text>
       </register>
       <register name="/" type="4">
-        <text>lockmaster</text>
+        <text>lockMaster</text>
       </register>
-      <register name="0" type="4">
-        <text encoding="base64">IGlmIChleGNsdXNpdmUgPT0gdHJ1ZSkgewogICAgICAgICAgICAgICAgaWYgKHRoaXMuZmlsZUxvY2tzLmdldChsYXN0UGF0aCkuaXNTdG9wcGVkKCkpIHsKICAgICAgICAgICAgICAgICAgICByZXR1cm4gdHJ1ZTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIHRyeSB7CiAgICAgICAgICAgICAgICAgICAgZmlsZUxvY2tzLmdldChsYXN0UGF0aCkubG9ja1dyaXRlKCk7CiAgICAgICAgICAgICAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCJ3cml0ZSBsb2NrIGhlcmUiICsgbGFzdFBhdGgpOwoKICAgICAgICAgICAgICAgIH0gY2F0Y2ggKEludGVycnVwdGVkRXhjZXB0aW9uIGUpIHsKICAgICAgICAgICAgICAgICAgICByZXR1cm4gdHJ1ZTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgIHRyeSB7CiAgICAgICAgICAgICAgICAgICAgZmlsZUxvY2tzLmdldChsYXN0UGF0aCkubG9ja1JlYWQoKTsKICAgICAgICAgICAgICAgIH0gY2F0Y2ggKEludGVycnVwdGVkRXhjZXB0aW9uIGUpIHsKICAgICAgICAgICAgICAgICAgICByZXR1cm4gdHJ1ZTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQ==</text>
+      <register name="0" type="2">
+        <text encoding="base64">ICAgIHB1YmxpYyB2b2lkIGxvY2tBUGF0aChQYXRoIHBhdGgsYm9vbGVhbiBleGNsdXNpdmUpIHRocm93cyAgSW50ZXJydXB0ZWRFeGNlcHRpb257CiAgICAgICAgdHJ5IHsKICAgICAgICAgICAgaWYgKGV4Y2x1c2l2ZSkKICAgICAgICAgICAgICAgIHRoaXMuZmlsZUxvY2tzLmdldChwYXRoKS5sb2NrV3JpdGUoKTsKICAgICAgICAgICAgZWxzZQogICAgICAgICAgICAgICAgdGhpcy5maWxlTG9ja3MuZ2V0KHBhdGgpLmxvY2tSZWFkKCk7CiAgICAgICAgfSBjYXRjaCAoSW50ZXJydXB0ZWRFeGNlcHRpb24gZSkgewogICAgICAgICAgICB0aHJvdyBlOwogICAgICAgIH0KICAgIH0K</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgZAo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgKiBpbiBhIGRvd253YXJkIG9yZGVyICovCg==</text>
+        <text encoding="base64">ICAgIH0K</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgIAkvKiBSZWxlYXNlIGFsbCBuZWNjZXNzYXJ5IGxvY2tzIGluY2x1ZGVkIGFsbCB0aGUgcGFyZW50IGRpcmVjdG9yeSBsb2Nrcwo=</text>
+        <text encoding="base64">ICAgICAgICAK</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAvL1BhdGhbXSBsb2NrUGF0aHMgPSBwYXRoLmdldFN1YlBhdGhzKCk7Cg==</text>
+        <text encoding="base64">ICAgICAgICAK</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICBzYi5hcHBlbmQoIi8iKTsK</text>
+        <text encoding="base64">ICAgICAgICAK</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgIHB1YmxpYyB2b2lkIHJlZ2lzdGVyKFBhdGggcGF0aCkgewo=</text>
       </register>
       <register name="7" type="2">
         <text encoding="base64">Cg==</text>
@@ -3208,19 +3206,19 @@
         </keys>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICB3aGlsZSAK</text>
+        <text encoding="base64">ICAgICAgICAgKiBpbiBhIGRvd253YXJkIG9yZGVyICovCg==</text>
       </register>
-      <register name="9" type="4">
-        <text>ConcurrentHashMap</text>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgIAkvKiBSZWxlYXNlIGFsbCBuZWNjZXNzYXJ5IGxvY2tzIGluY2x1ZGVkIGFsbCB0aGUgcGFyZW50IGRpcmVjdG9yeSBsb2Nrcwo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
       </register>
     </registers>
     <search>
-      <last-search>lockmaster</last-search>
+      <last-search>lockMaster</last-search>
       <last-offset />
-      <last-pattern>lockmaster</last-pattern>
+      <last-pattern>lockMaster</last-pattern>
       <last-dir>1</last-dir>
       <show-last>false</show-last>
     </search>
@@ -3231,7 +3229,6 @@
         <entry>directorySt</entry>
         <entry>getS</entry>
         <entry>isStop</entry>
-        <entry>lock</entry>
         <entry>remove</entry>
         <entry>delete</entry>
         <entry>totalReadR</entry>
@@ -3242,7 +3239,10 @@
         <entry>queue</entry>
         <entry>read</entry>
         <entry>unlock</entry>
+        <entry>lock</entry>
         <entry>lockmaster</entry>
+        <entry>this.lockMaster.</entry>
+        <entry>lockMaster</entry>
       </history-search>
       <history-cmd>
         <entry>q</entry>
