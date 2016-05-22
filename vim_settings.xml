@@ -42,7 +42,7 @@
         <mark key="." line="75" column="15" />
       </file>
       <file name="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" timestamp="1463903944259">
-        <mark key="'" line="117" column="60" />
+        <mark key="'" line="121" column="60" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/XQueryFilter.java" timestamp="1463119589044">
         <mark key="[" line="5" column="4" />
@@ -50,31 +50,17 @@
         <mark key="^" line="11" column="12" />
         <mark key="." line="11" column="12" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463905994464">
-        <mark key="'" line="190" column="26" />
-        <mark key="[" line="441" column="23" />
-        <mark key="]" line="441" column="25" />
-        <mark key="^" line="441" column="25" />
-        <mark key="." line="441" column="25" />
-      </file>
       <file name="$USER_HOME$/CSE232/testcases/Query4" timestamp="1463161784692">
         <mark key="[" line="4" column="60" />
         <mark key="]" line="4" column="37" />
         <mark key="^" line="4" column="37" />
         <mark key="." line="4" column="37" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/WriteRequest.java" timestamp="1463876181742">
-        <mark key="p" line="5" column="26" />
-        <mark key="[" line="5" column="43" />
-        <mark key="]" line="5" column="40" />
-        <mark key="^" line="5" column="40" />
-        <mark key="." line="5" column="40" />
-      </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" timestamp="1463950018691">
-        <mark key="[" line="73" column="35" />
-        <mark key="]" line="73" column="41" />
-        <mark key="^" line="73" column="41" />
-        <mark key="." line="73" column="41" />
+      <file name="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" timestamp="1463951274993">
+        <mark key="[" line="18" column="11" />
+        <mark key="]" line="18" column="19" />
+        <mark key="^" line="18" column="19" />
+        <mark key="." line="18" column="19" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/context/QueryContext.java" timestamp="1461869028600">
         <mark key="[" line="0" column="0" />
@@ -82,13 +68,6 @@
         <mark key="." line="1" column="0" />
       </file>
       <file name="$USER_HOME$/Distributed_system/src/common/Path.java" timestamp="1463949014403" />
-      <file name="$USER_HOME$/Distributed_system/src/naming/Request.java" timestamp="1463903456162">
-        <mark key="'" line="22" column="22" />
-        <mark key="[" line="16" column="8" />
-        <mark key="]" line="15" column="29" />
-        <mark key="^" line="15" column="29" />
-        <mark key="." line="15" column="29" />
-      </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/XQueryEvaluator.java" timestamp="1461870401733">
         <mark key="[" line="2" column="0" />
         <mark key="]" line="2" column="0" />
@@ -162,12 +141,6 @@
         <mark key="." line="84" column="6" />
         <mark key="^" line="84" column="6" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/ReplicateThread.java" timestamp="1463874934611">
-        <mark key="[" line="16" column="43" />
-        <mark key="]" line="16" column="40" />
-        <mark key="." line="16" column="40" />
-        <mark key="^" line="16" column="40" />
-      </file>
       <file name="$USER_HOME$/Distributed_system/src/naming/StorageAndLocks.java" timestamp="1463875041337">
         <mark key="[" line="20" column="37" />
         <mark key="]" line="20" column="36" />
@@ -220,6 +193,9 @@
         <mark key="]" line="51" column="15" />
         <mark key="^" line="51" column="15" />
         <mark key="." line="51" column="15" />
+      </file>
+      <file name="/fragment.java" timestamp="1463951252411">
+        <mark key="[" line="0" column="0" />
       </file>
     </filemarks>
     <jumps>
@@ -325,11 +301,11 @@
       <jump line="48" column="31" filename="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oIndyaXRlIGxvY2sgaGVyZSIgKyBsYXN0UGF0aCk7Cg==</text>
+      <register name="&quot;" type="4">
+        <text>ConcurrentHashMap</text>
       </register>
       <register name="-" type="4">
-        <text>lastPath</text>
+        <text>ConcurrentHashMap</text>
       </register>
       <register name="/" type="4">
         <text>lockmaster</text>
@@ -337,16 +313,19 @@
       <register name="0" type="4">
         <text encoding="base64">IGlmIChleGNsdXNpdmUgPT0gdHJ1ZSkgewogICAgICAgICAgICAgICAgaWYgKHRoaXMuZmlsZUxvY2tzLmdldChsYXN0UGF0aCkuaXNTdG9wcGVkKCkpIHsKICAgICAgICAgICAgICAgICAgICByZXR1cm4gdHJ1ZTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIHRyeSB7CiAgICAgICAgICAgICAgICAgICAgZmlsZUxvY2tzLmdldChsYXN0UGF0aCkubG9ja1dyaXRlKCk7CiAgICAgICAgICAgICAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCJ3cml0ZSBsb2NrIGhlcmUiICsgbGFzdFBhdGgpOwoKICAgICAgICAgICAgICAgIH0gY2F0Y2ggKEludGVycnVwdGVkRXhjZXB0aW9uIGUpIHsKICAgICAgICAgICAgICAgICAgICByZXR1cm4gdHJ1ZTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgIHRyeSB7CiAgICAgICAgICAgICAgICAgICAgZmlsZUxvY2tzLmdldChsYXN0UGF0aCkubG9ja1JlYWQoKTsKICAgICAgICAgICAgICAgIH0gY2F0Y2ggKEludGVycnVwdGVkRXhjZXB0aW9uIGUpIHsKICAgICAgICAgICAgICAgICAgICByZXR1cm4gdHJ1ZTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQ==</text>
       </register>
-      <register name="1" type="2">
+      <register name="1" type="4">
+        <text>ConcurrentHashMap</text>
+      </register>
+      <register name="2" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oIndyaXRlIGxvY2sgaGVyZSIgKyBsYXN0UGF0aCk7Cg==</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text>lastPath</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text>astPath</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text>//iterator not return root , here , check root first
             if (this.fileLocks.get(new Path()).isStopped()) {
                 return true;
@@ -357,14 +336,11 @@
                 return true;
             }</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICBpZiAocGF0aC5pc1Jvb3QoKSkgewo=</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgIH0K</text>
-      </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCItLS0tPiIrcGF0aC50b1N0cmluZygpKTsK</text>
+        <text encoding="base64">ICAgIH0K</text>
       </register>
       <register name="w" type="4">
         <keys>
@@ -3232,11 +3208,11 @@
           <key char="65535" code="27" mods="0" />
         </keys>
       </register>
-      <register name="8" type="4">
-        <text>&quot;&quot;);</text>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCItLS0tPiIrcGF0aC50b1N0cmluZygpKTsK</text>
       </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICBQYXRoIGxhc3RQYXRoID0gbmV3IFBhdGgoZmlsZW5hbWUpOwo=</text>
+      <register name="9" type="4">
+        <text>&quot;&quot;);</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
