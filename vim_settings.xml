@@ -70,18 +70,18 @@
         <mark key="^" line="5" column="40" />
         <mark key="." line="5" column="40" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" timestamp="1463946120517">
-        <mark key="'" line="23" column="21" />
-        <mark key="[" line="34" column="28" />
-        <mark key="]" line="28" column="32" />
-        <mark key="^" line="28" column="32" />
-        <mark key="." line="28" column="32" />
+      <file name="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" timestamp="1463950018691">
+        <mark key="[" line="73" column="35" />
+        <mark key="]" line="73" column="41" />
+        <mark key="^" line="73" column="41" />
+        <mark key="." line="73" column="41" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/context/QueryContext.java" timestamp="1461869028600">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="1" column="0" />
         <mark key="." line="1" column="0" />
       </file>
+      <file name="$USER_HOME$/Distributed_system/src/common/Path.java" timestamp="1463949014403" />
       <file name="$USER_HOME$/Distributed_system/src/naming/Request.java" timestamp="1463903456162">
         <mark key="'" line="22" column="22" />
         <mark key="[" line="16" column="8" />
@@ -223,7 +223,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="10" column="10" filename="$USER_HOME$/CSE232/testcases/Main.java" />
       <jump line="13" column="7" filename="$USER_HOME$/CSE232/testcases/Main.java" />
       <jump line="14" column="7" filename="$USER_HOME$/CSE232/testcases/Main.java" />
       <jump line="15" column="7" filename="$USER_HOME$/CSE232/testcases/Main.java" />
@@ -323,40 +322,49 @@
       <jump line="92" column="4" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="197" column="26" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="23" column="21" filename="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" />
+      <jump line="48" column="31" filename="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" />
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICBQYXRoIHBhcmVudCA9IHA7Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oIndyaXRlIGxvY2sgaGVyZSIgKyBsYXN0UGF0aCk7Cg==</text>
       </register>
       <register name="-" type="4">
-        <text>private</text>
+        <text>lastPath</text>
       </register>
       <register name="/" type="4">
         <text>lockmaster</text>
       </register>
       <register name="0" type="4">
-        <text encoding="base64">CVNldDxTdG9yYWdlPiBzdG9yYWdlTG9jYXRpb25zID0gdGhpcy5zdG9yYWdlTWFwLmdldChwYXRoKTsgICAgCQkKICAgIAkJU3RvcmFnZVtdIHN0b3JhZ2VBcnJheSA9IG5ldyBTdG9yYWdlW3N0b3JhZ2VMb2NhdGlvbnMuc2l6ZSgpXTsKICAgIAkJc3RvcmFnZUxvY2F0aW9ucy50b0FycmF5KHN0b3JhZ2VBcnJheSk7CiAgICAJCQogICAgCQlmb3IgKGludCBpID0gMTsgaTxzdG9yYWdlQXJyYXkubGVuZ3RoOyBpKyspewogICAgCQkJQ29tbWFuZCBjb21tYW5kU3R1YiA9IAogICAgCQkJCQl0aGlzLnJlZ2lzdGVyZWRTdG9yYWdlU2VydmVycy5nZXQoc3RvcmFnZUFycmF5W2ldKTsKCiAgICAJCQl0cnkgewoJCQkJCWNvbW1hbmRTdHViLmRlbGV0ZShwYXRoKTsKCSAgICAJCQlzdG9yYWdlTG9jYXRpb25zLnJlbW92ZShzdG9yYWdlQXJyYXlbaV0pOwoJCQkJfSBjYXRjaCAoUk1JRXhjZXB0aW9uIGUpIHsKCQkJCQl0aHJvdyBuZXcgSWxsZWdhbFN0YXRlRXhjZXB0aW9uKCk7CgkJCQl9CQogICAgCQl9CQ==</text>
+        <text encoding="base64">IGlmIChleGNsdXNpdmUgPT0gdHJ1ZSkgewogICAgICAgICAgICAgICAgaWYgKHRoaXMuZmlsZUxvY2tzLmdldChsYXN0UGF0aCkuaXNTdG9wcGVkKCkpIHsKICAgICAgICAgICAgICAgICAgICByZXR1cm4gdHJ1ZTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIHRyeSB7CiAgICAgICAgICAgICAgICAgICAgZmlsZUxvY2tzLmdldChsYXN0UGF0aCkubG9ja1dyaXRlKCk7CiAgICAgICAgICAgICAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCJ3cml0ZSBsb2NrIGhlcmUiICsgbGFzdFBhdGgpOwoKICAgICAgICAgICAgICAgIH0gY2F0Y2ggKEludGVycnVwdGVkRXhjZXB0aW9uIGUpIHsKICAgICAgICAgICAgICAgICAgICByZXR1cm4gdHJ1ZTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgIHRyeSB7CiAgICAgICAgICAgICAgICAgICAgZmlsZUxvY2tzLmdldChsYXN0UGF0aCkubG9ja1JlYWQoKTsKICAgICAgICAgICAgICAgIH0gY2F0Y2ggKEludGVycnVwdGVkRXhjZXB0aW9uIGUpIHsKICAgICAgICAgICAgICAgICAgICByZXR1cm4gdHJ1ZTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQ==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICBQYXRoIHBhcmVudCA9IHA7Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oIndyaXRlIGxvY2sgaGVyZSIgKyBsYXN0UGF0aCk7Cg==</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">ICAgICAgIC8vIHRoaXMubG9ja21hc3Rlci5yZXBsaWNhdG9yID0gRXhlY3V0b3JzLm5ld0NhY2hlZFRocmVhZFBvb2woKTsK</text>
+      <register name="2" type="4">
+        <text>lastPath</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">ICAgICAgIC8vIHRoaXMubG9ja21hc3Rlci5maWxlTG9ja3MucHV0KG5ldyBQYXRoKCksIG5ldyBSZWFkV3JpdGVMb2NrKCkpOwo=</text>
+      <register name="3" type="4">
+        <text>astPath</text>
       </register>
-      <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAvL3RoaXMubG9ja21hc3Rlci5maWxlTG9ja3MgPSBuZXcgQ29uY3VycmVudEhhc2hNYXA8UGF0aCwgUmVhZFdyaXRlTG9jaz4oKTsK</text>
+      <register name="4" type="4">
+        <text>//iterator not return root , here , check root first
+            if (this.fileLocks.get(new Path()).isStopped()) {
+                return true;
+            }
+            try {
+                this.fileLocks.get(new Path()).lockRead();
+            } catch (InterruptedException e) {
+                return true;
+            }</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICAvL3RoaXMubG9ja21hc3Rlci5yZWZfc3RvcmFnZU1hcCA9IHRoaXMuc3RvcmFnZU1hcDsK</text>
+        <text encoding="base64">ICAgICAgICBpZiAocGF0aC5pc1Jvb3QoKSkgewo=</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgIC8vIHRoaXMubG9ja21hc3Rlci5yZWZfcmVnaXN0ZXJlZFN0b3JhZ2VTZXJ2ZXJzID0gdGhpcy5yZWdpc3RlcmVkU3RvcmFnZVNlcnZlcnM7Cg==</text>
+        <text encoding="base64">ICAgIH0K</text>
       </register>
-      <register name="7" type="4">
-        <text encoding="base64">ICAgLy8gdGhpcy5sb2NrbWFzdGVyLnJlZl9yZWdpc3RlcmVkU3RvcmFnZVNlcnZlcnMgPSB0aGlzLnJlZ2lzdGVyZWRTdG9yYWdlU2VydmVyczsKICAgICAgICAvL3RoaXMubG9ja21hc3Rlci5yZWZfc3RvcmFnZU1hcCA9IHRoaXMuc3RvcmFnZU1hcDsKICAgICAgICAvL3RoaXMubG9ja21hc3Rlci5maWxlTG9ja3MgPSBuZXcgQ29uY3VycmVudEhhc2hNYXA8UGF0aCwgUmVhZFdyaXRlTG9jaz4oKTsKICAgICAgIC8vIHRoaXMubG9ja21hc3Rlci5maWxlTG9ja3MucHV0KG5ldyBQYXRoKCksIG5ldyBSZWFkV3JpdGVMb2NrKCkpOwogICAgICAgLy8gdGhpcy5sb2NrbWFzdGVyLnI=</text>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCItLS0tPiIrcGF0aC50b1N0cmluZygpKTsK</text>
       </register>
       <register name="w" type="4">
         <keys>
@@ -3224,11 +3232,11 @@
           <key char="65535" code="27" mods="0" />
         </keys>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">Cg==</text>
+      <register name="8" type="4">
+        <text>&quot;&quot;);</text>
       </register>
-      <register name="9" type="4">
-        <text encoding="base64">LyogUmVwbGljYXRlIGlmIHJlYWQgaXMgY2FsbGVkID49IDIwIHRpbWVzICovCiAgICAgICAgaWYgKCF0aGlzLmRpcmVjdG9yeVN0cnVjdHVyZS5jb250YWluc0tleShwYXRoKSAmJgogICAgICAgICAgICAgICAgbG9ja21hc3Rlci5maWxlTG9ja3MuZ2V0KHBhdGgpLmdldFRvdGFsUmVhZFJlcXVlc3RzKCkgPj0gMjAgJiYKICAgICAgICAgICAgICAgIGV4Y2x1c2l2ZSA9PSBmYWxzZSkgewog</text>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgICAgICBQYXRoIGxhc3RQYXRoID0gbmV3IFBhdGgoZmlsZW5hbWUpOwo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
