@@ -41,8 +41,12 @@
         <mark key="^" line="57" column="41" />
         <mark key="." line="75" column="15" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" timestamp="1463903944259">
-        <mark key="'" line="121" column="60" />
+      <file name="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" timestamp="1463963228664">
+        <mark key="'" line="110" column="0" />
+        <mark key="[" line="107" column="34" />
+        <mark key="]" line="107" column="34" />
+        <mark key="." line="107" column="34" />
+        <mark key="^" line="107" column="34" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/XQueryFilter.java" timestamp="1463119589044">
         <mark key="[" line="5" column="4" />
@@ -50,12 +54,12 @@
         <mark key="^" line="11" column="12" />
         <mark key="." line="11" column="12" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463959299769">
+      <file name="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" timestamp="1463963106883">
         <mark key="'" line="38" column="0" />
-        <mark key="[" line="148" column="13" />
-        <mark key="]" line="148" column="12" />
-        <mark key="^" line="148" column="12" />
-        <mark key="." line="148" column="12" />
+        <mark key="[" line="66" column="51" />
+        <mark key="]" line="66" column="51" />
+        <mark key="^" line="66" column="40" />
+        <mark key="." line="66" column="51" />
       </file>
       <file name="$USER_HOME$/CSE232/testcases/Query4" timestamp="1463161784692">
         <mark key="[" line="4" column="60" />
@@ -63,12 +67,12 @@
         <mark key="^" line="4" column="37" />
         <mark key="." line="4" column="37" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" timestamp="1463958454333">
-        <mark key="'" line="136" column="0" />
-        <mark key="[" line="184" column="5" />
-        <mark key="]" line="181" column="5" />
-        <mark key="." line="181" column="5" />
-        <mark key="^" line="181" column="5" />
+      <file name="$USER_HOME$/Distributed_system/src/naming/LockMaster.java" timestamp="1463963191478">
+        <mark key="'" line="124" column="0" />
+        <mark key="[" line="22" column="58" />
+        <mark key="]" line="22" column="38" />
+        <mark key="^" line="22" column="38" />
+        <mark key="." line="22" column="38" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/context/QueryContext.java" timestamp="1461869028600">
         <mark key="[" line="0" column="0" />
@@ -80,10 +84,12 @@
         <mark key="]" line="339" column="0" />
         <mark key="." line="339" column="0" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/ReplicationMaster.java" timestamp="1463958483278">
-        <mark key="]" line="65" column="4" />
-        <mark key="^" line="65" column="4" />
-        <mark key="." line="65" column="4" />
+      <file name="$USER_HOME$/Distributed_system/src/naming/ReplicationMaster.java" timestamp="1463962717789">
+        <mark key="'" line="59" column="0" />
+        <mark key="[" line="73" column="9" />
+        <mark key="]" line="70" column="40" />
+        <mark key="." line="70" column="40" />
+        <mark key="^" line="70" column="40" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/XQueryEvaluator.java" timestamp="1461870401733">
         <mark key="[" line="2" column="0" />
@@ -158,11 +164,12 @@
         <mark key="." line="84" column="6" />
         <mark key="^" line="84" column="6" />
       </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/ReplicateThread.java" timestamp="1463958751247">
+      <file name="$USER_HOME$/Distributed_system/src/naming/ReplicateThread.java" timestamp="1463962654852">
         <mark key="'" line="14" column="51" />
-        <mark key="[" line="8" column="0" />
-        <mark key="]" line="8" column="0" />
-        <mark key="." line="8" column="0" />
+        <mark key="[" line="40" column="0" />
+        <mark key="]" line="40" column="0" />
+        <mark key="^" line="33" column="25" />
+        <mark key="." line="40" column="0" />
       </file>
       <file name="$USER_HOME$/Distributed_system/src/naming/StorageAndLocks.java" timestamp="1463875041337">
         <mark key="[" line="20" column="37" />
@@ -222,25 +229,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="38" column="34" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
-      <jump line="118" column="55" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
-      <jump line="130" column="14" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
-      <jump line="202" column="56" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
-      <jump line="203" column="62" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
-      <jump line="205" column="16" filename="$USER_HOME$/Distributed_system/src/naming/Service.java" />
-      <jump line="4" column="13" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
-      <jump line="72" column="38" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
-      <jump line="87" column="13" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
-      <jump line="131" column="13" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
-      <jump line="24" column="8" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
-      <jump line="67" column="20" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
-      <jump line="71" column="8" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
-      <jump line="153" column="16" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
-      <jump line="227" column="42" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
-      <jump line="234" column="29" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
-      <jump line="257" column="29" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
-      <jump line="353" column="16" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
-      <jump line="361" column="42" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="364" column="25" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="422" column="45" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="424" column="39" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
@@ -271,7 +259,6 @@
       <jump line="555" column="0" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="69" column="15" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="8" column="27" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
-      <jump line="33" column="8" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="39" column="8" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="14" column="22" filename="$USER_HOME$/Distributed_system/src/naming/Request.java" />
       <jump line="118" column="41" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
@@ -291,7 +278,6 @@
       <jump line="59" column="10" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="60" column="25" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="97" column="18" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
-      <jump line="107" column="29" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="58" column="29" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="136" column="60" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="187" column="64" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
@@ -322,13 +308,34 @@
       <jump line="38" column="0" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="29" column="22" filename="$USER_HOME$/Distributed_system/src/naming/ReplicationMaster.java" />
       <jump line="18" column="51" filename="$USER_HOME$/Distributed_system/src/naming/ReplicateThread.java" />
+      <jump line="66" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReplicationMaster.java" />
+      <jump line="11" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="13" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="17" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="22" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="25" column="29" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="33" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="37" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="42" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="44" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="55" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="66" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="72" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="80" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="84" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="86" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="92" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="101" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="106" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="107" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="110" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">CS8qIFJlcGxpY2F0ZSBpZiByZWFkIGlzIGNhbGxlZCA+PSAyMCB0aW1lcyAqLwogICAgICAgIGlmICghdGhpcy5kaXJlY3RvcnlUcmVlLmNvbnRhaW5zS2V5KHBhdGgpICYmCiAgICAgICAgICAgICAgICBsb2NrTWFzdGVyLmdldEZpbGVMb2NrcygpLmdldChwYXRoKS5nZXRUb3RhbFJlYWRSZXF1ZXN0cygpID49IDIwICYmCiAgICAgICAgICAgICAgICBleGNsdXNpdmUgPT0gZmFsc2UpIHsKICAgICAgICAgICAgLy8gVE9ETwovLyAgICAgICAgICAgIHRoaXMubG9ja01hc3Rlci5hc3luUmVwbGljYXRvcihwYXRoKTsKICAgICAgICB9Cg==</text>
+        <text encoding="base64">IHN0b3JhZ2VMaXN0</text>
       </register>
       <register name="-" type="4">
-        <text>ExecutorService</text>
+        <text encoding="base64">IHN0b3JhZ2VMaXN0</text>
       </register>
       <register name="/" type="4">
         <text>lockMaster</text>
@@ -337,25 +344,25 @@
         <text encoding="base64">SGFzaHRhYmxlPFBhdGgsIExpc3Q8UGF0aD4+IHJlZl9kaXJlY3RvcnlUcmVlID0=</text>
       </register>
       <register name="1" type="4">
-        <text encoding="base64">CS8qIFJlcGxpY2F0ZSBpZiByZWFkIGlzIGNhbGxlZCA+PSAyMCB0aW1lcyAqLwogICAgICAgIGlmICghdGhpcy5kaXJlY3RvcnlUcmVlLmNvbnRhaW5zS2V5KHBhdGgpICYmCiAgICAgICAgICAgICAgICBsb2NrTWFzdGVyLmdldEZpbGVMb2NrcygpLmdldChwYXRoKS5nZXRUb3RhbFJlYWRSZXF1ZXN0cygpID49IDIwICYmCiAgICAgICAgICAgICAgICBleGNsdXNpdmUgPT0gZmFsc2UpIHsKICAgICAgICAgICAgLy8gVE9ETwovLyAgICAgICAgICAgIHRoaXMubG9ja01hc3Rlci5hc3luUmVwbGljYXRvcihwYXRoKTsKICAgICAgICB9Cg==</text>
+        <text encoding="base64">IHN0b3JhZ2VMaXN0</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">aW1wb3J0IGphdmEudXRpbC5TZXQ7Cg==</text>
+        <text encoding="base64">ICAgICAgICB0aGlzLnJlZl9yZWdpc3RlcmVkU3RvcmFnZVNlcnZlcnMgPSByZWdpc3RlcmVkU3RvcmFnZVNlcnZlcnM7Cg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICB0aGlzLmxvY2tNYXN0ZXIuc3RvcF9yZXBsaWNhdG9yKCk7Cg==</text>
+        <text encoding="base64">ICAgIHByaXZhdGUgTGlzdDxTdG9yYWdlPiByZWZfcmVnaXN0ZXJlZFN0b3JhZ2VTZXJ2ZXJzOwo=</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgIHB1YmxpYyAgcmVwbGljYXRvcjsK</text>
+        <text encoding="base64">ICAgICAgICAvL3JhbmRvbSByZWxlYXNlIHJlYWQgbG9jayBiZWNhdXNlIHdlIGRvIG5vdCBjYXJlIHdoaWNoIHJlYWQgd2UgcmVsZWFzZQo=</text>
       </register>
       <register name="5" type="4">
-        <text>ExecutorService</text>
+        <text encoding="base64">cHJpdmF0ZSA8VD4gVCBnZXRSYW5kb21FbGVtZW50RnJvbVNldChTZXQ8VD4gc2V0KSB7CiAgICAgICAgaWYgKHNldC5pc0VtcHR5KCkpIHsKICAgICAgICAgICAgcmV0dXJuIG51bGw7CiAgICAgICAgfQoKICAgICAgICBpbnQgaW5kZXggPSAoaW50KSAoc2V0LnNpemUoKSAqIE1hdGgucmFuZG9tKCkpOwoKICAgICAgICBPYmplY3RbXSBhcnJheSA9IG5ldyBPYmplY3Rbc2V0LnNpemUoKV07CiAgICAgICAgc2V0LnRvQXJyYXkoYXJyYXkpOwoKICAgICAgICByZXR1cm4gKFQpIGFycmF5W2luZGV4XTsKICAgIH0=</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICB0aGlzLnJlcGxpY2F0b3IgPSBFeGVjdXRvcnMubmV3Q2FjaGVkVGhyZWFkUG9vbCgpOwo=</text>
+      <register name="6" type="4">
+        <text encoding="base64">ICAgIHByaXZhdGUgPFQ+IFQgZ2V0UmFuZG9tRWxlbWVudEZyb21TZXQoU2V0PFQ+IHNldCkgewogICAgICAgIGlmIChzZXQuaXNFbXB0eSgpKSB7CiAgICAgICAgICAgIHJldHVybiBudWxsOwogICAgICAgIH0KCiAgICAgICAgaW50IGluZGV4ID0gKGludCkgKHNldC5zaXplKCkgKiBNYXRoLnJhbmRvbSgpKTsKCiAgICAgICAgT2JqZWN0W10gYXJyYXkgPSBuZXcgT2JqZWN0W3NldC5zaXplKCldOwogICAgICAgIHNldC50b0FycmF5KGFycmF5KTsKCiAgICAgICAgcmV0dXJuIChUKSBhcnJheVtpbmRleF07CiAgICB9Cn0=</text>
       </register>
-      <register name="7" type="4">
-        <text encoding="base64">IC8qIEhlbHBlciBtZXRob2QgdGhhdCByZXR1cm5zIGEgcmFuZG9tIGVsZW1lbnQgZnJvbSBhIGdpdmVuIHNldCAqLwogICAgcHJpdmF0ZSA8VD4gVCBnZXRSYW5kb21FbGVtZW50RnJvbVNldChTZXQ8VD4gc2V0KXsKICAgICAgICBpZihzZXQuaXNFbXB0eSgpKXsKICAgICAgICAgICAgcmV0dXJuIG51bGw7CiAgICAgICAgfQoKICAgICAgICBpbnQgaW5kZXggPSAoaW50KShzZXQuc2l6ZSgpICogTWF0aC5yYW5kb20oKSk7CgogICAgICAgIE9iamVjdFtdIGFycmF5ID0gbmV3IE9iamVjdFtzZXQuc2l6ZSgpXTsKICAgICAgICBzZXQudG9BcnJheShhcnJheSk7CgogICAgICAgIHJldHVybiAoVClhcnJheVtpbmRleF07CiAgICB9Cg==</text>
+      <register name="7" type="2">
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="w" type="4">
         <keys>
@@ -3224,10 +3231,10 @@
         </keys>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">aW1wb3J0IGphdmEudXRpbC5jb25jdXJyZW50LkNvbmN1cnJlbnRIYXNoTWFwOwo=</text>
+        <text encoding="base64">ICAgIH0KCg==</text>
       </register>
-      <register name="9" type="4">
-        <text>(replicationTarget)</text>
+      <register name="9" type="2">
+        <text encoding="base64">Cg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
