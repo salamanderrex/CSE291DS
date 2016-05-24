@@ -116,12 +116,6 @@
         <mark key="." line="20" column="36" />
         <mark key="^" line="20" column="36" />
       </file>
-      <file name="$USER_HOME$/CSE232/oldJoinOptimizer/testcase.dot" timestamp="1464069412555">
-        <mark key="[" line="10" column="108" />
-        <mark key="]" line="10" column="82" />
-        <mark key="^" line="10" column="82" />
-        <mark key="." line="10" column="82" />
-      </file>
       <file name="$USER_HOME$/Distributed_system/project2/storage/StorageServer.java" timestamp="1463527976015">
         <mark key="[" line="56" column="23" />
         <mark key="]" line="56" column="22" />
@@ -170,7 +164,12 @@
       <file name="$USER_HOME$/CSE232/project1/src/xquery/MyXQueryEvaluator.java" timestamp="1463157673367">
         <mark key="[" line="371" column="8" />
       </file>
-      <file name="$USER_HOME$/CSE232/oldJoinOptimizer/testcase" timestamp="1464069348343" />
+      <file name="$USER_HOME$/CSE232/oldJoinOptimizer/testcase" timestamp="1464107801475">
+        <mark key="[" line="11" column="0" />
+        <mark key="]" line="11" column="4" />
+        <mark key="." line="11" column="4" />
+        <mark key="^" line="4" column="0" />
+      </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/XQueryList.java" timestamp="1463120237271">
         <mark key="[" line="75" column="14" />
         <mark key="]" line="75" column="15" />
