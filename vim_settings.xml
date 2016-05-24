@@ -3,11 +3,6 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="$USER_HOME$/Distributed_system/src/.gitignore" timestamp="1463543497538">
-        <mark key="[" line="26" column="0" />
-        <mark key="]" line="26" column="0" />
-        <mark key="." line="26" column="0" />
-      </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/ApRpEvaluator.java" timestamp="1463072000054">
         <mark key="[" line="12" column="0" />
         <mark key="]" line="12" column="0" />
@@ -21,9 +16,6 @@
       <file name="/a.dummy" timestamp="1463969937969">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/CSE232/project1/src/xquery/MyXQueryEvaluator.java" timestamp="1463157673367">
-        <mark key="[" line="371" column="8" />
-      </file>
       <file name="$USER_HOME$/CSE232/project1/src/antlr4/XQueryBaseListener.java" timestamp="1461869601713">
         <mark key="[" line="2" column="0" />
         <mark key="]" line="2" column="0" />
@@ -34,19 +26,6 @@
         <mark key="]" line="385" column="0" />
         <mark key="^" line="207" column="29" />
         <mark key="." line="385" column="0" />
-      </file>
-      <file name="$USER_HOME$/CSE232/project1/src/xquery/value/XQueryList.java" timestamp="1463120237271">
-        <mark key="[" line="75" column="14" />
-        <mark key="]" line="75" column="15" />
-        <mark key="^" line="57" column="41" />
-        <mark key="." line="75" column="15" />
-      </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" timestamp="1463963228664">
-        <mark key="'" line="110" column="0" />
-        <mark key="[" line="107" column="34" />
-        <mark key="]" line="107" column="34" />
-        <mark key="." line="107" column="34" />
-        <mark key="^" line="107" column="34" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/XQueryFilter.java" timestamp="1463119589044">
         <mark key="[" line="5" column="4" />
@@ -79,37 +58,20 @@
         <mark key="]" line="339" column="0" />
         <mark key="." line="339" column="0" />
       </file>
-      <file name="$USER_HOME$/CSE232/project1/src/xquery/context/QueryContext.java" timestamp="1461869028600">
-        <mark key="[" line="0" column="0" />
-        <mark key="]" line="1" column="0" />
-        <mark key="." line="1" column="0" />
-      </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/ReplicationMaster.java" timestamp="1463970331682">
-        <mark key="'" line="59" column="0" />
-        <mark key="[" line="78" column="1" />
-        <mark key="]" line="78" column="1" />
-        <mark key="." line="78" column="1" />
-        <mark key="^" line="78" column="6" />
-      </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/visitor/XQueryEvaluator.java" timestamp="1461870401733">
         <mark key="[" line="2" column="0" />
         <mark key="]" line="2" column="0" />
         <mark key="." line="2" column="0" />
       </file>
+      <file name="$USER_HOME$/CSE232/pom.xml" timestamp="1464064312483">
+        <mark key="[" line="35" column="26" />
+        <mark key="]" line="31" column="0" />
+        <mark key="." line="31" column="0" />
+      </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/IXQueryValue.java" timestamp="1461865547872">
         <mark key="[" line="1" column="0" />
         <mark key="]" line="1" column="30" />
         <mark key="." line="1" column="0" />
-      </file>
-      <file name="$USER_HOME$/CSE232/project1/src/xquery/xmltree/XMLDocument.java" timestamp="1461865400423">
-        <mark key="[" line="1" column="0" />
-        <mark key="]" line="1" column="32" />
-        <mark key="." line="1" column="0" />
-      </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project2/rmi/GracefulSkeleton.java" timestamp="1463122324262">
-        <mark key="[" line="0" column="8" />
-        <mark key="]" line="0" column="8" />
-        <mark key="." line="0" column="8" />
       </file>
       <file name="$USER_HOME$/Distributed_system/src/naming/ReadRequest.java" timestamp="1463876604977">
         <mark key="[" line="5" column="42" />
@@ -117,21 +79,10 @@
         <mark key="^" line="5" column="12" />
         <mark key="." line="5" column="12" />
       </file>
-      <file name="$USER_HOME$/CSE232/project1/src/xquery/xmltree/IXMLElement.java" timestamp="1461869098735">
-        <mark key="[" line="1" column="32" />
-        <mark key="]" line="2" column="0" />
-        <mark key="." line="2" column="0" />
-      </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/xmlElement/XMLElement.java" timestamp="1463122901913">
         <mark key="[" line="44" column="0" />
         <mark key="]" line="44" column="0" />
         <mark key="." line="44" column="0" />
-      </file>
-      <file name="$USER_HOME$/CSE232/project1/src/xquery/parser/XQuery.g4" timestamp="1464045676693">
-        <mark key="[" line="52" column="10" />
-      </file>
-      <file name="$USER_HOME$/Distributed_system/Distributed_system.iml" timestamp="1463525517312">
-        <mark key="[" line="1" column="37" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/VarEnvironment.java" timestamp="1461865551812">
         <mark key="[" line="1" column="0" />
@@ -148,11 +99,6 @@
         <mark key="]" line="1" column="32" />
         <mark key="." line="1" column="0" />
       </file>
-      <file name="$USER_HOME$/CSE232/project1/src/xquery/value/VarEnvironmentList.java" timestamp="1461865880817">
-        <mark key="[" line="2" column="0" />
-        <mark key="]" line="2" column="0" />
-        <mark key="." line="2" column="0" />
-      </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/xmltree/XMLElement.java" timestamp="1461865780915">
         <mark key="[" line="1" column="32" />
         <mark key="]" line="1" column="32" />
@@ -163,13 +109,6 @@
         <mark key="]" line="84" column="6" />
         <mark key="." line="84" column="6" />
         <mark key="^" line="84" column="6" />
-      </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/ReplicateThread.java" timestamp="1463962654852">
-        <mark key="'" line="14" column="51" />
-        <mark key="[" line="40" column="0" />
-        <mark key="]" line="40" column="0" />
-        <mark key="^" line="33" column="25" />
-        <mark key="." line="40" column="0" />
       </file>
       <file name="$USER_HOME$/Distributed_system/src/naming/StorageAndLocks.java" timestamp="1463875041337">
         <mark key="[" line="20" column="37" />
@@ -183,25 +122,18 @@
         <mark key="^" line="56" column="22" />
         <mark key="." line="56" column="22" />
       </file>
-      <file name="$USER_HOME$/CSE232/testcases/Main.java" timestamp="1463161804636">
+      <file name="$USER_HOME$/CSE232/testcases/Main.java" timestamp="1464064886183">
         <mark key="'" line="69" column="0" />
         <mark key="[" line="31" column="31" />
         <mark key="]" line="31" column="21" />
         <mark key="." line="31" column="21" />
         <mark key="^" line="31" column="21" />
       </file>
-      <file name="$USER_HOME$/CSE232/project1/src/xquery/context/SymbolTable.java" timestamp="1461865954431">
-        <mark key="[" line="1" column="0" />
-        <mark key="]" line="1" column="0" />
-        <mark key="." line="1" column="0" />
-      </file>
-      <file name="$USER_HOME$/Distributed_system/src/naming/Service.java" timestamp="1463867095848">
-        <mark key="'" line="205" column="16" />
-      </file>
-      <file name="$USER_HOME$/CSE232/.gitignore" timestamp="1463125105629">
-        <mark key="[" line="19" column="0" />
-        <mark key="]" line="19" column="0" />
-        <mark key="." line="19" column="0" />
+      <file name="$USER_HOME$/CSE232/oldJoinOptimizer/JoinOptimizer.java" timestamp="1464066206589">
+        <mark key="[" line="60" column="66" />
+        <mark key="]" line="58" column="26" />
+        <mark key="." line="58" column="26" />
+        <mark key="^" line="58" column="26" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/utils/QueryGenerator.java" timestamp="1461865934914">
         <mark key="[" line="5" column="0" />
@@ -224,12 +156,106 @@
         <mark key="^" line="51" column="15" />
         <mark key="." line="51" column="15" />
       </file>
+      <file name="$USER_HOME$/Distributed_system/src/.gitignore" timestamp="1463543497538">
+        <mark key="[" line="26" column="0" />
+        <mark key="]" line="26" column="0" />
+        <mark key="." line="26" column="0" />
+      </file>
+      <file name="$USER_HOME$/CSE232/project1/src/xquery/MyXQueryEvaluator.java" timestamp="1463157673367">
+        <mark key="[" line="371" column="8" />
+      </file>
+      <file name="$USER_HOME$/CSE232/oldJoinOptimizer/testcase" timestamp="1464066347047">
+        <mark key="[" line="0" column="4" />
+      </file>
+      <file name="$USER_HOME$/CSE232/project1/src/xquery/value/XQueryList.java" timestamp="1463120237271">
+        <mark key="[" line="75" column="14" />
+        <mark key="]" line="75" column="15" />
+        <mark key="^" line="57" column="41" />
+        <mark key="." line="75" column="15" />
+      </file>
+      <file name="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" timestamp="1463963228664">
+        <mark key="'" line="110" column="0" />
+        <mark key="[" line="107" column="34" />
+        <mark key="]" line="107" column="34" />
+        <mark key="." line="107" column="34" />
+        <mark key="^" line="107" column="34" />
+      </file>
+      <file name="$USER_HOME$/CSE232/project1/src/xquery/context/QueryContext.java" timestamp="1461869028600">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="1" column="0" />
+        <mark key="." line="1" column="0" />
+      </file>
+      <file name="$USER_HOME$/Distributed_system/src/naming/ReplicationMaster.java" timestamp="1463970331682">
+        <mark key="'" line="59" column="0" />
+        <mark key="[" line="78" column="1" />
+        <mark key="]" line="78" column="1" />
+        <mark key="." line="78" column="1" />
+        <mark key="^" line="78" column="6" />
+      </file>
+      <file name="$USER_HOME$/CSE232/oldJoinOptimizer/TestJoinOptimizer.java" timestamp="1464066884655">
+        <mark key="[" line="13" column="30" />
+        <mark key="]" line="13" column="24" />
+        <mark key="^" line="13" column="24" />
+        <mark key="." line="13" column="24" />
+      </file>
+      <file name="$USER_HOME$/CSE232/project1/src/xquery/xmltree/XMLDocument.java" timestamp="1461865400423">
+        <mark key="[" line="1" column="0" />
+        <mark key="]" line="1" column="32" />
+        <mark key="." line="1" column="0" />
+      </file>
+      <file name="$USER_HOME$/Desktop/CSE291DS/project2/rmi/GracefulSkeleton.java" timestamp="1463122324262">
+        <mark key="[" line="0" column="8" />
+        <mark key="]" line="0" column="8" />
+        <mark key="." line="0" column="8" />
+      </file>
+      <file name="$USER_HOME$/CSE232/project1/src/xquery/xmltree/IXMLElement.java" timestamp="1461869098735">
+        <mark key="[" line="1" column="32" />
+        <mark key="]" line="2" column="0" />
+        <mark key="." line="2" column="0" />
+      </file>
+      <file name="$USER_HOME$/CSE232/project1/src/xquery/parser/XQuery.g4" timestamp="1464045676693">
+        <mark key="[" line="52" column="10" />
+      </file>
+      <file name="$USER_HOME$/Distributed_system/Distributed_system.iml" timestamp="1463525517312">
+        <mark key="[" line="1" column="37" />
+      </file>
+      <file name="$USER_HOME$/CSE232/project1/src/xquery/value/VarEnvironmentList.java" timestamp="1461865880817">
+        <mark key="[" line="2" column="0" />
+        <mark key="]" line="2" column="0" />
+        <mark key="." line="2" column="0" />
+      </file>
+      <file name="$USER_HOME$/Distributed_system/src/naming/ReplicateThread.java" timestamp="1463962654852">
+        <mark key="'" line="14" column="51" />
+        <mark key="[" line="40" column="0" />
+        <mark key="]" line="40" column="0" />
+        <mark key="^" line="33" column="25" />
+        <mark key="." line="40" column="0" />
+      </file>
+      <file name="$USER_HOME$/CSE232/project1/src/xquery/context/SymbolTable.java" timestamp="1461865954431">
+        <mark key="[" line="1" column="0" />
+        <mark key="]" line="1" column="0" />
+        <mark key="." line="1" column="0" />
+      </file>
+      <file name="$USER_HOME$/Distributed_system/src/naming/Service.java" timestamp="1463867095848">
+        <mark key="'" line="205" column="16" />
+      </file>
+      <file name="$USER_HOME$/CSE232/.gitignore" timestamp="1463125105629">
+        <mark key="[" line="19" column="0" />
+        <mark key="]" line="19" column="0" />
+        <mark key="." line="19" column="0" />
+      </file>
       <file name="/fragment.java" timestamp="1463953322820">
         <mark key="[" line="0" column="0" />
       </file>
+      <file name="$USER_HOME$/CSE232/oldJoinOptimizer/GraphPrinter.java" timestamp="1464065706937">
+        <mark key="'" line="40" column="0" />
+        <mark key="[" line="38" column="81" />
+        <mark key="]" line="38" column="81" />
+        <mark key="." line="38" column="81" />
+        <mark key="^" line="38" column="81" />
+      </file>
     </filemarks>
     <jumps>
-      <jump line="364" column="25" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="422" column="45" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="424" column="39" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="468" column="18" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
@@ -329,40 +355,41 @@
       <jump line="106" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="107" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="110" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
+      <jump line="38" column="0" filename="$USER_HOME$/CSE232/oldJoinOptimizer/GraphPrinter.java" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text encoding="base64">CgoKCgo=</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4ocHJpbnRHcmFwaCgpOykK</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">IHN0b3JhZ2VMaXN0</text>
       </register>
       <register name="/" type="4">
-        <text>lockMaster</text>
+        <text>print</text>
       </register>
       <register name="0" type="4">
         <text encoding="base64">SGFzaHRhYmxlPFBhdGgsIExpc3Q8UGF0aD4+IHJlZl9kaXJlY3RvcnlUcmVlID0=</text>
       </register>
-      <register name="1" type="4">
-        <text encoding="base64">CgoKCgo=</text>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4ocHJpbnRHcmFwaCgpOykK</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">UmVhZFdyaXRlTG9jawo=</text>
+        <text encoding="base64">ICAgICAgICBkZXBlbmRlbmN5R3JhcGguCg==</text>
       </register>
-      <register name="3" type="4">
-        <text encoding="base64">IHN0b3JhZ2VMaXN0</text>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgam8udG9TdHJpbmcoKWRkCg==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICB0aGlzLnJlZl9yZWdpc3RlcmVkU3RvcmFnZVNlcnZlcnMgPSByZWdpc3RlcmVkU3RvcmFnZVNlcnZlcnM7Cg==</text>
+        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oKTsK</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgIHByaXZhdGUgTGlzdDxTdG9yYWdlPiByZWZfcmVnaXN0ZXJlZFN0b3JhZ2VTZXJ2ZXJzOwo=</text>
+        <text encoding="base64">aW1wb3J0IG9yZy5qZ3JhcGh0Lgo=</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAvL3JhbmRvbSByZWxlYXNlIHJlYWQgbG9jayBiZWNhdXNlIHdlIGRvIG5vdCBjYXJlIHdoaWNoIHJlYWQgd2UgcmVsZWFzZQo=</text>
+      <register name="6" type="4">
+        <text encoding="base64">CiAgICAgICAgPGRlcGVuZGVuY3k+CiAgICAgICAgICAgIDxncm91cElkPm9yZy5qZ3JhcGh0PC9ncm91cElkPgogICAgICAgICAgICA8YXJ0aWZhY3RJZD5qZ3JhcGh0LWNvcmU8L2FydGlmYWN0SWQ+CiAgICAgICAgICAgIDx2ZXJzaW9uPjAuOS4xPC92ZXJzaW9uPgogICAgICAgIDwvZGVwZW5kZW5jeT4=</text>
       </register>
-      <register name="7" type="4">
-        <text encoding="base64">cHJpdmF0ZSA8VD4gVCBnZXRSYW5kb21FbGVtZW50RnJvbVNldChTZXQ8VD4gc2V0KSB7CiAgICAgICAgaWYgKHNldC5pc0VtcHR5KCkpIHsKICAgICAgICAgICAgcmV0dXJuIG51bGw7CiAgICAgICAgfQoKICAgICAgICBpbnQgaW5kZXggPSAoaW50KSAoc2V0LnNpemUoKSAqIE1hdGgucmFuZG9tKCkpOwoKICAgICAgICBPYmplY3RbXSBhcnJheSA9IG5ldyBPYmplY3Rbc2V0LnNpemUoKV07CiAgICAgICAgc2V0LnRvQXJyYXkoYXJyYXkpOwoKICAgICAgICByZXR1cm4gKFQpIGFycmF5W2luZGV4XTsKICAgIH0=</text>
+      <register name="7" type="2">
+        <text encoding="base64">aW1wb3J0IG9yZy5qZ3JhcGh0LmV4Cg==</text>
       </register>
       <register name="w" type="4">
         <keys>
@@ -3230,26 +3257,25 @@
           <key char="65535" code="27" mods="0" />
         </keys>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">ICAgIHByaXZhdGUgPFQ+IFQgZ2V0UmFuZG9tRWxlbWVudEZyb21TZXQoU2V0PFQ+IHNldCkgewogICAgICAgIGlmIChzZXQuaXNFbXB0eSgpKSB7CiAgICAgICAgICAgIHJldHVybiBudWxsOwogICAgICAgIH0KCiAgICAgICAgaW50IGluZGV4ID0gKGludCkgKHNldC5zaXplKCkgKiBNYXRoLnJhbmRvbSgpKTsKCiAgICAgICAgT2JqZWN0W10gYXJyYXkgPSBuZXcgT2JqZWN0W3NldC5zaXplKCldOwogICAgICAgIHNldC50b0FycmF5KGFycmF5KTsKCiAgICAgICAgcmV0dXJuIChUKSBhcnJheVtpbmRleF07CiAgICB9Cn0=</text>
+      <register name="8" type="2">
+        <text encoding="base64">aW1wb3J0IG9yZy5qZ3JhcGh0LmV2ZW50LkRPVAo=</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICBTdHJpbmcgcXVlcnkgPSBTYW1wbGVSZWFkZXIub3BlblF1ZXJ5RmlsZUFzU3RyaW5nKCJNaWxlc3RvbmUyUTEiKTsK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
       </register>
     </registers>
     <search>
-      <last-search>lockMaster</last-search>
+      <last-search>print</last-search>
       <last-offset />
-      <last-pattern>lockMaster</last-pattern>
+      <last-pattern>print</last-pattern>
       <last-dir>1</last-dir>
       <show-last>false</show-last>
     </search>
     <history>
       <history-search>
-        <entry>j</entry>
         <entry>apa</entry>
         <entry>directorySt</entry>
         <entry>getS</entry>
@@ -3268,6 +3294,8 @@
         <entry>lockmaster</entry>
         <entry>this.lockMaster.</entry>
         <entry>lockMaster</entry>
+        <entry>Path</entry>
+        <entry>print</entry>
       </history-search>
       <history-cmd>
         <entry>q</entry>
