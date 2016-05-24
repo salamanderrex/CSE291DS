@@ -116,6 +116,12 @@
         <mark key="." line="20" column="36" />
         <mark key="^" line="20" column="36" />
       </file>
+      <file name="$USER_HOME$/CSE232/oldJoinOptimizer/testcase.dot" timestamp="1464069412555">
+        <mark key="[" line="10" column="108" />
+        <mark key="]" line="10" column="82" />
+        <mark key="^" line="10" column="82" />
+        <mark key="." line="10" column="82" />
+      </file>
       <file name="$USER_HOME$/Distributed_system/project2/storage/StorageServer.java" timestamp="1463527976015">
         <mark key="[" line="56" column="23" />
         <mark key="]" line="56" column="22" />
@@ -129,7 +135,7 @@
         <mark key="." line="31" column="21" />
         <mark key="^" line="31" column="21" />
       </file>
-      <file name="$USER_HOME$/CSE232/oldJoinOptimizer/JoinOptimizer.java" timestamp="1464066206589">
+      <file name="$USER_HOME$/CSE232/oldJoinOptimizer/JoinOptimizer.java" timestamp="1464068706254">
         <mark key="[" line="60" column="66" />
         <mark key="]" line="58" column="26" />
         <mark key="." line="58" column="26" />
@@ -164,9 +170,7 @@
       <file name="$USER_HOME$/CSE232/project1/src/xquery/MyXQueryEvaluator.java" timestamp="1463157673367">
         <mark key="[" line="371" column="8" />
       </file>
-      <file name="$USER_HOME$/CSE232/oldJoinOptimizer/testcase" timestamp="1464066347047">
-        <mark key="[" line="0" column="4" />
-      </file>
+      <file name="$USER_HOME$/CSE232/oldJoinOptimizer/testcase" timestamp="1464069348343" />
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/XQueryList.java" timestamp="1463120237271">
         <mark key="[" line="75" column="14" />
         <mark key="]" line="75" column="15" />
@@ -247,16 +251,15 @@
       <file name="/fragment.java" timestamp="1463953322820">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/CSE232/oldJoinOptimizer/GraphPrinter.java" timestamp="1464065706937">
+      <file name="$USER_HOME$/CSE232/oldJoinOptimizer/GraphPrinter.java" timestamp="1464069129116">
         <mark key="'" line="40" column="0" />
-        <mark key="[" line="38" column="81" />
-        <mark key="]" line="38" column="81" />
-        <mark key="." line="38" column="81" />
-        <mark key="^" line="38" column="81" />
+        <mark key="[" line="54" column="9" />
+        <mark key="]" line="55" column="4" />
+        <mark key="." line="55" column="4" />
+        <mark key="^" line="55" column="4" />
       </file>
     </filemarks>
     <jumps>
-      <jump line="422" column="45" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="424" column="39" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="468" column="18" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="470" column="18" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
@@ -356,40 +359,41 @@
       <jump line="107" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="110" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="38" column="0" filename="$USER_HOME$/CSE232/oldJoinOptimizer/GraphPrinter.java" />
+      <jump line="8" column="41" filename="$USER_HOME$/CSE232/oldJoinOptimizer/testcase.dot" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4ocHJpbnRHcmFwaCgpOykK</text>
+      <register name="&quot;" type="4">
+        <text encoding="base64">IHZ0YSAtPiB2YSBbIGxhYmVsPSIkdGEgLT4gJGEgKGxhYmVsOiB0aXRsZSkiIF07CiAgdnRiIC0+IHZiIFsgbGFiZWw9IiR0YiAtPiAkYiAobGFiZWw6IHRpdGxlKSIgXTsKICB2YSAtPiBkb2NfaW5wdXRfIFsgbGFiZWw9IiRhIC0+IGRvYygiaW5wdXQiKSAobGFiZWw6IGVudHJ5KSIgXTsKICB2YiAtPiBkb2NfaW5wdXRfIFsgbGFiZWw9IiRiIC0+IGRvYygiaW5wdXQiKSAobGFiZWw6IGJvb2spIiBdOwogIHZ0YiAtPiB2dGEgWyBsYWJlbD0iJHRiIC0+ICR0YSAobGFiZWw6IGVxKSIgXTsKICB2dGEgLT4gdnRiIFsgbGFiZWw9IiR0YiAtPiAkdGEgKGxhYmVsOiBlcSkiIF07</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">IHN0b3JhZ2VMaXN0</text>
       </register>
       <register name="/" type="4">
-        <text>print</text>
+        <text>input</text>
       </register>
       <register name="0" type="4">
         <text encoding="base64">SGFzaHRhYmxlPFBhdGgsIExpc3Q8UGF0aD4+IHJlZl9kaXJlY3RvcnlUcmVlID0=</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4ocHJpbnRHcmFwaCgpOykK</text>
+      <register name="1" type="4">
+        <text encoding="base64">IHZ0YSAtPiB2YSBbIGxhYmVsPSIkdGEgLT4gJGEgKGxhYmVsOiB0aXRsZSkiIF07CiAgdnRiIC0+IHZiIFsgbGFiZWw9IiR0YiAtPiAkYiAobGFiZWw6IHRpdGxlKSIgXTsKICB2YSAtPiBkb2NfaW5wdXRfIFsgbGFiZWw9IiRhIC0+IGRvYygiaW5wdXQiKSAobGFiZWw6IGVudHJ5KSIgXTsKICB2YiAtPiBkb2NfaW5wdXRfIFsgbGFiZWw9IiRiIC0+IGRvYygiaW5wdXQiKSAobGFiZWw6IGJvb2spIiBdOwogIHZ0YiAtPiB2dGEgWyBsYWJlbD0iJHRiIC0+ICR0YSAobGFiZWw6IGVxKSIgXTsKICB2dGEgLT4gdnRiIFsgbGFiZWw9IiR0YiAtPiAkdGEgKGxhYmVsOiBlcSkiIF07</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICBkZXBlbmRlbmN5R3JhcGguCg==</text>
+        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4ocHJpbnRHcmFwaCgpOykK</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgam8udG9TdHJpbmcoKWRkCg==</text>
+        <text encoding="base64">ICAgICAgICBkZXBlbmRlbmN5R3JhcGguCg==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oKTsK</text>
+        <text encoding="base64">ICAgICAgICAgICAgam8udG9TdHJpbmcoKWRkCg==</text>
       </register>
       <register name="5" type="2">
+        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oKTsK</text>
+      </register>
+      <register name="6" type="2">
         <text encoding="base64">aW1wb3J0IG9yZy5qZ3JhcGh0Lgo=</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CiAgICAgICAgPGRlcGVuZGVuY3k+CiAgICAgICAgICAgIDxncm91cElkPm9yZy5qZ3JhcGh0PC9ncm91cElkPgogICAgICAgICAgICA8YXJ0aWZhY3RJZD5qZ3JhcGh0LWNvcmU8L2FydGlmYWN0SWQ+CiAgICAgICAgICAgIDx2ZXJzaW9uPjAuOS4xPC92ZXJzaW9uPgogICAgICAgIDwvZGVwZW5kZW5jeT4=</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">aW1wb3J0IG9yZy5qZ3JhcGh0LmV4Cg==</text>
       </register>
       <register name="w" type="4">
         <keys>
@@ -3258,25 +3262,24 @@
         </keys>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">aW1wb3J0IG9yZy5qZ3JhcGh0LmV2ZW50LkRPVAo=</text>
+        <text encoding="base64">aW1wb3J0IG9yZy5qZ3JhcGh0LmV4Cg==</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICBTdHJpbmcgcXVlcnkgPSBTYW1wbGVSZWFkZXIub3BlblF1ZXJ5RmlsZUFzU3RyaW5nKCJNaWxlc3RvbmUyUTEiKTsK</text>
+        <text encoding="base64">aW1wb3J0IG9yZy5qZ3JhcGh0LmV2ZW50LkRPVAo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
       </register>
     </registers>
     <search>
-      <last-search>print</last-search>
+      <last-search>input</last-search>
       <last-offset />
-      <last-pattern>print</last-pattern>
+      <last-pattern>input</last-pattern>
       <last-dir>1</last-dir>
       <show-last>false</show-last>
     </search>
     <history>
       <history-search>
-        <entry>apa</entry>
         <entry>directorySt</entry>
         <entry>getS</entry>
         <entry>isStop</entry>
@@ -3296,6 +3299,7 @@
         <entry>lockMaster</entry>
         <entry>Path</entry>
         <entry>print</entry>
+        <entry>input</entry>
       </history-search>
       <history-cmd>
         <entry>q</entry>
