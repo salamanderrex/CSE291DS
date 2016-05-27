@@ -230,12 +230,12 @@
       <file name="$USER_HOME$/Distributed_system/Distributed_system.iml" timestamp="1463525517312">
         <mark key="[" line="1" column="37" />
       </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" timestamp="1464388235309">
-        <mark key="'" line="54" column="31" />
-        <mark key="[" line="79" column="0" />
-        <mark key="]" line="68" column="3" />
-        <mark key="." line="68" column="3" />
-        <mark key="^" line="68" column="3" />
+      <file name="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" timestamp="1464390370405">
+        <mark key="'" line="55" column="31" />
+        <mark key="[" line="135" column="53" />
+        <mark key="]" line="135" column="52" />
+        <mark key="." line="135" column="52" />
+        <mark key="^" line="135" column="52" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/VarEnvironmentList.java" timestamp="1461865880817">
         <mark key="[" line="2" column="0" />
@@ -374,37 +374,37 @@
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">fQo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgY29uZjIuc2V0Sm9iTmFtZSgiIikK</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">ZXh0ZW5kcyA=</text>
+        <text>clas</text>
       </register>
       <register name="/" type="4">
         <text>input</text>
       </register>
-      <register name="0" type="4">
-        <text encoding="base64">SGFzaHRhYmxlPFBhdGgsIExpc3Q8UGF0aD4+IHJlZl9kaXJlY3RvcnlUcmVlID0=</text>
+      <register name="0" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgVGV4dE91dHB1dEZvcm1hdC5zZXRPdXRwdXRQYXRoKGpvYiwgbmV3IFBhdGgoYXJnc1sxXSkpOwo=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">fQo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgY29uZjIuc2V0Sm9iTmFtZSgiIikK</text>
       </register>
       <register name="2" type="2">
         <text encoding="base64">Cg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgVGV4dE91dHB1dEZvcm1hdC5zZXRPdXRwdXRQYXRoKGpvYiwgbmV3IFBhdGgoYXJnc1sxXSkpOwo=</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgVGV4dElucHV0Rm9ybWF0LmFkZElucHV0UGF0aChqb2IsIG5ldyBQYXRoKGFyZ3NbMF0pKTsK</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgd29yZC5zZXQoc3RyLnRvU3RyaW5nKCkpOwogICAgICAgICAgICBjb250ZXh0LndyaXRlKHdvcmQsIG9uZSk7Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgam9iMi5zZXQK</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgLy9vbmUuc2V0KGxzLnNpemUoKSk7Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgCg==</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgc3RyID0gbmV3IFN0cmluZ0J1ZmZlcigiIik7Cg==</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="w" type="4">
         <keys>
@@ -3272,11 +3272,11 @@
           <key char="65535" code="27" mods="0" />
         </keys>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">Cg==</text>
+      <register name="8" type="4">
+        <text>clas</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICB9Cg==</text>
+        <text encoding="base64">ICAgIHB1YmxpYyBzdGF0aWMgY2xhc3MgUmVkdWNlMSBleHRlbmRzIFJlZHVjZXI8VGV4dCwgSW50V3JpdGFibGUsIFRleHQsIEludFdyaXRhYmxlPiB7Cg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
