@@ -230,11 +230,12 @@
       <file name="$USER_HOME$/Distributed_system/Distributed_system.iml" timestamp="1463525517312">
         <mark key="[" line="1" column="37" />
       </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" timestamp="1464370923558">
-        <mark key="[" line="84" column="36" />
-        <mark key="]" line="47" column="15" />
-        <mark key="^" line="47" column="15" />
-        <mark key="." line="47" column="15" />
+      <file name="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" timestamp="1464388235309">
+        <mark key="'" line="54" column="31" />
+        <mark key="[" line="79" column="0" />
+        <mark key="]" line="68" column="3" />
+        <mark key="." line="68" column="3" />
+        <mark key="^" line="68" column="3" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/VarEnvironmentList.java" timestamp="1461865880817">
         <mark key="[" line="2" column="0" />
@@ -270,7 +271,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="468" column="18" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="470" column="18" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="477" column="17" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="2" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
@@ -370,10 +370,11 @@
       <jump line="38" column="0" filename="$USER_HOME$/CSE232/oldJoinOptimizer/GraphPrinter.java" />
       <jump line="8" column="41" filename="$USER_HOME$/CSE232/oldJoinOptimizer/testcase.dot" />
       <jump line="6" column="4" filename="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/WorCount.java" />
+      <jump line="54" column="31" filename="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text encoding="base64">ZXh0ZW5kcyA=</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">fQo=</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">ZXh0ZW5kcyA=</text>
@@ -384,11 +385,11 @@
       <register name="0" type="4">
         <text encoding="base64">SGFzaHRhYmxlPFBhdGgsIExpc3Q8UGF0aD4+IHJlZl9kaXJlY3RvcnlUcmVlID0=</text>
       </register>
-      <register name="1" type="4">
-        <text encoding="base64">ZXh0ZW5kcyA=</text>
+      <register name="1" type="2">
+        <text encoding="base64">fQo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">aW1wb3J0IHN0YXRpYyBqYXZhLmF3dC5TeXN0ZW1Db2xvci50ZXh0Owo=</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="3" type="2">
         <text encoding="base64">Cg==</text>
@@ -396,14 +397,14 @@
       <register name="4" type="2">
         <text encoding="base64">Cg==</text>
       </register>
-      <register name="5" type="4">
-        <text encoding="base64">cHVibGljIGNsYXNzIFdvckNvdW50IHsKfQo=</text>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgd29yZC5zZXQoc3RyLnRvU3RyaW5nKCkpOwogICAgICAgICAgICBjb250ZXh0LndyaXRlKHdvcmQsIG9uZSk7Cg==</text>
       </register>
-      <register name="6" type="4">
-        <text>2</text>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgLy9vbmUuc2V0KGxzLnNpemUoKSk7Cg==</text>
       </register>
-      <register name="7" type="4">
-        <text encoding="base64">ICAgICAgICAzCiAgICAgICAgNAogICAgICAgIDUKICAgICAgICA2CiAgICAgICAgNwogICAgICAgIDgKICAgICAgICA5CiAgICAgICAgMTAKICAgICAgICAxMQogICAgICAgIDEyCiAgICAgICAgMTMKICAgICAgICAxNAogICAgICAgIDE1CiAgICAgICAgMTYKICAgICAgICAxNwogICAgICAgIDE4CiAgICAgICAgMTkKICAgICAgICAyMAogICAgICAgIDIxCiAgICAgICAgMjIKICAgICAgICAyMwogICAgICAgIDI0CiAgICAgICAgMjUKICAgICAgICAyNgogICAgICAgIDI3CiAgICAgICAgMjgKICAgICAgICAyOQogICAgICAgIDMwCiAgICAgICAgMzEKICAgICAgICAzMgogICAgICAgIDMzCiAgICAgICAgMzQKICAgICAgICAzNQogICAgICAgIDM2CiAgICAgICAgMzcKICAgICAgICAzOAogICAgICAgIDM5CiAgICAgICAgNDAKICAgICAgICA0MQogICAgICAgIDQyCiAgICAgICAgNDMKICAgICAgICA0NAogICAgICAgIDQ1CiAgICAgICAgNDYKICAgICAgICA0NwogICAgICAgIDQ4CiAgICAgICAgNDkKICAgICAgICA1MAogICAgICAgIDUxCiAgICAgICAgNTIKICAgICAgICA1MwogICAgICAgIDU0CiAgICAgICAgNTUKICAgICAgICA1NgogICAgICAgIDU3CiAgICAgICAgNTgKICAgICAgICA1OQogICAgICAgIDYwCiAgICAgICAgNjEKICAgICAgICA2MgogICAgICAgIDYzCiAgICAgICAgNjQ=</text>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgc3RyID0gbmV3IFN0cmluZ0J1ZmZlcigiIik7Cg==</text>
       </register>
       <register name="w" type="4">
         <keys>
@@ -3271,11 +3272,11 @@
           <key char="65535" code="27" mods="0" />
         </keys>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">IHZ0YSAtPiB2YSBbIGxhYmVsPSIkdGEgLT4gJGEgKGxhYmVsOiB0aXRsZSkiIF07CiAgdnRiIC0+IHZiIFsgbGFiZWw9IiR0YiAtPiAkYiAobGFiZWw6IHRpdGxlKSIgXTsKICB2YSAtPiBkb2NfaW5wdXRfIFsgbGFiZWw9IiRhIC0+IGRvYygiaW5wdXQiKSAobGFiZWw6IGVudHJ5KSIgXTsKICB2YiAtPiBkb2NfaW5wdXRfIFsgbGFiZWw9IiRiIC0+IGRvYygiaW5wdXQiKSAobGFiZWw6IGJvb2spIiBdOwogIHZ0YiAtPiB2dGEgWyBsYWJlbD0iJHRiIC0+ICR0YSAobGFiZWw6IGVxKSIgXTsKICB2dGEgLT4gdnRiIFsgbGFiZWw9IiR0YiAtPiAkdGEgKGxhYmVsOiBlcSkiIF07</text>
+      <register name="8" type="2">
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4ocHJpbnRHcmFwaCgpOykK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICB9Cg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
