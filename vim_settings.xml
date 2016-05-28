@@ -235,11 +235,11 @@
       <file name="$USER_HOME$/Distributed_system/Distributed_system.iml" timestamp="1463525517312">
         <mark key="[" line="1" column="37" />
       </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" timestamp="1464399172511">
-        <mark key="[" line="89" column="14" />
-        <mark key="]" line="89" column="11" />
-        <mark key="^" line="89" column="11" />
-        <mark key="." line="89" column="11" />
+      <file name="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" timestamp="1464400451501">
+        <mark key="[" line="155" column="34" />
+        <mark key="]" line="156" column="35" />
+        <mark key="^" line="156" column="35" />
+        <mark key="." line="156" column="35" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/VarEnvironmentList.java" timestamp="1461865880817">
         <mark key="[" line="2" column="0" />
@@ -378,7 +378,8 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text />
+        <text>job.setOutputKeyClass(Text.class);
+        job.setOutputValueClass(IntWritable.class);</text>
       </register>
       <register name="-" type="4">
         <text />
@@ -386,29 +387,30 @@
       <register name="/" type="4">
         <text>input</text>
       </register>
-      <register name="0" type="2">
-        <text encoding="base64">ICAgICAgICAvL1RleHRPdXRwdXRGb3JtYXQuc2V0T3V0cHV0UGF0aChqb2IsIG5ldyBQYXRoKCJ0bXAvdGVtcCIpOwo=</text>
+      <register name="0" type="4">
+        <text>job.setOutputKeyClass(Text.class);
+        job.setOutputValueClass(IntWritable.class);</text>
       </register>
-      <register name="1" type="4">
-        <text />
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgfQo=</text>
       </register>
-      <register name="2" type="4">
-        <text>uc</text>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHQudG9TdHJpbmcoKTsK</text>
       </register>
-      <register name="3" type="4">
-        <text>}</text>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgZm9yIChUZXh0IHQgOiB2YWx1ZXMpIHsK</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oImNudCBpcyAiKyBNYXAxLmNudCk7Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgU3RyaW5nIGtleSA9ICIiOwo=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oIkRvbmUuIik7Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgLyoK</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIAo=</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgam9iMi5zZXRNYXBPdXRwdXRWYWx1ZUNsYXNzKFRleHQuY2xhc3MpOwo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIAo=</text>
       </register>
       <register name="w" type="4">
         <keys>
@@ -3277,10 +3279,10 @@
         </keys>
       </register>
       <register name="8" type="4">
-        <text encoding="base64">IA==</text>
+        <text />
       </register>
       <register name="9" type="4">
-        <text>g</text>
+        <text>uc</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
@@ -3323,6 +3325,7 @@
         <entry>W</entry>
         <entry>wk</entry>
         <entry>we</entry>
+        <entry>w:w</entry>
         <entry>w</entry>
       </history-cmd>
       <history-expr />
