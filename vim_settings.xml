@@ -135,6 +135,7 @@
         <mark key="." line="31" column="21" />
         <mark key="^" line="31" column="21" />
       </file>
+      <file name="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/WordCount.java" timestamp="1464415598300" />
       <file name="$USER_HOME$/CSE232/oldJoinOptimizer/JoinOptimizer.java" timestamp="1464122003359">
         <mark key="[" line="118" column="21" />
         <mark key="]" line="118" column="20" />
@@ -235,11 +236,12 @@
       <file name="$USER_HOME$/Distributed_system/Distributed_system.iml" timestamp="1463525517312">
         <mark key="[" line="1" column="37" />
       </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" timestamp="1464412525779">
-        <mark key="[" line="136" column="0" />
-        <mark key="]" line="136" column="0" />
-        <mark key="." line="136" column="0" />
-        <mark key="^" line="136" column="22" />
+      <file name="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" timestamp="1464415566509">
+        <mark key="'" line="179" column="36" />
+        <mark key="[" line="126" column="23" />
+        <mark key="]" line="92" column="32" />
+        <mark key="." line="92" column="32" />
+        <mark key="^" line="92" column="32" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/VarEnvironmentList.java" timestamp="1461865880817">
         <mark key="[" line="2" column="0" />
@@ -275,7 +277,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="477" column="17" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="2" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="63" column="49" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="140" column="4" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
@@ -375,40 +376,41 @@
       <jump line="6" column="4" filename="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/WorCount.java" />
       <jump line="54" column="31" filename="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" />
       <jump line="142" column="12" filename="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" />
+      <jump line="179" column="36" filename="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAvL0ZpbGVTeXN0ZW0uZ2V0TG9jYWwoY29uZikuZGVsZXRlKG5ldyBQYXRoKCIvdG1wL3RlbXAxL3BhcnQtci0wMDAwMCIpLCB0cnVlKTsK</text>
+      <register name="&quot;" type="4">
+        <text encoding="base64">IFN0cmluZyBzdHIxID0gc3RyaW5nVG9rZW5pemVyLm5leHRUb2tlbigpOwoKICAgICAgICAgICAgICAgICAgICB3b3JkID0gc3RyMC50cmltKCkgKyAiICIgK3N0cjEudHJpbSgpOw==</text>
       </register>
       <register name="-" type="4">
-        <text />
+        <text>static</text>
       </register>
       <register name="/" type="4">
         <text>input</text>
       </register>
-      <register name="0" type="2">
-        <text encoding="base64">ICAgICAgICBqb2Iuc2V0TWFwT3V0cHV0VmFsdWVDbGFzcyhJbnRXcml0YWJsZS5jbGFzcyk7Cg==</text>
+      <register name="0" type="4">
+        <text encoding="base64">IFBhdGggb3V0cHV0ID0gbmV3IFBhdGgoIi90bXAvdGVtcDEiKTsKICAgICAgICBGaWxlU3lzdGVtIGhkZnMgPSBGaWxlU3lzdGVtLmdldChjb25mKTsKCiAgICAgICAgLy8gZGVsZXRlIGV4aXN0aW5nIGRpcmVjdG9yeQogICAgICAgIGlmIChoZGZzLmV4aXN0cyhvdXRwdXQpKSB7CiAgICAgICAgICAgIGhkZnMuZGVsZXRlKG91dHB1dCwgdHJ1ZSk7CiAgICAgICAgfQ==</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAvL0ZpbGVTeXN0ZW0uZ2V0TG9jYWwoY29uZikuZGVsZXRlKG5ldyBQYXRoKCIvdG1wL3RlbXAxL3BhcnQtci0wMDAwMCIpLCB0cnVlKTsK</text>
+      <register name="1" type="4">
+        <text encoding="base64">IFN0cmluZyBzdHIxID0gc3RyaW5nVG9rZW5pemVyLm5leHRUb2tlbigpOwoKICAgICAgICAgICAgICAgICAgICB3b3JkID0gc3RyMC50cmltKCkgKyAiICIgK3N0cjEudHJpbSgpOw==</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICBDb25maWd1cmF0aW9uIGNvbmYgPSBuZXcgQ29uZmlndXJhdGlvbigpOwo=</text>
+        <text encoding="base64">ICAgICAgICBGaWxlU3lzdGVtLmdldExvY2FsKGNvbmYyKS5kZWxldGUobmV3IFBhdGgoYXJnc1sxXSksIHRydWUpOwo=</text>
       </register>
       <register name="3" type="4">
-        <text encoding="base64">IEZpbGVTeXN0ZW0gZnMgPSBGaWxlU3lzdGVtLmdldChjb25mKTsKICAgICAgICBmcy5kZWxldGUobmV3IFBhdGgoIi90bXAvIiksIHRydWUpOyAvLyBkZWxldGUgZmlsZSwgdHJ1ZSBmb3IgcmVjdXJzaXZl</text>
+        <text>static</text>
       </register>
-      <register name="4" type="4">
-        <text />
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICBGaWxlU3lzdGVtIGhkZnMyID0gRmlsZVN5c3RlbS5nZXQoY29uZik7Cg==</text>
       </register>
-      <register name="5" type="4">
-        <text encoding="base64">ICAgIHByb3RlY3RlZCBEZXNjZW5kaW5nS2V5Q29tcGFyYXRvcigpIHsKICAgICAgICAgICAgc3VwZXIoVGV4dC5jbGFzcywgdHJ1ZSk7CiAgICAgICAgfQ==</text>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgICAgICBGaWxlU3lzdGVtIGhkZnMyID0gRmlsZVN5c3RlbS5nZXQoY29uZik7Cg==</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICBQYXRoIG91dHB1dDIgPSBuZXcgUGF0aChhcmdzWzFdKTsK</text>
       </register>
       <register name="7" type="4">
-        <text />
+        <text>output2</text>
       </register>
       <register name="w" type="4">
         <keys>
@@ -3276,11 +3278,11 @@
           <key char="65535" code="27" mods="0" />
         </keys>
       </register>
-      <register name="8" type="4">
-        <text>IntWritable,</text>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgICAvL0ZpbGVTeXN0ZW0uZ2V0TG9jYWwoY29uZikuZGVsZXRlKG5ldyBQYXRoKCIvdG1wL3RlbXAxL3BhcnQtci0wMDAwMCIpLCB0cnVlKTsK</text>
       </register>
-      <register name="9" type="4">
-        <text />
+      <register name="9" type="2">
+        <text encoding="base64">ICAgICAgICBDb25maWd1cmF0aW9uIGNvbmYgPSBuZXcgQ29uZmlndXJhdGlvbigpOwo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
