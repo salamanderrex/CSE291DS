@@ -235,11 +235,11 @@
       <file name="$USER_HOME$/Distributed_system/Distributed_system.iml" timestamp="1463525517312">
         <mark key="[" line="1" column="37" />
       </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" timestamp="1464400451501">
-        <mark key="[" line="155" column="34" />
-        <mark key="]" line="156" column="35" />
-        <mark key="^" line="156" column="35" />
-        <mark key="." line="156" column="35" />
+      <file name="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" timestamp="1464412525779">
+        <mark key="[" line="136" column="0" />
+        <mark key="]" line="136" column="0" />
+        <mark key="." line="136" column="0" />
+        <mark key="^" line="136" column="22" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/VarEnvironmentList.java" timestamp="1461865880817">
         <mark key="[" line="2" column="0" />
@@ -377,9 +377,8 @@
       <jump line="142" column="12" filename="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(IntWritable.class);</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICAvL0ZpbGVTeXN0ZW0uZ2V0TG9jYWwoY29uZikuZGVsZXRlKG5ldyBQYXRoKCIvdG1wL3RlbXAxL3BhcnQtci0wMDAwMCIpLCB0cnVlKTsK</text>
       </register>
       <register name="-" type="4">
         <text />
@@ -387,30 +386,29 @@
       <register name="/" type="4">
         <text>input</text>
       </register>
-      <register name="0" type="4">
-        <text>job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(IntWritable.class);</text>
+      <register name="0" type="2">
+        <text encoding="base64">ICAgICAgICBqb2Iuc2V0TWFwT3V0cHV0VmFsdWVDbGFzcyhJbnRXcml0YWJsZS5jbGFzcyk7Cg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgfQo=</text>
+        <text encoding="base64">ICAgICAgICAvL0ZpbGVTeXN0ZW0uZ2V0TG9jYWwoY29uZikuZGVsZXRlKG5ldyBQYXRoKCIvdG1wL3RlbXAxL3BhcnQtci0wMDAwMCIpLCB0cnVlKTsK</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHQudG9TdHJpbmcoKTsK</text>
+        <text encoding="base64">ICAgICAgICBDb25maWd1cmF0aW9uIGNvbmYgPSBuZXcgQ29uZmlndXJhdGlvbigpOwo=</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgZm9yIChUZXh0IHQgOiB2YWx1ZXMpIHsK</text>
+      <register name="3" type="4">
+        <text encoding="base64">IEZpbGVTeXN0ZW0gZnMgPSBGaWxlU3lzdGVtLmdldChjb25mKTsKICAgICAgICBmcy5kZWxldGUobmV3IFBhdGgoIi90bXAvIiksIHRydWUpOyAvLyBkZWxldGUgZmlsZSwgdHJ1ZSBmb3IgcmVjdXJzaXZl</text>
       </register>
-      <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgU3RyaW5nIGtleSA9ICIiOwo=</text>
+      <register name="4" type="4">
+        <text />
       </register>
-      <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgLyoK</text>
+      <register name="5" type="4">
+        <text encoding="base64">ICAgIHByb3RlY3RlZCBEZXNjZW5kaW5nS2V5Q29tcGFyYXRvcigpIHsKICAgICAgICAgICAgc3VwZXIoVGV4dC5jbGFzcywgdHJ1ZSk7CiAgICAgICAgfQ==</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIAo=</text>
+        <text encoding="base64">Cg==</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIAo=</text>
+      <register name="7" type="4">
+        <text />
       </register>
       <register name="w" type="4">
         <keys>
@@ -3279,10 +3277,10 @@
         </keys>
       </register>
       <register name="8" type="4">
-        <text />
+        <text>IntWritable,</text>
       </register>
       <register name="9" type="4">
-        <text>uc</text>
+        <text />
       </register>
       <register name=":" type="4">
         <text>w</text>
