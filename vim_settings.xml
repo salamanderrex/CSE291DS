@@ -13,6 +13,12 @@
         <mark key="]" line="49" column="0" />
         <mark key="." line="49" column="0" />
       </file>
+      <file name="$USER_HOME$/Desktop/CSE291DS/project3/pom.xml" timestamp="1464393491968">
+        <mark key="[" line="19" column="24" />
+        <mark key="]" line="19" column="23" />
+        <mark key="^" line="19" column="23" />
+        <mark key="." line="19" column="23" />
+      </file>
       <file name="/a.dummy" timestamp="1463969937969">
         <mark key="[" line="0" column="0" />
       </file>
@@ -129,7 +135,7 @@
         <mark key="." line="31" column="21" />
         <mark key="^" line="31" column="21" />
       </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/WordCount.java" timestamp="1464370744569" />
+      <file name="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/WordCount.java" timestamp="1464393440538" />
       <file name="$USER_HOME$/CSE232/oldJoinOptimizer/JoinOptimizer.java" timestamp="1464122003359">
         <mark key="[" line="118" column="21" />
         <mark key="]" line="118" column="20" />
@@ -230,12 +236,11 @@
       <file name="$USER_HOME$/Distributed_system/Distributed_system.iml" timestamp="1463525517312">
         <mark key="[" line="1" column="37" />
       </file>
-      <file name="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" timestamp="1464390370405">
-        <mark key="'" line="55" column="31" />
-        <mark key="[" line="135" column="53" />
-        <mark key="]" line="135" column="52" />
-        <mark key="." line="135" column="52" />
-        <mark key="^" line="135" column="52" />
+      <file name="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" timestamp="1464392901023">
+        <mark key="[" line="154" column="37" />
+        <mark key="]" line="154" column="7" />
+        <mark key="^" line="154" column="7" />
+        <mark key="." line="154" column="7" />
       </file>
       <file name="$USER_HOME$/CSE232/project1/src/xquery/value/VarEnvironmentList.java" timestamp="1461865880817">
         <mark key="[" line="2" column="0" />
@@ -271,7 +276,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="470" column="18" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="477" column="17" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
       <jump line="2" column="0" filename="$USER_HOME$/Distributed_system/src/naming/ReadWriteLock.java" />
       <jump line="63" column="49" filename="$USER_HOME$/Distributed_system/src/naming/NamingServer.java" />
@@ -371,40 +375,41 @@
       <jump line="8" column="41" filename="$USER_HOME$/CSE232/oldJoinOptimizer/testcase.dot" />
       <jump line="6" column="4" filename="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/WorCount.java" />
       <jump line="54" column="31" filename="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" />
+      <jump line="142" column="12" filename="$USER_HOME$/Desktop/CSE291DS/project3/src/main/java/BiGram.java" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgY29uZjIuc2V0Sm9iTmFtZSgiIikK</text>
+      <register name="&quot;" type="4">
+        <text />
       </register>
       <register name="-" type="4">
-        <text>clas</text>
+        <text />
       </register>
       <register name="/" type="4">
         <text>input</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgVGV4dE91dHB1dEZvcm1hdC5zZXRPdXRwdXRQYXRoKGpvYiwgbmV3IFBhdGgoYXJnc1sxXSkpOwo=</text>
+        <text encoding="base64">ICAgICAgICAvL1RleHRPdXRwdXRGb3JtYXQuc2V0T3V0cHV0UGF0aChqb2IsIG5ldyBQYXRoKCJ0bXAvdGVtcCIpOwo=</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgY29uZjIuc2V0Sm9iTmFtZSgiIikK</text>
+      <register name="1" type="4">
+        <text />
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">Cg==</text>
+      <register name="2" type="4">
+        <text>uc</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgVGV4dE91dHB1dEZvcm1hdC5zZXRPdXRwdXRQYXRoKGpvYiwgbmV3IFBhdGgoYXJnc1sxXSkpOwo=</text>
+      <register name="3" type="4">
+        <text>}</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgVGV4dElucHV0Rm9ybWF0LmFkZElucHV0UGF0aChqb2IsIG5ldyBQYXRoKGFyZ3NbMF0pKTsK</text>
+        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oImNudCBpcyAiKyBNYXAxLmNudCk7Cg==</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgam9iMi5zZXQK</text>
+        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oIkRvbmUuIik7Cg==</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgCg==</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgam9iMi5zZXRNYXBPdXRwdXRWYWx1ZUNsYXNzKFRleHQuY2xhc3MpOwo=</text>
       </register>
       <register name="w" type="4">
         <keys>
@@ -3273,10 +3278,10 @@
         </keys>
       </register>
       <register name="8" type="4">
-        <text>clas</text>
+        <text encoding="base64">IA==</text>
       </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgIHB1YmxpYyBzdGF0aWMgY2xhc3MgUmVkdWNlMSBleHRlbmRzIFJlZHVjZXI8VGV4dCwgSW50V3JpdGFibGUsIFRleHQsIEludFdyaXRhYmxlPiB7Cg==</text>
+      <register name="9" type="4">
+        <text>g</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
@@ -3317,6 +3322,8 @@
         <entry>r</entry>
         <entry>U</entry>
         <entry>W</entry>
+        <entry>wk</entry>
+        <entry>we</entry>
         <entry>w</entry>
       </history-cmd>
       <history-expr />
