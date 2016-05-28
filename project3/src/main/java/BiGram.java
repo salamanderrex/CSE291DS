@@ -11,6 +11,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import org.apache.commons.collections.iterators.ListIteratorWrapper;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileUtil;
 import org.apache.hadoop.fs.Path;
@@ -64,7 +65,7 @@ public class BiGram {
             }
         }
     }
-    public static class Combiner1 extends Reducer<Text,IntWritable,Text,IntWritable>
+    public static class Combiner1 extends Reducer<Text,IntWritable,IntWritable,Text>
     {
         private IntWritable result = new IntWritable();
 
@@ -76,19 +77,23 @@ public class BiGram {
                 sum += val.get();
             }
             result.set(sum);
-            context.write(key, result);
+            //context.write(key, result);
+            context.write(result,key);
         }
     }
 
-    public static class Reduce1 extends Reducer<Text, IntWritable, IntWritable, Text> {
-        public void reduce(Text key, Iterable<IntWritable> values, Context context)
+    public static class Reduce1 extends Reducer<IntWritable, Text, IntWritable, Text> {
+        public void reduce(IntWritable val, Iterable<Text> values, Context context)
                 throws IOException, InterruptedException {
+            /*
             int sum = 0;
             for (IntWritable val : values) {
                 sum += val.get();
             }
+            */
+
             //context.write(key, new IntWritable(sum));
-            context.write(new IntWritable(sum), key);
+            context.write(val, values.iterator().next());
         }
 
 
@@ -144,8 +149,12 @@ public class BiGram {
         // job.setNumReduceTasks(0);
         job.setJarByClass(BiGram.class);
 
+        /*
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
+        */
+        job.setOutputKeyClass(IntWritable.class);
+        job.setOutputValueClass(Text.class);
         job.setMapOutputValueClass(IntWritable.class);
         job.setMapOutputKeyClass(Text.class);
         job.setInputFormatClass(TextInputFormat.class);
