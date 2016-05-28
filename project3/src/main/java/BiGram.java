@@ -13,12 +13,10 @@ import java.util.StringTokenizer;
 
 import org.apache.commons.collections.iterators.ListIteratorWrapper;
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.FileUtil;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.io.IntWritable;
-import org.apache.hadoop.io.LongWritable;
-import org.apache.hadoop.io.Text;
-import org.apache.hadoop.io.WritableComparator;
+import org.apache.hadoop.io.*;
 import org.apache.hadoop.mapred.OutputCollector;
 import org.apache.hadoop.mapred.Reporter;
 import org.apache.hadoop.mapreduce.Job;
@@ -43,7 +41,6 @@ public class BiGram {
 
             while (dt.hasMoreTokens()) {
                 ls.add(dt.nextToken());
-                cnt++;
             }
 
         }
@@ -59,41 +56,24 @@ public class BiGram {
                         str = str.append(" ");
                     str = str.append(ls.get(i + j));
                 }
+                this.cnt++;
                 word.set(str.toString());
                 context.write(word, one);
                 str.setLength(0);
             }
         }
     }
-    public static class Combiner1 extends Reducer<Text,IntWritable,IntWritable,Text>
-    {
-        private IntWritable result = new IntWritable();
 
-        public void reduce(Text key, Iterable<IntWritable> values,Context context) throws IOException, InterruptedException
-        {
-            int sum = 0;
-            for (IntWritable val : values)
-            {
-                sum += val.get();
-            }
-            result.set(sum);
-            //context.write(key, result);
-            context.write(result,key);
-        }
-    }
 
-    public static class Reduce1 extends Reducer<IntWritable, Text, IntWritable, Text> {
-        public void reduce(IntWritable val, Iterable<Text> values, Context context)
+    public static class Reduce1 extends Reducer<Text, IntWritable, Text, IntWritable> {
+        public void reduce(Text key, Iterable<IntWritable> values, Context context)
                 throws IOException, InterruptedException {
-            /*
             int sum = 0;
             for (IntWritable val : values) {
                 sum += val.get();
             }
-            */
 
-            //context.write(key, new IntWritable(sum));
-            context.write(val, values.iterator().next());
+            context.write(key, new IntWritable(sum));
         }
 
 
@@ -101,8 +81,7 @@ public class BiGram {
 
     //change (word,count) -> (count->word)
     // ngram count
-    /*
-    public static class Map2 extends Mapper<LongWritable, Text, Text, IntWritable> {
+    public static class Map2 extends Mapper<LongWritable, Text, IntWritable, Text> {
         public void map(LongWritable key, Text value, Context context)
                 throws IOException, InterruptedException {
             String line = value.toString();
@@ -111,92 +90,122 @@ public class BiGram {
                 int number = 999;
                 String word = "empty!!!!";
 
+                String str0 = "";
                 if (stringTokenizer.hasMoreTokens()) {
-                    String str0 = stringTokenizer.nextToken();
-                    word = str0.trim();
+                    //Bigram
+                    str0 = stringTokenizer.nextToken();
+
                 }
 
                 if (stringTokenizer.hasMoreElements()) {
                     String str1 = stringTokenizer.nextToken();
-                    number = Integer.parseInt(str1.trim());
+
+                    word = str0.trim() + " " + str1.trim();
+                    String str2 = stringTokenizer.nextToken();
+                    number = Integer.parseInt(str2.trim());
                 }
 
                 //collector.collect(new IntWritable(number), new Text(word));
-                context.write
+                context.write(new IntWritable(number), new Text(word));
             }
 
 
         }
 
 
-        public static class Reduce2 extends Reducer<IntWritable, Text, IntWritable, Text> {
+    }
 
-            public void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException {
-                while ((values.hasNext())) {
-                    arg2.collect(key, values.next());
-                }
-            }
+    public static class Reduce2 extends Reducer<IntWritable, Text, IntWritable, Text> {
 
+        public void reduce(IntWritable key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
+            context.write(key, values.iterator().next());
         }
-        */
+    }
+
+    public static class MyKeyComparator extends WritableComparator {
+        protected MyKeyComparator() {
+            super(IntWritable.class, true);
+        }
+
+        @SuppressWarnings("rawtypes")
+        @Override
+        public int compare(WritableComparable w1, WritableComparable w2) {
+            IntWritable key1 = (IntWritable) w1;
+            IntWritable key2 = (IntWritable) w2;
+            return -1 * key1.compareTo(key2);
+        }
+    }
 
     public static void main(String[] args) throws Exception {
         FileUtil.fullyDelete(new File(args[1]));
+        FileUtil.fullyDelete(new File("/tmp"));
 
         Configuration conf = new Configuration();
+
+
+        Path output = new Path("/tmp/temp1");
+        FileSystem hdfs = FileSystem.get(conf);
+
+        // delete existing directory
+        if (hdfs.exists(output)) {
+            hdfs.delete(output, true);
+        }
+
+        Path output2 = new Path(args[1]);
+
+        // delete existing directory
+        if (hdfs.exists(output2)) {
+            hdfs.delete(output2, true);
+        }
         //conf.set("grams", args[2]);
         Job job = new Job(conf, "wordcount");
         // job.setNumReduceTasks(0);
         job.setJarByClass(BiGram.class);
 
-        /*
+        //job.setMapOutputKeyClass(Text.class);
+        //job.setMapOutputValueClass(IntWritable.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
-        */
-        job.setOutputKeyClass(IntWritable.class);
-        job.setOutputValueClass(Text.class);
-        job.setMapOutputValueClass(IntWritable.class);
-        job.setMapOutputKeyClass(Text.class);
         job.setInputFormatClass(TextInputFormat.class);
         job.setOutputFormatClass(TextOutputFormat.class);
 
         job.setMapperClass(Map1.class);
-        job.setCombinerClass(Combiner1.class);
+        job.setCombinerClass(Reduce1.class);
         job.setReducerClass(Reduce1.class);
         TextInputFormat.addInputPath(job, new Path(args[0]));
-        //TextOutputFormat.setOutputPath(job, new Path("tmp/temp");
-        TextOutputFormat.setOutputPath(job, new Path(args[1]));
+        TextOutputFormat.setOutputPath(job, new Path("/tmp/temp1"));
 
-            /*
-            Configuration conf2 = new Configuration();
-            Job job2 = new Job(conf2, "reverKeyPair");
-            job2.setJarByClass(Ngram.class);
+        //TextOutputFormat.setOutputPath(job, new Path(args[1]));
 
-            job2.setOutputKeyClass(IntWritable.class);
-            job2.setOutputValueClass(Text.class);
-            job2.setMapOutputKeyClass(IntWritable.class);
-            job2.setMapOutputValueClass(Text.class);
-            job2.setInputFormatClass(TextInputFormat.class);
-            job2.setOutputFormatClass(TextOutputFormat.class);
+        Configuration conf2 = new Configuration();
+        Job job2 = new Job(conf2, "reverKeyPair");
+        job2.setJarByClass(BiGram.class);
 
-            job2.setMapperClass(Map2.class);
-            job2.setCombinerClass(Reduce2.class);
-            job2.setReducerClass(Reduce2.class);
-            TextInputFormat.addInputPath(job2, new Path("tmp/temp/part-00000"));
-            TextOutputFormat.setOutputPath(job2, new Path(args[1]));
+        job2.setOutputKeyClass(IntWritable.class);
+        job2.setOutputValueClass(Text.class);
+        //job2.setMapOutputKeyClass(IntWritable.class);
+        //job2.setMapOutputValueClass(Text.class);
+        job2.setInputFormatClass(TextInputFormat.class);
+        job2.setOutputFormatClass(TextOutputFormat.class);
+
+        //reserve sort
+        job2.setSortComparatorClass(MyKeyComparator.class);
+
+        job2.setMapperClass(Map2.class);
+        job2.setReducerClass(Reduce2.class);
+        TextInputFormat.addInputPath(job2, new Path("/tmp/temp1/part-r-00000"));
+        TextOutputFormat.setOutputPath(job2, new Path(args[1]));
 
 
-            job.submit();
-            if (job.waitForCompletion(true)) {
-                System.out.println("job 1 done ");
-            }
-            job2.submit();
-            job2.waitForCompletion(true);
-            */
-        job.waitForCompletion(true);
-
+        job.submit();
+        if (job.waitForCompletion(true)) {
+            System.out.println("job 1 done ");
+            System.out.println("cnt is " + Map1.cnt);
+        }
+        job2.submit();
+        job2.waitForCompletion(true);
+        //job.waitForCompletion(true);
         System.out.println("Done.");
-        System.out.println("cnt is " + Map1.cnt);
     }
 
 
