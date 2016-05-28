@@ -59,6 +59,7 @@ public class BiGram {
                 this.cnt++;
                 word.set(str.toString());
                 context.write(word, one);
+                context.write(new Text("THIS_IS TOTAL_COUNT"),one);
                 str.setLength(0);
             }
         }
