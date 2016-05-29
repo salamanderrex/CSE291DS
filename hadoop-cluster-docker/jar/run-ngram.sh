@@ -27,5 +27,6 @@ echo -e "\n----"
 hdfs dfs -cat /tmp/temp2/part-r-00000
 
 echo -e "\n to print final result"
+rm /root/jar/part-r-00000
 hadoop fs -get /output/part-r-00000 /root/jar/
 python /root/jar/display.py
