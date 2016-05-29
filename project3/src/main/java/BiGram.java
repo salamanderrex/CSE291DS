@@ -241,22 +241,39 @@ public static class Map3 extends Mapper<LongWritable, Text, IntWritable, Text> {
             int counter = 0;
             int tempK = 0;
             boolean find= false;
+            int count=0;
+            int max = 0;
             //ArrayList <String> mostFrequestWordList =((Map.Entry<Integer,ArrayList<String>> )(entrySet.iterator().next())).getValue();
             Iterator it = entrySet.iterator();
-            while (it.hasNext()&& !find) {
+            while (it.hasNext() && !find) {
                 Map.Entry<Integer, ArrayList<String>> me = (Map.Entry) it.next();
                 ArrayList<String> list = me.getValue();
-                int count = me.getKey();
+                if(max == 0)
+                    max = me.getKey();
+                count = me.getKey();
                 for (String str : list) {
                     //context.write(new IntWritable(count), new Text(str));
+                    tempK ++;
                     counter = counter + count;
                     if (find == false && counter > threadHold) {
                         find = true;
                         break;
                     } else {
                         context.write(new IntWritable(tempK), new Text("in loop:"+str));
-                        tempK ++;
+
                     }
+                }
+            }
+            
+            context.write(new IntWritable(tempK), new Text("top K"));
+            it = entrySet.iterator();
+            while(it.hasNext()){
+                Map.Entry<Integer, ArrayList<String>> me = (Map.Entry) it.next();
+                ArrayList<String> list = me.getValue();
+                if(me.getKey() < max)
+                    break;
+                for(String str: list){
+                    context.write(new IntWritable(me.getKey()), new Text(str));
                 }
             }
             //total count
@@ -270,7 +287,6 @@ public static class Map3 extends Mapper<LongWritable, Text, IntWritable, Text> {
             }
             System.out.println("#########10% gram is\n "+tempK);
             */
-            context.write(new IntWritable(tempK), new Text("top K"));
         }
     }
     public static void main(String[] args) throws Exception {
