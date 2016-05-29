@@ -1,7 +1,7 @@
 __author__ = 'qingyu'
 
 def main():
-    fileName = "displayOutPut"
+    fileName = "part-r-00000"
     with open(fileName,'r') as f:
         lines = f.readlines()
     print "##########Total is ##########"
