@@ -25,3 +25,7 @@ echo -e "\nwordcount output:"
 hdfs dfs -cat /output/part-r-00000
 echo -e "\n----"
 hdfs dfs -cat /tmp/temp2/part-r-00000
+
+echo -e "\n to print final result"
+hadoop fs -get /output/part-r-00000 /root/jar/
+python /root/jar/display.py
