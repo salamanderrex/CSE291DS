@@ -1,7 +1,7 @@
 __author__ = 'qingyu'
 
 def main():
-    fileName = "part-r-00000"
+    fileName = "/root/jar/part-r-00000"
     with open(fileName,'r') as f:
         lines = f.readlines()
     print "##########Total is ##########"
@@ -14,4 +14,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
