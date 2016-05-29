@@ -23,3 +23,5 @@ hadoop jar /root/jar/291p_3.jar BiGram /input /output
 # print the output of wordcount
 echo -e "\nwordcount output:"
 hdfs dfs -cat /output/part-r-00000
+echo -e "\n----"
+hdfs dfs -cat /tmp/temp2/part-r-00000
