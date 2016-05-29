@@ -13,8 +13,8 @@ fi
 # founction for delete images
 function docker_rmi()
 {
-	echo -e "\n\nsudo docker rmi kiwenlau/$1:$tag"
-	sudo docker rmi kiwenlau/$1:$tag
+	echo -e "\n\nsudo docker rmi tuan/$1:$tag"
+	sudo docker rmi tuan/$1:$tag
 }
 
 
@@ -22,8 +22,8 @@ function docker_rmi()
 function docker_build()
 {
 	cd $1
-	echo -e "\n\nsudo docker build -t kiwenlau/$1:$tag ."
-	/usr/bin/time -f "real  %e" sudo docker build -t kiwenlau/$1:$tag .
+	echo -e "\n\nsudo docker build -t $1 ."
+	/usr/bin/time -f "real  %e" sudo docker build -t $1 .
 	cd ..
 }
 
@@ -42,7 +42,7 @@ then
 	docker_build serf-dnsmasq
 	docker_build hadoop-base
 	docker_build hadoop-master
-	docker_build hadoop-slave 
+	docker_build hadoop-slave
 elif [ $image == "hadoop-base" ]
 then
 	docker_rmi hadoop-master

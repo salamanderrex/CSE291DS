@@ -1,23 +1,21 @@
-FROM kiwenlau/hadoop-base:0.1.0
-
-MAINTAINER KiwenLau <kiwenlau@gmail.com>
+FROM hadoop-base
 
 # move all confugration files into container
 ADD files/* /tmp/
 
 ENV HADOOP_INSTALL /usr/local/hadoop
 
-RUN mkdir -p ~/hdfs/namenode && \ 
+RUN mkdir -p ~/hdfs/namenode && \
 mkdir -p ~/hdfs/datanode && \
 mkdir $HADOOP_INSTALL/logs
 
-RUN mv /tmp/hdfs-site.xml $HADOOP_INSTALL/etc/hadoop/hdfs-site.xml && \ 
+RUN mv /tmp/hdfs-site.xml $HADOOP_INSTALL/etc/hadoop/hdfs-site.xml && \
 mv /tmp/core-site.xml $HADOOP_INSTALL/etc/hadoop/core-site.xml && \
 mv /tmp/mapred-site.xml $HADOOP_INSTALL/etc/hadoop/mapred-site.xml && \
 mv /tmp/yarn-site.xml $HADOOP_INSTALL/etc/hadoop/yarn-site.xml && \
 mv /tmp/slaves $HADOOP_INSTALL/etc/hadoop/slaves && \
 mv /tmp/start-hadoop.sh ~/start-hadoop.sh && \
-mv /tmp/run-wordcount.sh ~/run-wordcount.sh && \ 
+mv /tmp/run-wordcount.sh ~/run-wordcount.sh && \
 mv /tmp/start-ssh-serf.sh ~/start-ssh-serf.sh
 
 RUN chmod +x ~/start-hadoop.sh && \
