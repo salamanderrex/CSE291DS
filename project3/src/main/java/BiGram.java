@@ -1,6 +1,6 @@
 /**
-* Created by qingyu on 5/27/16.
-*/
+ * Created by qingyu on 5/27/16.
+ */
 
 
 import java.io.File;
@@ -88,6 +88,7 @@ public class BiGram extends Configured implements Tool {
 
     }
 
+
     //change (word,count) -> (count->word)
     // ngram count
     public static class Map2 extends Mapper<LongWritable, Text, IntWritable, Text> {
@@ -121,86 +122,20 @@ public class BiGram extends Configured implements Tool {
 
         }
 
+
     }
 
+    public static class Reduce2 extends Reducer<IntWritable, Text, IntWritable, Text> {
 
-
-    public static class Reduce2 extends Reducer<IntWritable, Text, Text, Text> {
-
-        public void reduce(IntWritable key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
-
-        }
-
-        @Override
-        protected void cleanup(Context context) throws IOException, InterruptedException {
-           // System.out.println("#########10% gram is\n "+tempK);
-        }
-    }
-    /*
-    public static class Reduce2 extends Reducer<IntWritable, Text, Text, Text> {
-        private TreeMap<Integer, ArrayList<String>> fatcats = new TreeMap<Integer, ArrayList<String>>(Collections.reverseOrder());
-
-        int total_count = 0;
         public void reduce(IntWritable key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
             for (Text value : values) {
-                if (!"THIS_IS TOTAL_COUNT".equals(value.toString())) {
-                    if (this.fatcats.get(key.get()) == null) {
-                        ArrayList<String> al = new ArrayList<String>();
-                        al.add(value.toString());
-                        this.fatcats.put(key.get(), al);
-                    } else {
-                        List<String> list = this.fatcats.get(key.get());
-                        list.add(value.toString());
-                    }
-                } else {
-                    this.total_count = key.get();
-                }
-            }
-        }
-
-        @Override
-        protected void cleanup(Context context) throws IOException, InterruptedException {
-            Collection entrySet = this.fatcats.entrySet();
-
-            double threadHold = 0.1 * total_count;
-            int counter = 0;
-            int tempK = 0;
-            boolean find= false;
-            ArrayList <String> mostFrequestWordList =((Map.Entry<Integer,ArrayList<String>> )(entrySet.iterator().next())).getValue();
-
-            Iterator it = entrySet.iterator();
-            while (it.hasNext()) {
-                Map.Entry<Integer, ArrayList<String>> me = (Map.Entry) it.next();
-                ArrayList<String> list = me.getValue();
-                int count = me.getKey();
-                for (String str : list) {
-                    //context.write(new IntWritable(count), new Text(str));
-                    counter = counter + count;
-
-                    if (find == false && counter > threadHold) {
-                        find = true;
-                        break;
-                    } else {
-                        tempK ++;
-                    }
-
-                }
-
+                context.write(key, value);
             }
 
-
-            //total count
-            //System.out.println("#########total number is \n" + total_count);
-            context.write(new Text("most fequent is "),new Text(" "+total_count));
-            System.out.println("#########most frequest is\n ");
-            int i = 0;
-            for (String str : mostFrequestWordList) {
-                context.write(new Text("most feaquent is"+i),new Text(str));
-            }
-            System.out.println("#########10% gram is\n "+tempK);
         }
     }
-*/
+
+
     public static class MyKeyComparator extends WritableComparator {
         protected MyKeyComparator() {
             super(IntWritable.class, true);
@@ -292,7 +227,8 @@ public class BiGram extends Configured implements Tool {
 
 
 
-        Job job2 = new Job();
+        Configuration conf2 = new Configuration();
+        Job job2 = new Job(conf2, "reverKeyPair");
         job2.setJarByClass(BiGram.class);
 
         job2.setOutputKeyClass(IntWritable.class);
@@ -305,7 +241,8 @@ public class BiGram extends Configured implements Tool {
         //reserve sort
         job2.setSortComparatorClass(MyKeyComparator.class);
 
-        job2.setMapperClass(InverseMapper.class);
+        job2.setMapperClass(Map2.class);
+        job2.setReducerClass(Reduce2.class);
         //job2.setReducerClass(Reducer.class);
         job2.setNumReduceTasks(1);
         TextInputFormat.addInputPath(job2, new Path("/tmp/temp1/part-r-00000"));

@@ -13,7 +13,7 @@ fi
 # delete old master container and start new master container
 docker rm -f master &> /dev/null
 echo "start master container..."
-docker run -v $PWD:/root/pro3 -d -t --dns 127.0.0.1 -P --name master -h master.tuan.com -w /root hadoop-master &> /dev/null
+docker run -v $PWD/jar/:/root/jar/ -d -t --dns 127.0.0.1 -P --name master -h master.tuan.com -w /root hadoop-master &> /dev/null
 
 # get the IP address of master container
 FIRST_IP=$(docker inspect --format="{{.NetworkSettings.IPAddress}}" master)
