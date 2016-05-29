@@ -26,10 +26,10 @@ alvinhenrick/hadoop-nn-dn     49.548s         84               4.331GB
 
 ```
 Image Name                    Build time     Layer number       Image Size
-kiwenlau/serf-dnsmasq         509.46s        8                  206.6 MB
-kiwenlau/hadoop-base          400.29s        7                  775.4 MB
-kiwenlau/hadoop-master        5.41s          9                  775.4 MB
-kiwenlau/hadoop-slave         2.41s          8                  775.4 MB
+tuan/serf-dnsmasq         509.46s        8                  206.6 MB
+tuan/hadoop-base          400.29s        7                  775.4 MB
+tuan/hadoop-master        5.41s          9                  775.4 MB
+tuan/hadoop-slave         2.41s          8                  775.4 MB
 ```
 
 #####Attention: old kernel version will cause failure while running my project
@@ -56,16 +56,16 @@ Based on hadoop-base. Configure the Hadoop slave node.
 
 Following picture shows the image architecture of my project:
 
-![alt text](https://github.com/kiwenlau/hadoop-cluster-docker/raw/master/image architecture.jpg "Image Architecture")
+![alt text](https://github.com/tuan/hadoop-cluster-docker/raw/master/image architecture.jpg "Image Architecture")
 
 ##3. steps to build a 3 nodes Hadoop cluster
 
 #####a. pull image
 ```
-sudo docker pull kiwenlau/hadoop-master:0.1.0
-sudo docker pull kiwenlau/hadoop-slave:0.1.0
-sudo docker pull kiwenlau/hadoop-base:0.1.0
-sudo docker pull kiwenlau/serf-dnsmasq:0.1.0
+sudo docker pull tuan/hadoop-master:0.1.0
+sudo docker pull tuan/hadoop-slave:0.1.0
+sudo docker pull tuan/hadoop-base:0.1.0
+sudo docker pull tuan/serf-dnsmasq:0.1.0
 ```
 *check downloaded images*
 
@@ -77,16 +77,16 @@ sudo docker images
 
 ```
 REPOSITORY                TAG       IMAGE ID        CREATED         VIRTUAL SIZE
-kiwenlau/hadoop-slave     0.1.0     d63869855c03    17 hours ago    777.4 MB
-kiwenlau/hadoop-master    0.1.0     7c9d32ede450    17 hours ago    777.4 MB
-kiwenlau/hadoop-base      0.1.0     5571bd5de58e    17 hours ago    777.4 MB
-kiwenlau/serf-dnsmasq     0.1.0     09ed89c24ee8    17 hours ago    206.7 MB
+tuan/hadoop-slave     0.1.0     d63869855c03    17 hours ago    777.4 MB
+tuan/hadoop-master    0.1.0     7c9d32ede450    17 hours ago    777.4 MB
+tuan/hadoop-base      0.1.0     5571bd5de58e    17 hours ago    777.4 MB
+tuan/serf-dnsmasq     0.1.0     09ed89c24ee8    17 hours ago    206.7 MB
 ```
 
 
 #####b. clone source code
 ```
-git clone https://github.com/kiwenlau/hadoop-cluster-docker
+git clone https://github.com/tuan/hadoop-cluster-docker
 ```
 #####c. run container
 ```
@@ -130,22 +130,22 @@ serf members
 *output*
 
 ```
-master.kiwenlau.com  172.17.0.65:7946  alive  
-slave1.kiwenlau.com  172.17.0.66:7946  alive  
-slave2.kiwenlau.com  172.17.0.67:7946  alive
+master.tuan.com  172.17.0.65:7946  alive  
+slave1.tuan.com  172.17.0.66:7946  alive  
+slave2.tuan.com  172.17.0.67:7946  alive
 ```
 - you can wait for a while if any nodes don't show up since serf agent need time to recognize all nodes
 
 *test ssh*
 
 ```
-ssh slave2.kiwenlau.com
+ssh slave2.tuan.com
 ```
 
 *output*
 
 ```
-Warning: Permanently added 'slave2.kiwenlau.com,172.17.0.67' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'slave2.tuan.com,172.17.0.67' (ECDSA) to the list of known hosts.
 Welcome to Ubuntu 15.04 (GNU/Linux 3.13.0-53-generic x86_64)
  * Documentation:  https://help.ubuntu.com/
 The programs included with the Ubuntu system are free software;
@@ -166,7 +166,7 @@ exit
 
 ```
 logout
-Connection to slave2.kiwenlau.com closed.
+Connection to slave2.tuan.com closed.
 ```
 - Please wait for a whil if ssh fails, dnsmasq need time to configure domain name resolution service
 - You can start hadoop after these tests!
@@ -253,10 +253,10 @@ alvinhenrick/hadoop-nn-dn    49.548s      84          4.331GB
 
 ```
 镜像名称	                  构建时间	   镜像层数	   镜像大小
-kiwenlau/serf-dnsmasq        509.46s      8	         206.6 MB
-kiwenlau/hadoop-base	     400.29s	  7	         775.4 MB
-kiwenlau/hadoop-master       5.41s        9	         775.4 MB
-kiwenlau/hadoop-slave	     2.41s	      8	         775.4 MB
+tuan/serf-dnsmasq        509.46s      8	         206.6 MB
+tuan/hadoop-base	     400.29s	  7	         775.4 MB
+tuan/hadoop-master       5.41s        9	         775.4 MB
+tuan/hadoop-slave	     2.41s	      8	         775.4 MB
 ```
 
 #####注意：硬盘不够，内存不够，尤其是内核版本过低会导致运行失败:(
@@ -279,7 +279,7 @@ kiwenlau/hadoop-slave	     2.41s	      8	         775.4 MB
 
 下图显示了项目的Docker镜像结构：
 
-![alt text](https://github.com/kiwenlau/hadoop-cluster-docker/raw/master/image architecture.jpg "Image Architecture")
+![alt text](https://github.com/tuan/hadoop-cluster-docker/raw/master/image architecture.jpg "Image Architecture")
 
 
 ##三. 3节点Hadoop集群搭建步骤
@@ -288,10 +288,10 @@ kiwenlau/hadoop-slave	     2.41s	      8	         775.4 MB
 #####1. 拉取镜像
 
 ```sh
-sudo docker pull index.alauda.cn/kiwenlau/hadoop-master:0.1.0
-sudo docker pull index.alauda.cn/kiwenlau/hadoop-slave:0.1.0
-sudo docker pull index.alauda.cn/kiwenlau/hadoop-base:0.1.0
-sudo docker pull index.alauda.cn/kiwenlau/serf-dnsmasq:0.1.0
+sudo docker pull index.alauda.cn/tuan/hadoop-master:0.1.0
+sudo docker pull index.alauda.cn/tuan/hadoop-slave:0.1.0
+sudo docker pull index.alauda.cn/tuan/hadoop-base:0.1.0
+sudo docker pull index.alauda.cn/tuan/serf-dnsmasq:0.1.0
 ```
 
 *查看下载的镜像*
@@ -304,19 +304,19 @@ sudo docker images
 
 ```
 REPOSITORY                                TAG      IMAGE ID        CREATED         VIRTUAL SIZE
-index.alauda.cn/kiwenlau/hadoop-slave     0.1.0    d63869855c03    17 hours ago    777.4 MB
-index.alauda.cn/kiwenlau/hadoop-master    0.1.0    7c9d32ede450    17 hours ago    777.4 MB
-index.alauda.cn/kiwenlau/hadoop-base      0.1.0    5571bd5de58e    17 hours ago    777.4 MB
-index.alauda.cn/kiwenlau/serf-dnsmasq     0.1.0    09ed89c24ee8    17 hours ago    206.7 MB
+index.alauda.cn/tuan/hadoop-slave     0.1.0    d63869855c03    17 hours ago    777.4 MB
+index.alauda.cn/tuan/hadoop-master    0.1.0    7c9d32ede450    17 hours ago    777.4 MB
+index.alauda.cn/tuan/hadoop-base      0.1.0    5571bd5de58e    17 hours ago    777.4 MB
+index.alauda.cn/tuan/serf-dnsmasq     0.1.0    09ed89c24ee8    17 hours ago    206.7 MB
 ```
 
 #####2. 修改镜像tag
 
 ```sh
-sudo docker tag d63869855c03 kiwenlau/hadoop-slave:0.1.0
-sudo docker tag 7c9d32ede450 kiwenlau/hadoop-master:0.1.0
-sudo docker tag 5571bd5de58e kiwenlau/hadoop-base:0.1.0
-sudo docker tag 09ed89c24ee8 kiwenlau/serf-dnsmasq:0.1.0 
+sudo docker tag d63869855c03 tuan/hadoop-slave:0.1.0
+sudo docker tag 7c9d32ede450 tuan/hadoop-master:0.1.0
+sudo docker tag 5571bd5de58e tuan/hadoop-base:0.1.0
+sudo docker tag 09ed89c24ee8 tuan/serf-dnsmasq:0.1.0 
 ```
 
 *查看修改tag后镜像*
@@ -329,14 +329,14 @@ sudo docker images
 
 ```
 REPOSITORY                               TAG      IMAGE ID        CREATED         VIRTUAL SIZE
-index.alauda.cn/kiwenlau/hadoop-slave    0.1.0    d63869855c03    17 hours ago    777.4 MB
-kiwenlau/hadoop-slave                    0.1.0    d63869855c03    17 hours ago    777.4 MB
-index.alauda.cn/kiwenlau/hadoop-master   0.1.0    7c9d32ede450    17 hours ago    777.4 MB
-kiwenlau/hadoop-master                   0.1.0    7c9d32ede450    17 hours ago    777.4 MB
-kiwenlau/hadoop-base                     0.1.0    5571bd5de58e    17 hours ago    777.4 MB
-index.alauda.cn/kiwenlau/hadoop-base     0.1.0    5571bd5de58e    17 hours ago    777.4 MB
-kiwenlau/serf-dnsmasq                    0.1.0    09ed89c24ee8    17 hours ago    206.7 MB
-index.alauda.cn/kiwenlau/serf-dnsmasq    0.1.0    09ed89c24ee8    17 hours ago    206.7 MB
+index.alauda.cn/tuan/hadoop-slave    0.1.0    d63869855c03    17 hours ago    777.4 MB
+tuan/hadoop-slave                    0.1.0    d63869855c03    17 hours ago    777.4 MB
+index.alauda.cn/tuan/hadoop-master   0.1.0    7c9d32ede450    17 hours ago    777.4 MB
+tuan/hadoop-master                   0.1.0    7c9d32ede450    17 hours ago    777.4 MB
+tuan/hadoop-base                     0.1.0    5571bd5de58e    17 hours ago    777.4 MB
+index.alauda.cn/tuan/hadoop-base     0.1.0    5571bd5de58e    17 hours ago    777.4 MB
+tuan/serf-dnsmasq                    0.1.0    09ed89c24ee8    17 hours ago    206.7 MB
+index.alauda.cn/tuan/serf-dnsmasq    0.1.0    09ed89c24ee8    17 hours ago    206.7 MB
 ```
 
 - 之所以要修改镜像，是因为我默认是将镜像上传到Dockerhub, 因此Dokerfile以及shell脚本中得镜像名称都是没有alauada前缀的，sorry for this....不过改tag还是很快滴
@@ -345,13 +345,13 @@ index.alauda.cn/kiwenlau/serf-dnsmasq    0.1.0    09ed89c24ee8    17 hours ago  
 #####3.下载源代码
 
 ```sh
-git clone https://github.com/kiwenlau/hadoop-cluster-docker
+git clone https://github.com/tuan/hadoop-cluster-docker
 ```
 
 - 为了防止Github被XX, 我把代码导入到了开源中国的git仓库
 
 ```sh
-git clone http://git.oschina.net/kiwenlau/hadoop-cluster-docker
+git clone http://git.oschina.net/tuan/hadoop-cluster-docker
 ```
 
 
@@ -401,9 +401,9 @@ serf members
 *运行结果*
 
 ```
-master.kiwenlau.com  172.17.0.65:7946  alive  
-slave1.kiwenlau.com  172.17.0.66:7946  alive  
-slave2.kiwenlau.com  172.17.0.67:7946  alive
+master.tuan.com  172.17.0.65:7946  alive  
+slave1.tuan.com  172.17.0.66:7946  alive  
+slave2.tuan.com  172.17.0.67:7946  alive
 ```
 
 - 若结果缺少节点，可以稍等片刻，再执行“serf members”命令。因为serf agent需要时间发现所有节点。
@@ -411,13 +411,13 @@ slave2.kiwenlau.com  172.17.0.67:7946  alive
 *测试ssh*
 
 ```sh
-ssh slave2.kiwenlau.com
+ssh slave2.tuan.com
 ```
 
 *运行结果*
 
 ```
-Warning: Permanently added 'slave2.kiwenlau.com,172.17.0.67' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'slave2.tuan.com,172.17.0.67' (ECDSA) to the list of known hosts.
 Welcome to Ubuntu 15.04 (GNU/Linux 3.13.0-53-generic x86_64)
  * Documentation:  https://help.ubuntu.com/
 The programs included with the Ubuntu system are free software;
@@ -437,7 +437,7 @@ exit
 *运行结果*
 ```
 logout
-Connection to slave2.kiwenlau.com closed.
+Connection to slave2.tuan.com closed.
 ```
 
 - 若ssh失败，请稍等片刻再测试，因为dnsmasq的dns服务器启动需要时间。
