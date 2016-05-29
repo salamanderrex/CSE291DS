@@ -6,13 +6,12 @@
 import java.io.File;
 import java.io.IOException;
 import java.nio.ByteBuffer;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.StringTokenizer;
+import java.util.*;
 
+import org.apache.commons.collections.ArrayStack;
 import org.apache.commons.collections.iterators.ListIteratorWrapper;
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.FileUtil;
 import org.apache.hadoop.fs.Path;
@@ -24,9 +23,11 @@ import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
+import org.apache.hadoop.util.Tool;
+import org.apache.hadoop.util.ToolRunner;
 
 
-public class BiGram {
+public class BiGram extends Configured implements Tool {
     // ngram count
     public static class Map1 extends Mapper<LongWritable, Text, Text, IntWritable> {
         private final static IntWritable one = new IntWritable(1);
@@ -59,7 +60,7 @@ public class BiGram {
                 this.cnt++;
                 word.set(str.toString());
                 context.write(word, one);
-                context.write(new Text("THIS_IS TOTAL_COUNT"),one);
+                context.write(new Text("THIS_IS TOTAL_COUNT"), one);
                 str.setLength(0);
             }
         }
@@ -117,9 +118,37 @@ public class BiGram {
     }
 
     public static class Reduce2 extends Reducer<IntWritable, Text, IntWritable, Text> {
+        private TreeMap<Integer, ArrayList<String>> fatcats = new TreeMap<Integer, ArrayList<String>>();
 
         public void reduce(IntWritable key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
-            context.write(key, values.iterator().next());
+            for (Text value : values) {
+                if (!"THIS_IS TOTAL_COUNT".equals(value.toString())) {
+                    if (this.fatcats.get(key.get()) == null) {
+                        ArrayList<String> al = new ArrayList<String>();
+                        al.add(value.toString());
+                        this.fatcats.put(key.get(), al);
+                    } else {
+                        List<String> list = this.fatcats.get(key.get());
+                        list.add(value.toString());
+                    }
+                }
+            }
+        }
+
+        @Override
+        protected void cleanup(Context context) throws IOException, InterruptedException {
+            Collection entrySet = this.fatcats.entrySet();
+
+            Iterator it = entrySet.iterator();
+            while (it.hasNext()) {
+                Map.Entry<Integer, ArrayList<String>> me = (Map.Entry) it.next();
+                ArrayList<String> list = me.getValue();
+                int count = me.getKey();
+                for (String str : list) {
+                    context.write(new IntWritable(count), new Text(str));
+                }
+
+            }
         }
     }
 
@@ -136,8 +165,48 @@ public class BiGram {
             return -1 * key1.compareTo(key2);
         }
     }
+/*
+    public static void main(String[] args) throws Exception {
+
+
+
+
+        Job job2 = new Job(conf, "reverKeyPair");
+        job2.setJarByClass(BiGram.class);
+
+        job2.setOutputKeyClass(IntWritable.class);
+        job2.setOutputValueClass(Text.class);
+        //job2.setMapOutputKeyClass(IntWritable.class);
+        //job2.setMapOutputValueClass(Text.class);
+        job2.setInputFormatClass(TextInputFormat.class);
+        job2.setOutputFormatClass(TextOutputFormat.class);
+
+        //reserve sort
+        job2.setSortComparatorClass(MyKeyComparator.class);
+
+        job2.setMapperClass(Map2.class);
+        job2.setReducerClass(Reduce2.class);
+        TextInputFormat.addInputPath(job2, new Path("/tmp/temp1/part-r-00000"));
+        TextOutputFormat.setOutputPath(job2, new Path(args[1]));
+
+        job2.submit();
+        job2.waitForCompletion(true);
+
+
+        //job.waitForCompletion(true);
+        System.out.println("Done.");
+    }
+
+*/
 
     public static void main(String[] args) throws Exception {
+        int exitCode = ToolRunner.run(new Configuration(), new BiGram(), args);
+        System.exit(exitCode);
+    }
+
+
+    public int run(String[] args) throws Exception {
+
         FileUtil.fullyDelete(new File(args[1]));
         FileUtil.fullyDelete(new File("/tmp"));
 
@@ -178,8 +247,14 @@ public class BiGram {
 
         //TextOutputFormat.setOutputPath(job, new Path(args[1]));
 
-        Configuration conf2 = new Configuration();
-        Job job2 = new Job(conf2, "reverKeyPair");
+
+        job.submit();
+        job.waitForCompletion(true);
+        System.out.println("job 1 done");
+
+
+
+        Job job2 = new Job(conf, "reverKeyPair");
         job2.setJarByClass(BiGram.class);
 
         job2.setOutputKeyClass(IntWritable.class);
@@ -198,16 +273,13 @@ public class BiGram {
         TextOutputFormat.setOutputPath(job2, new Path(args[1]));
 
 
-        job.submit();
-        if (job.waitForCompletion(true)) {
-            System.out.println("job 1 done ");
-            System.out.println("cnt is " + Map1.cnt);
-        }
         job2.submit();
         job2.waitForCompletion(true);
-        //job.waitForCompletion(true);
-        System.out.println("Done.");
+        System.out.println("cnt is " + Map1.cnt);
+        return 0;
+
     }
 
 
 }
+
