@@ -260,7 +260,7 @@ public class BiGram extends Configured implements Tool {
                         find = true;
                         break;
                     } else {
-                        context.write(new IntWritable(tempK), new Text("in loop:" + str));
+                        //context.write(new IntWritable(tempK), new Text("in loop:" + str));
 
                     }
                 }
