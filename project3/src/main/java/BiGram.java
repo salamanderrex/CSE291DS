@@ -3,8 +3,7 @@
  */
 
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.nio.ByteBuffer;
 import java.util.*;
 import java.util.Collection;
@@ -14,6 +13,7 @@ import org.apache.commons.collections.ArrayStack;
 import org.apache.commons.collections.iterators.ListIteratorWrapper;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
+import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.FileUtil;
 import org.apache.hadoop.fs.Path;
@@ -74,8 +74,9 @@ public class BiGram extends Configured implements Tool {
     }
 
 
-    public  static class Reduce1 extends Reducer<Text, IntWritable, Text, IntWritable> {
+    public static class Reduce1 extends Reducer<Text, IntWritable, Text, IntWritable> {
         int count = 0;
+
         public void reduce(Text key, Iterable<IntWritable> values, Context context)
                 throws IOException, InterruptedException {
             int sum = 0;
@@ -86,7 +87,6 @@ public class BiGram extends Configured implements Tool {
 
             context.write(key, new IntWritable(sum));
         }
-
 
 
     }
@@ -152,68 +152,68 @@ public class BiGram extends Configured implements Tool {
             return -1 * key1.compareTo(key2);
         }
     }
-/*
-    public static void main(String[] args) throws Exception {
-        Job job2 = new Job(conf, "reverKeyPair");
-        job2.setJarByClass(BiGram.class);
-        job2.setOutputKeyClass(IntWritable.class);
-        job2.setOutputValueClass(Text.class);
-        //job2.setMapOutputKeyClass(IntWritable.class);
-        //job2.setMapOutputValueClass(Text.class);
-        job2.setInputFormatClass(TextInputFormat.class);
-        job2.setOutputFormatClass(TextOutputFormat.class);
-        //reserve sort
-        job2.setSortComparatorClass(MyKeyComparator.class);
-        job2.setMapperClass(Map2.class);
-        job2.setReducerClass(Reduce2.class);
-        TextInputFormat.addInputPath(job2, new Path("/tmp/temp1/part-r-00000"));
-        TextOutputFormat.setOutputPath(job2, new Path(args[1]));
-        job2.submit();
-        job2.waitForCompletion(true);
-        //job.waitForCompletion(true);
-        System.out.println("Done.");
-    }
-*/
-public static class Map3 extends Mapper<LongWritable, Text, IntWritable, Text> {
-    public void map(LongWritable key, Text value, Context context)
-            throws IOException, InterruptedException {
-        String line = value.toString();
-        StringTokenizer stringTokenizer = new StringTokenizer(line);
-        {
-            String number = "";
-            String word = "empty!!!!";
 
-            //String number = "";
-            if (stringTokenizer.hasMoreTokens()) {
-                //Bigram
-                number = stringTokenizer.nextToken();
+    /*
+        public static void main(String[] args) throws Exception {
+            Job job2 = new Job(conf, "reverKeyPair");
+            job2.setJarByClass(BiGram.class);
+            job2.setOutputKeyClass(IntWritable.class);
+            job2.setOutputValueClass(Text.class);
+            //job2.setMapOutputKeyClass(IntWritable.class);
+            //job2.setMapOutputValueClass(Text.class);
+            job2.setInputFormatClass(TextInputFormat.class);
+            job2.setOutputFormatClass(TextOutputFormat.class);
+            //reserve sort
+            job2.setSortComparatorClass(MyKeyComparator.class);
+            job2.setMapperClass(Map2.class);
+            job2.setReducerClass(Reduce2.class);
+            TextInputFormat.addInputPath(job2, new Path("/tmp/temp1/part-r-00000"));
+            TextOutputFormat.setOutputPath(job2, new Path(args[1]));
+            job2.submit();
+            job2.waitForCompletion(true);
+            //job.waitForCompletion(true);
+            System.out.println("Done.");
+        }
+    */
+    public static class Map3 extends Mapper<LongWritable, Text, IntWritable, Text> {
+        public void map(LongWritable key, Text value, Context context)
+                throws IOException, InterruptedException {
+            String line = value.toString();
+            StringTokenizer stringTokenizer = new StringTokenizer(line);
+            {
+                String number = "";
+                String word = "empty!!!!";
 
+                //String number = "";
+                if (stringTokenizer.hasMoreTokens()) {
+                    //Bigram
+                    number = stringTokenizer.nextToken();
+
+                }
+
+                if (stringTokenizer.hasMoreElements()) {
+                    String str1 = stringTokenizer.nextToken();
+                    String str2 = stringTokenizer.nextToken();
+                    word = str1.trim() + " " + str2.trim();
+                    //String str2 = stringTokenizer.nextToken();
+                    //number = Integer.parseInt(str2.trim());
+                }
+
+                //collector.collect(new IntWritable(number), new Text(word));
+                context.write(new IntWritable(Integer.parseInt(number)), new Text(word));
             }
 
-            if (stringTokenizer.hasMoreElements()) {
-                String str1 = stringTokenizer.nextToken();
-                String str2 = stringTokenizer.nextToken();
-                word = str1.trim() + " " + str2.trim();
-                //String str2 = stringTokenizer.nextToken();
-                //number = Integer.parseInt(str2.trim());
-            }
 
-            //collector.collect(new IntWritable(number), new Text(word));
-            context.write(new IntWritable(Integer.parseInt(number)), new Text(word));
         }
 
-
     }
-
-}
-
-
 
 
     public static class Reduce3 extends Reducer<IntWritable, Text, IntWritable, Text> {
         private TreeMap<Integer, ArrayList<String>> fatcats = new TreeMap<Integer, ArrayList<String>>(Collections.reverseOrder());
 
         int total_count = 0;
+
         public void reduce(IntWritable key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
 
             for (Text value : values) {
@@ -232,6 +232,7 @@ public static class Map3 extends Mapper<LongWritable, Text, IntWritable, Text> {
                 }
             }
         }
+
         @Override
         protected void cleanup(Context context) throws IOException, InterruptedException {
             int total = Integer.parseInt(context.getConfiguration().get("total"));
@@ -240,39 +241,39 @@ public static class Map3 extends Mapper<LongWritable, Text, IntWritable, Text> {
             double threadHold = 0.1 * total;
             int counter = 0;
             int tempK = 0;
-            boolean find= false;
-            int count=0;
+            boolean find = false;
+            int count = 0;
             int max = 0;
             //ArrayList <String> mostFrequestWordList =((Map.Entry<Integer,ArrayList<String>> )(entrySet.iterator().next())).getValue();
             Iterator it = entrySet.iterator();
             while (it.hasNext() && !find) {
                 Map.Entry<Integer, ArrayList<String>> me = (Map.Entry) it.next();
                 ArrayList<String> list = me.getValue();
-                if(max == 0)
+                if (max == 0)
                     max = me.getKey();
                 count = me.getKey();
                 for (String str : list) {
                     //context.write(new IntWritable(count), new Text(str));
-                    tempK ++;
+                    tempK++;
                     counter = counter + count;
                     if (find == false && counter > threadHold) {
                         find = true;
                         break;
                     } else {
-                        context.write(new IntWritable(tempK), new Text("in loop:"+str));
+                        context.write(new IntWritable(tempK), new Text("in loop:" + str));
 
                     }
                 }
             }
-            
+
             context.write(new IntWritable(tempK), new Text("top K"));
             it = entrySet.iterator();
-            while(it.hasNext()){
+            while (it.hasNext()) {
                 Map.Entry<Integer, ArrayList<String>> me = (Map.Entry) it.next();
                 ArrayList<String> list = me.getValue();
-                if(me.getKey() < max)
+                if (me.getKey() < max)
                     break;
-                for(String str: list){
+                for (String str : list) {
                     context.write(new IntWritable(me.getKey()), new Text(str));
                 }
             }
@@ -289,6 +290,7 @@ public static class Map3 extends Mapper<LongWritable, Text, IntWritable, Text> {
             */
         }
     }
+
     public static void main(String[] args) throws Exception {
         int exitCode = ToolRunner.run(new Configuration(), new BiGram(), args);
         System.exit(exitCode);
@@ -312,7 +314,7 @@ public static class Map3 extends Mapper<LongWritable, Text, IntWritable, Text> {
         }
 
 
-        Path output3= new Path("/tmp/temp2");
+        Path output3 = new Path("/tmp/temp2");
         //FileSystem hdfs3 = FileSystem.get(conf);
 
         // delete existing directory
@@ -353,7 +355,6 @@ public static class Map3 extends Mapper<LongWritable, Text, IntWritable, Text> {
         System.out.println("job 1 done");
 
 
-
         Configuration conf2 = new Configuration();
         Job job2 = new Job(conf2, "reverKeyPair");
         job2.setJarByClass(BiGram.class);
@@ -382,7 +383,26 @@ public static class Map3 extends Mapper<LongWritable, Text, IntWritable, Text> {
 
         // ---------------- job 3 ---------------------//
         Configuration conf3 = new Configuration();
-        conf3.set("total","17");
+
+        try {
+
+            FileSystem fs = FileSystem.get(conf3);
+            InputStream is = fs.open(new Path("/tmp/temp2/part-r-00000"));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+            String line;
+            String total = "";
+            while ((line = reader.readLine()) != null) {
+                total = (line.split(" "))[0];
+            }
+
+            System.out.println("total is " + total);
+            reader.close();
+            conf3.set("total", "" + total);
+
+
+        } catch (Exception e) {
+        }
+
         Job job3 = new Job(conf3, "reverKeyPair");
         job3.setJarByClass(BiGram.class);
 
