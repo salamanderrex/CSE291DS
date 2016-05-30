@@ -59,7 +59,7 @@ public class BiGram extends Configured implements Tool {
             //int va = Integer.parseInt(context.getConfiguration().get("grams"));
             int va = 2; // bigram!!
             StringBuffer str = new StringBuffer("");
-            for (int i = 0; i < ls.size() - va; i++) {
+            for (int i = 0; i < ls.size() - va + 1; i++) {
                 for (int j = 0; j < va; j++) {
                     if (j != 0)
                         str = str.append(" ");
