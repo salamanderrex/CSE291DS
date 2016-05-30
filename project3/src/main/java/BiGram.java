@@ -392,7 +392,7 @@ public class BiGram extends Configured implements Tool {
             String line;
             String total = "";
             while ((line = reader.readLine()) != null) {
-                total = (line.split(" "))[0];
+                total = (line.split("\\t|\\s"))[0];
                 break;
             }
 
