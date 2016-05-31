@@ -266,7 +266,7 @@ public class BiGram extends Configured implements Tool {
                 }
             }
 
-            context.write(new IntWritable(tempK), new Text("top K"));
+
             it = entrySet.iterator();
             while (it.hasNext()) {
                 Map.Entry<Integer, ArrayList<String>> me = (Map.Entry) it.next();
@@ -277,6 +277,7 @@ public class BiGram extends Configured implements Tool {
                     context.write(new IntWritable(me.getKey()), new Text(str));
                 }
             }
+            context.write(new IntWritable(tempK), new Text("top K"));
             //total count
             //System.out.println("#########total number is \n" + total_count);
             /*
