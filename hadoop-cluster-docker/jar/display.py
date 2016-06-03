@@ -10,7 +10,7 @@ def main():
     for l in lines[1:-1]:
         print l
     print "##########10% needs topK #######"
-    print lines[1].split(' ')[0].split('\t')[0]
+    print lines[-1:][0].split(' ')[0].split('\t')[0]
 
 if __name__ == "__main__":
     main()

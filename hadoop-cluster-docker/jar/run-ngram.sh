@@ -21,12 +21,13 @@ hdfs dfs -put /root/jar/input/* /input
 hadoop jar /root/jar/291p_3.jar BiGram /input /output
 
 # print the output of wordcount
-echo -e "\nwordcount output:"
-hdfs dfs -cat /output/part-r-00000
-echo -e "\n----"
+echo -e "\ntemp2----"
 hdfs dfs -cat /tmp/temp2/part-r-00000
+echo -e "\nbigram output:------------"
+hdfs dfs -cat /output/part-r-00000
 
-echo -e "\n to print final result"
+
+echo -e "\npretty print-----------"
 rm /root/jar/part-r-00000
 hadoop fs -get /output/part-r-00000 /root/jar/
 python /root/jar/display.py
